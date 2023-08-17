@@ -639,7 +639,7 @@ fi
 echo -e "$OK ---------------- COMPLETE ----------------"
 
 if echo "$options_choises" | grep -qw 6; then
-    read -rep "$ACTN Rrboot? [Y/n] " confirm
+    read -rep "$ACTN Reboot? [Y/n] " confirm
     if [[ ! $confirm == [nN] ]]; then
         reboot
     fi
