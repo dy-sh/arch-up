@@ -398,9 +398,6 @@ HEADER="${BLUE}\n--------------------------------------------------------------$
 echo -e "$HEADER Arch-Up Installer $HEADER"
 
 
-read "test" test
-read -rep "$ACTN test2 " test2
-
 # udpdate repository database
 echo -e "$INFO Updating repository..."
 sudo pacman -Sy
