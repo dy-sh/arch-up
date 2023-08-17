@@ -80,8 +80,6 @@ main_apps=(         # ---------- MAIN GUI APPS -------------
 main_apps_aur=(     # ---------- MAIN APPS FROM AUR -------------
     appimagelauncher # appimages installer
     downgrade       # bash script for downgrading packages to a version in cache
-    # pamac-all       # GUI for installing apps from pacman, AUR, snap, flatpak, appindicator
-    pamac-aur       # GUI for installing apps from pacman, AUR
     ttf-ms-fonts    # fonts
     # timeshift     # GUI for disk snapshots
 )
