@@ -59,6 +59,7 @@ sudo ./tweaks.sh
 # apply theme
 dconf write /org/gnome/shell/extensions/user-theme/name "'WhiteSur-Dark-nord'"
 dconf write /org/gnome/desktop/interface/gtk-theme "'WhiteSur-Dark-nord'"
+
 # icons
 dconf write /org/gnome/desktop/interface/icon-theme "'Nordzy-dark'"
 

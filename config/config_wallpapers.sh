@@ -40,6 +40,9 @@ cp wallpapers/* ~/.wallpapers
 gsettings set org.gnome.desktop.background picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
 gsettings set org.gnome.desktop.background picture-uri-dark "'file://$HOME/.wallpapers/plane_sunset.png'"
 gsettings set org.gnome.desktop.background picture-options "'stretched'"
+gsettings set org.gnome.desktop.screensaver picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
+gsettings set org.gnome.desktop.screensaver picture-options "'stretched'"
+
 
 
 echo -e "$OK DONE"
