@@ -442,6 +442,7 @@ dialog_options=(
     3 "Install packages from AUR (yay)" on
     4 "Enable installed services" on
     5 "Configure all apps" on
+    6 "Reboot when finished (recomended)" on
     )
 options_choises=$("${cmd[@]}" "${dialog_options[@]}" 2>&1 >/dev/tty)
 clear
@@ -636,3 +637,10 @@ fi
 
 
 echo -e "$OK ---------------- COMPLETE ----------------"
+
+if echo "$options_choises" | grep -qw 6; then
+    read -rep "$ACTN Rrboot? [Y/n] " confirm
+    if [[ ! $confirm == [nN] ]]; then
+        reboot
+    fi
+fi
