@@ -1,0 +1,38 @@
+{
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": false,
+    // "editor.fontWeight": "400",
+    // "editor.letterSpacing": 0.2,
+    // "editor.lineHeight": 20,
+    "markdown.preview.breaks": true,
+    "workbench.colorTheme": "nordic-vscode",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelScrollSensitivity": 2,
+    "settingsSync.ignoredSettings": [
+    
+    ],
+    "window.zoomLevel": 0.5,
+    "workbench.colorCustomizations": {
+        "terminal.background":"#242933",
+        "terminal.foreground":"#D8DEE9",
+        "terminal.ansiBrightBlack":"#3B4252",
+        "terminal.ansiBrightRed":"#D06F79",
+        "terminal.ansiBrightGreen":"#B1D196",
+        "terminal.ansiBrightYellow":"#F0D399",
+        "terminal.ansiBrightBlue":"#88C0D0",
+        "terminal.ansiBrightMagenta":"#C895BF",
+        "terminal.ansiBrightCyan":"#93CCDC",
+        "terminal.ansiBrightWhite":"#E5E9F0",
+        "terminal.ansiBlack":"#191D24",
+        "terminal.ansiRed":"#BF616A",
+        "terminal.ansiGreen":"#A3BE8C",
+        "terminal.ansiYellow":"#EBCB8B",
+        "terminal.ansiBlue":"#81A1C1",
+        "terminal.ansiMagenta":"#B48EAD",
+        "terminal.ansiCyan":"#8FBCBB",
+        "terminal.ansiWhite":"#D8DEE9"
+    },
+}

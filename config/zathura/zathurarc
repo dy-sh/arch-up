@@ -1,0 +1,50 @@
+# Nordic colors.
+
+set notification-error-bg       "#232831"
+set notification-error-fg       "#BF616A"
+set notification-warning-bg     "#232831"
+set notification-warning-fg     "#D08770"
+set notification-bg             "#232831"
+set notification-fg             "#D8DEE9"
+
+set completion-bg               "#232831"
+set completion-fg               "#D8DEE9"
+set completion-group-bg         "#3B4252"
+set completion-group-fg         "#D8DEE9"
+set completion-highlight-bg     "#88C0D0"
+set completion-highlight-fg     "#3B4252"
+
+set index-bg                    "#232831"
+set index-fg                    "#EBCB8B"
+set index-active-bg             "#2E3440"
+set index-active-fg             "#EBCB8B"
+
+set inputbar-bg                 "#232831"
+set inputbar-fg                 "#E5E9F0"
+
+set statusbar-bg                "#191C24"
+set statusbar-fg                "#BBC3D4"
+
+set highlight-color             "#D08770"
+set highlight-active-color      "#BF616A"
+
+set default-bg                  "#232831"
+set default-fg                  "#D8DEE9"
+set render-loading              "true"
+set render-loading-bg           "#232831"
+set render-loading-fg           "#434C5E"
+
+set recolor-lightcolor          "#232831"
+set recolor-darkcolor           "#ECEFF4"
+
+# Dark mode/invert.
+set recolor                     "true" 
+
+# Font.
+set font "JetBrainsMono Nerd Font 10"
+
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+# Pages per row.
+set pages-per-row 1

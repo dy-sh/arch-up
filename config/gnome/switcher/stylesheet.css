@@ -1,0 +1,39 @@
+.switcher-label, .switcher-icon {
+  padding: .4em;
+}
+
+.switcher-box:hover {
+  background-color:  #4a5561;
+}
+
+.switcher-box:last-child {
+  border-radius: 0 0 9px 9px;
+}
+
+.switcher-box-layout {
+  font-weight: bold;
+  color: #aaaaaa;
+  background-color: #242933;
+  border: 2px solid #000;
+  border-radius: 19px;
+  margin-top: 100px;
+}
+
+.switcher-highlight {
+  color: #ffffff;
+  background-color: #6F9AA7;
+}
+
+.switcher-highlight:hover {
+  color: #D8DEE9;
+}
+
+.switcher-entry {
+  margin: .4em;
+}
+
+.switcher-shortcut {
+  text-align: center;
+  padding-left: .4em;
+  padding-right: .4em;
+}
