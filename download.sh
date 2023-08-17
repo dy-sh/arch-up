@@ -67,7 +67,7 @@ fi
 
 echo -e "$OK Scripts downloaded"
 
-echo -e "$OK Extracting..."
+echo -e "$INFO Extracting..."
 
 bsdtar -x -f "${ARCHIVE_NAME}.zip"
 cd "$ARCHIVE_NAME"
@@ -75,8 +75,8 @@ cd "$ARCHIVE_NAME"
 chmod +x ./*.sh
 chmod +x config/*.sh
 
-
 echo -e "$OK Extracted"
+
 
 echo -e "$INFO Executing installer..."
 
