@@ -59,9 +59,9 @@ done
 
 # set -x
 if [ -n "$HASH" ]; then
-  curl -sL -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/${HASH}.zip"
+  curl -sSL --progress-bar -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/${HASH}.zip"
 else
-  curl -sL -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/refs/heads/${BRANCH}.zip"
+  curl -sSL --progress-bar -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/refs/heads/${BRANCH}.zip"
 fi
 
 
