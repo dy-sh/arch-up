@@ -13,18 +13,18 @@ After installing the programs, all system and software settings are configured (
 To start the automatic dowloading and execution of the script, run the command:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/dy-sh/arch-up/main/download.sh | bash 
+curl -sSL https://raw.githubusercontent.com/dy-sh/arch-up/main/download.sh -o arch-up.sh && bash arch-up.sh 
 ```
 
 You can use a short link, but it may become invalid over time:
 
 ```bash
-curl -sL https://rb.gy/5abct | bash 
+curl -sSL https://rb.gy/5abct -o arch-up.sh && bash arch-up.sh 
 ```
 or:
 
 ```bash
-curl -sL https://t.ly/9xK39 | bash 
+curl -sSL https://t.ly/9xK39 -o arch-up.sh && bash arch-up.sh 
 ```
 
 
