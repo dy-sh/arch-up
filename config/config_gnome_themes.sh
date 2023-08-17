@@ -90,15 +90,12 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
 gsettings set org.gnome.desktop.interface cursor-size 22
 
 
-
-echo -e "$INFO Installing fonts"
-
 # fonts
+echo -e "$INFO Installing fonts"
 sudo pacman -S --needed --noconfirm \
 ttf-ubuntu-font-family \
 ttf-jetbrains-mono \
 ttf-roboto \
-
 
 gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11' # default: 'Cantarell 11'
 gsettings set org.gnome.desktop.interface document-font-name 'Ubuntu 11' # default: 'Cantarell 11'
@@ -107,6 +104,10 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 11' # 
 # gsettings set org.gnome.desktop.interface font-antialiasing 'rgba' # default:  'grayscale'
 
 
+# wallpaper
+echo -e "$INFO Installing wallpaper"
+dconf write /org/gnome/desktop/background/picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
+dconf write /org/gnome/desktop/background/picture-options "'stretched'"
 
 
 echo -e "$OK DONE"
