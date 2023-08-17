@@ -3,7 +3,7 @@
 
 # e - stop script if error
 # u - stop script if using uninitialized variable
-set -eu 
+# set -eu 
 
 # set colors
 NC=$(tput sgr0)
@@ -24,6 +24,12 @@ ACTN="[${CYAN}ACTN${NC}]"
 WARN="[${YELLOW}WARN${NC}]"
 ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
+
+
+echo -e "$HEADER Arch-up downloader $HEADER"
+
+
+echo -e "$INFO Downloading scripts..."
 
 
 GITHUB_USER="dy-sh"
@@ -58,10 +64,20 @@ else
   curl -sL -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/refs/heads/${BRANCH}.zip"
 fi
 
+
+echo -e "$OK Scripts downloaded"
+
+echo -e "$OK Extracting..."
+
 bsdtar -x -f "${ARCHIVE_NAME}.zip"
 cd "$ARCHIVE_NAME"
 
 chmod +x ./*.sh
 chmod +x config/*.sh
+
+
+echo -e "$OK Extracted"
+
+echo -e "$INFO Executing installer..."
 
 ./install.sh
