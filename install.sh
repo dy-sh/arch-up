@@ -396,8 +396,7 @@ HEADER="${BLUE}\n--------------------------------------------------------------$
 
 # ---------------------------------------------------------------------
 
-
-echo -e "$HEADER ======= Arch-Up Installer ======="
+echo -e "$HEADER Arch-Up Installer $HEADER"
 
 
 # udpdate repository database
