@@ -54,7 +54,7 @@ cd $dst
 # install WhiteSur Nordic Theme
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
 cd WhiteSur-gtk-theme
-./install.sh --nord --color Dark --opacity normal --normalshowapps -t all
+./install.sh --nord --color Dark --opacity normal --normalshowapps -t all -l
 sudo ./tweaks.sh
 # apply theme
 dconf write /org/gnome/shell/extensions/user-theme/name "'WhiteSur-Dark-nord'"
@@ -76,9 +76,9 @@ cd Nordzy-icon/
 
 echo -e "$INFO Installing othes themes"
 
-
 # install other themes
-cd "$SCRIPT_DIR" || exit
+if [[ -d ~/.themes/Nordic-Folders ]]; then rm -r ~/.themes/Nordic-Folders; fi # fix overwriting issue
+cd "$SCRIPT_DIR"
 7z x "gnome/gnome-themes.7z" -o"$HOME/.themes" -y
 
 
@@ -97,6 +97,10 @@ ttf-ubuntu-font-family \
 ttf-jetbrains-mono \
 ttf-roboto \
 
+yay -S --needed --noconfirm --answerdiff=None \
+ttf-ms-fonts \
+
+
 gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11' # default: 'Cantarell 11'
 gsettings set org.gnome.desktop.interface document-font-name 'Ubuntu 11' # default: 'Cantarell 11'
 gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 11'
@@ -104,10 +108,6 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 11' # 
 # gsettings set org.gnome.desktop.interface font-antialiasing 'rgba' # default:  'grayscale'
 
 
-# wallpaper
-echo -e "$INFO Installing wallpaper"
-dconf write /org/gnome/desktop/background/picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
-dconf write /org/gnome/desktop/background/picture-options "'stretched'"
 
 
 echo -e "$OK DONE"

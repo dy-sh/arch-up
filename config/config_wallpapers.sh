@@ -33,9 +33,13 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring wallpapers $HEADER"
 
-
 mkdir -p ~/.wallpapers
 cp wallpapers/* ~/.wallpapers
+
+# wallpaper
+gsettings set org.gnome.desktop.background picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
+gsettings set org.gnome.desktop.background picture-uri-dark "'file://$HOME/.wallpapers/plane_sunset.png'"
+gsettings set org.gnome.desktop.background picture-options "'stretched'"
 
 
 echo -e "$OK DONE"

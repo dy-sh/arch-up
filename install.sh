@@ -23,6 +23,7 @@ main_cli=(          # ---------- MAIN CLI TOOLS -------------
     freerdp         # remote desktop protocol (RDP)
     gcc             # c/c++ compiler
     git             # version control system
+    ripgrep         # grep alternative
     gnome-keyring   # stores passwords and encryption keys
     gwakeonlan      # utility to awake machines using the Wake on LAN
     gparted         # partition manager 
@@ -78,9 +79,7 @@ main_apps=(         # ---------- MAIN GUI APPS -------------
     veracrypt       # encryption tool
 )
 main_apps_aur=(     # ---------- MAIN APPS FROM AUR -------------
-    appimagelauncher # appimages installer
     downgrade       # bash script for downgrading packages to a version in cache
-    ttf-ms-fonts    # fonts
     # timeshift     # GUI for disk snapshots
 )
 
@@ -99,6 +98,7 @@ text=(              # ---------- TEXT EDITORS AND TOOLS -------------
     obsidian        # note taking app
     espeak-ng       # text to speach (TTS)
     festival festival-us #  text to speach (TTS)
+    zathura zathura-pdf-mupdf # simple pdf viewer
 )
 text_aur=(          # ---------- TEXT EDITORS FROM AUR -------------
     typora          # markdown editor
@@ -158,6 +158,8 @@ audio_editors_aur=( # ---------- AUDIO EDITORS FROM AUR -------------
 video_players=(     # ---------- VIDEO PLAYERS -------------
     mpv             # video player
     vlc             # video player
+    totem           # video player
+    gst-libav       # codecs for totem and gthumb
     playerctl       # CLI for players (vlc and other)
 )
 video_players_aur=(         # ---------- VIDEO PLAYERS FROM AUR -------------
@@ -263,7 +265,6 @@ gaming_aur=( # ---------- GAMING FROM AUR -------------
 
 dev=(               # ---------- DEV TOOLS -------------
     blender
-    code
     glade
     httpie
     jdk-openjdk
@@ -274,6 +275,7 @@ dev=(               # ---------- DEV TOOLS -------------
     qtcreator
 )
 dev_aur=(           # ---------- DEV TOOLS FROM AUR -------------
+    visual-studio-code-bin
     clion
     gitfiend
     github-desktop-bin
