@@ -101,7 +101,7 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 11' # 
 # gsettings set org.gnome.desktop.interface font-antialiasing 'rgba' # default:  'grayscale'
 
 # interface scaling for xorg
-sudo pacman -Rdd mutter
+sudo pacman -Rdd --noconfirm mutter
 yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling
 # interface scaling wayland 
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling','scale-monitor-framebuffer']"
