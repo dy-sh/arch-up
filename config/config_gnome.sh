@@ -102,7 +102,9 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 11' # 
 
 # interface scaling for xorg
 sudo pacman -Rdd --noconfirm mutter
-yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling
+if ! yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling; then
+    sudo pacman -S --needed --noconfirm mutter
+fi
 # interface scaling wayland 
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling','scale-monitor-framebuffer']"
 
