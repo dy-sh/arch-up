@@ -74,31 +74,7 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 # hide date on clock widget
 gsettings set org.gnome.desktop.interface clock-show-date false
 
-# GTK theme
-yay -S --needed --noconfirm --answerdiff=None adw-gtk3 
-flatpak install -y org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
-# Change the theme to adw-gtk3-dark
-gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-
-# bibata cursor theme
-# bug in wayland: huge cursor size in telegram
-yay -S --needed --noconfirm --answerdiff=None bibata-cursor-theme
-gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
-gsettings set org.gnome.desktop.interface cursor-size 22
-
-# fonts
-sudo pacman -S --needed --noconfirm \
-ttf-ubuntu-font-family \
-ttf-jetbrains-mono \
-ttf-roboto \
-
-
-gsettings set org.gnome.desktop.interface font-name 'Ubuntu 11' # default: 'Cantarell 11'
-gsettings set org.gnome.desktop.interface document-font-name 'Ubuntu 11' # default: 'Cantarell 11'
-gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrains Mono 11'
-gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 11' # default:  'Cantarell Bold 11'
-# gsettings set org.gnome.desktop.interface font-antialiasing 'rgba' # default:  'grayscale'
 
 # interface scaling for xorg
 sudo pacman -Rdd --noconfirm mutter
