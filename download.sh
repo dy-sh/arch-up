@@ -3,7 +3,7 @@
 
 # e - stop script if error
 # u - stop script if using uninitialized variable
-# set -eu 
+set -eu 
 
 # set colors
 NC=$(tput sgr0)
@@ -77,6 +77,8 @@ chmod +x config/*.sh
 
 echo -e "$OK Extracted"
 
+read "test" test
+read -rep "$ACTN test2 " test2
 
 echo -e "$INFO Executing installer..."
 
