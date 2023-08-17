@@ -396,9 +396,8 @@ HEADER="${BLUE}\n--------------------------------------------------------------$
 
 # ---------------------------------------------------------------------
 
-clear
 
-echo -e "$HEADER ======= Arch Linux Soft Installer ======="
+echo -e "$HEADER ======= Arch-Up Installer ======="
 
 
 # udpdate repository database

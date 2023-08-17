@@ -26,7 +26,7 @@ ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
 
-echo -e "$HEADER Arch-up downloader $HEADER"
+echo -e "$HEADER Arch-Up Downloader $HEADER"
 
 
 echo -e "$INFO Downloading scripts..."

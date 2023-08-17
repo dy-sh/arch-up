@@ -31,7 +31,7 @@ cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
-echo -e "$HEADER Configuring all apps and settings $HEADER"
+echo -e "$HEADER Arch-Up Config $HEADER"
 
 cd config
 for f in config_*.sh; do
