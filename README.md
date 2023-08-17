@@ -20,9 +20,10 @@ You can use a short link, but it may become invalid over time:
 
 ```bash
 curl -sL https://rb.gy/5abct | bash 
+```
+or:
 
-### OR:
-
+```bash
 curl -sL https://t.ly/9xK39 | bash 
 ```
 
