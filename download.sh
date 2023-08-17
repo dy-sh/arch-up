@@ -27,19 +27,19 @@ HEADER="${BLUE}\n--------------------------------------------------------------$
 
 
 GITHUB_USER="dy-sh"
-BRANCH="master"
+BRANCH="main"
 HASH=""
-ARTIFACT="arch-up-${BRANCH}"
+ARCHIVE_NAME="arch-up-${BRANCH}"
 
 while getopts "b:h:u:" arg; do
   case ${arg} in
     b)
       BRANCH="${OPTARG}"
-      ARTIFACT="arch-up-${BRANCH}"
+      ARCHIVE_NAME="arch-up-${BRANCH}"
       ;;
     h)
       HASH="${OPTARG}"
-      ARTIFACT="arch-up-${HASH}"
+      ARCHIVE_NAME="arch-up-${HASH}"
       ;;
     u)
       GITHUB_USER=${OPTARG}
@@ -53,14 +53,15 @@ done
 
 # set -x
 if [ -n "$HASH" ]; then
-  curl -sL -o "${ARTIFACT}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/${HASH}.zip"
-  bsdtar -x -f "${ARTIFACT}.zip"
-  cp -R "${ARTIFACT}"/*.sh "${ARTIFACT}"/*.conf "${ARTIFACT}"/files/ "${ARTIFACT}"/configs/ ./
+  curl -sL -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/${HASH}.zip"
 else
-  curl -sL -o "${ARTIFACT}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/refs/heads/${BRANCH}.zip"
-  bsdtar -x -f "${ARTIFACT}.zip"
-  cp -R "${ARTIFACT}"/*.sh "${ARTIFACT}"/*.conf "${ARTIFACT}"/files/ "${ARTIFACT}"/configs/ ./
+  curl -sL -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/refs/heads/${BRANCH}.zip"
 fi
+
+bsdtar -x -f "${ARCHIVE_NAME}.zip"
+cd "$ARCHIVE_NAME"
 
 chmod +x ./*.sh
 chmod +x config/*.sh
+
+./install.sh
