@@ -56,10 +56,14 @@ if [[ -d /home/user/.config/Code ]]; then rm -r /home/user/.config/Code; fi
 
 echo -e "$INFO Coonfiguting settings..."
 
+echo -e "$INFO Installing extensions..."
+code --install-extension bonchol.nordic-vscode
+
+killall code
+sleep 2
+
 mkdir -p ~/.config/Code/User/
 cp code/config/* ~/.config/Code/User/
 
-echo -e "$INFO Installing extensions..."
-code --install-extension bonchol.nordic-vscode
 
 echo -e "$OK DONE"
