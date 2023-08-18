@@ -83,6 +83,7 @@ gsettings set org.gnome.desktop.interface clock-show-date false
 # if ! yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling; then
 #     sudo pacman -S --needed --noconfirm mutter
 # fi
+
 # interface scaling wayland 
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling','scale-monitor-framebuffer']"
 
