@@ -77,7 +77,9 @@ gsettings set org.gnome.desktop.interface clock-show-date false
 
 
 # interface scaling for xorg
-sudo pacman -Rdd --noconfirm mutter
+set +e
+sudo pacman -Rdd --noconfirm mutter 2> /dev/null
+set -eu 
 if ! yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling; then
     sudo pacman -S --needed --noconfirm mutter
 fi
