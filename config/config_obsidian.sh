@@ -31,7 +31,7 @@ cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
-echo -e "$HEADER Configuring Obsidian $HEADER"
+# echo -e "$HEADER Configuring Obsidian $HEADER"
 
 
 # echo -e "$INFO Editing obsidian.desktop file for wayland support..."
@@ -52,4 +52,4 @@ echo -e "$HEADER Configuring Obsidian $HEADER"
 # new_text="Exec=/usr/bin/obsidian --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland %U"
 # sudo sed -i "s|$old_text|$new_text|g" "$desktop_file"
 
-echo -e "$OK DONE"
+# echo -e "$OK DONE"
