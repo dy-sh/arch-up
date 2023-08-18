@@ -33,12 +33,41 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring VSCode $HEADER"
 
+# todo check is code installed instead of code-oss
+if ! command -v code &> /dev/null; then
+    echo -e "$NOTE code is not installed. Skipping."
+    exit 0
+fi
+
+
+
+echo -e "$INFO Coonfiguting settings..."
+
+# reset settings
+if [[ -d /home/user/.vscode      ]]; then rm -r /home/user/.vscode;      fi
+if [[ -d /home/user/.config/Code ]]; then rm -r /home/user/.config/Code; fi
+
+
+
+echo -e "$INFO Installing extensions..."
+code --install-extension bonchol.nordic-vscode
+
+set +e
+killall code %2 > /dev/null
+sleep 2
+set -e
+
+mkdir -p ~/.config/Code/User/
+cp code/config/* ~/.config/Code/User/
+
+
+
 
 # Check if the .desktop file exists
-if [[ ! -f "$desktop_file" ]]; then
-    echo -e "$NOTE VSCode is not installed. Skipping."
-    exit
-fi
+# if [[ ! -f "$desktop_file" ]]; then
+#     echo -e "$NOTE VSCode is not installed. Skipping."
+#     exit
+# fi
 
 # echo -e "$INFO Editing code.desktop file for wayland support..."
 
@@ -51,25 +80,6 @@ fi
 # old_text="Exec=/usr/bin/code --new-window %F"
 # new_text="Exec=/usr/bin/code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --new-window %F"
 # sudo sed -i "s|$old_text|$new_text|g" "$desktop_file"
-
-
-# reset settings
-if [[ -d /home/user/.vscode      ]]; then rm -r /home/user/.vscode;      fi
-if [[ -d /home/user/.config/Code ]]; then rm -r /home/user/.config/Code; fi
-
-
-echo -e "$INFO Coonfiguting settings..."
-
-echo -e "$INFO Installing extensions..."
-code --install-extension bonchol.nordic-vscode
-
-set +e
-killall code %2 > /dev/null
-sleep 2
-set -e
-
-mkdir -p ~/.config/Code/User/
-cp code/config/* ~/.config/Code/User/
 
 
 echo -e "$OK DONE"
