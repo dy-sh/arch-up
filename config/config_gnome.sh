@@ -74,20 +74,35 @@ gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 # hide date on clock widget
 gsettings set org.gnome.desktop.interface clock-show-date false
 
-
-
-# interface scaling for xorg
-# set +e
-# sudo pacman -Rdd --noconfirm mutter 2> /dev/null
-# set -eu 
-# if ! yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling; then
-#     sudo pacman -S --needed --noconfirm mutter
-# fi
-
-# interface scaling wayland 
-gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling','scale-monitor-framebuffer']"
-
 # text scaling
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.05
+
+# interface scaling wayland 
+# gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+
+# interface scaling for xorg
+set +e
+sudo pacman -Rdd --noconfirm mutter 2> /dev/null
+set -eu 
+if ! yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling; then
+    sudo pacman -S --needed --noconfirm mutter
+fi
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling','scale-monitor-framebuffer']" # wayland and x11
+
+
+# set default GDM session to xorg
+config_file="/etc/gdm/custom.conf"
+insert_string="DefaultSession=gnome-xorg.desktop"
+if [ -f "$config_file" ]; then
+    if ! grep -qF "$insert_string" "$config_file"; then
+        sudo sed -i '/\[daemon\]/a '"$insert_string"'' "$config_file"
+        echo -e "$OK GDM configured to xorg by default"
+    else
+        echo -e "$INFO GDM already configured to xorg by default"
+    fi
+else
+    echo "$ERR /etc/gdm/custom.conf does not exist"
+fi
+
 
 echo -e "$OK DONE"

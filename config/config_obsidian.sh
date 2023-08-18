@@ -34,18 +34,22 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring Obsidian $HEADER"
 
 
-echo -e "$INFO Editing obsidian.desktop file for wayland support..."
+# echo -e "$INFO Editing obsidian.desktop file for wayland support..."
 
-desktop_file="/usr/share/applications/obsidian.desktop"
+# desktop_file="/usr/share/applications/obsidian.desktop"
 
-# Check if the .desktop file exists
-if [[ ! -f "$desktop_file" ]]; then
-    echo -e "$NOTE Obsidian is not installed. Skipping."
-    exit
-fi
+# # Check if the .desktop file exists
+# if [[ ! -f "$desktop_file" ]]; then
+#     echo -e "$NOTE Obsidian is not installed. Skipping."
+#     exit
+# fi
 
-old_text="Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U"
-new_text="Exec=/usr/bin/obsidian --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland %U"
-sudo sed -i "s|$old_text|$new_text|g" "$desktop_file"
+# old_text="Exec=/usr/bin/obsidian --ozone-platform-hint=auto %U"
+# new_text="Exec=/usr/bin/obsidian --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland %U"
+# sudo sed -i "s|$old_text|$new_text|g" "$desktop_file"
+
+# old_text="Exec=/usr/bin/obsidian %U"
+# new_text="Exec=/usr/bin/obsidian --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland %U"
+# sudo sed -i "s|$old_text|$new_text|g" "$desktop_file"
 
 echo -e "$OK DONE"

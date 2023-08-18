@@ -34,18 +34,22 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring VSCode $HEADER"
 
 
+# Check if the .desktop file exists
+if [[ ! -f "$desktop_file" ]]; then
+    echo -e "$NOTE VSCode is not installed. Skipping."
+    exit
+fi
+
 # echo -e "$INFO Editing code.desktop file for wayland support..."
 
 # desktop_file="/usr/share/applications/code.desktop"
 
-# # Check if the .desktop file exists
-# if [[ ! -f "$desktop_file" ]]; then
-#     echo -e "$NOTE VSCode is not installed. Skipping."
-#     exit
-# fi
-
 # old_text="Exec=/usr/bin/code --unity-launch %F"
 # new_text="Exec=/usr/bin/code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --unity-launch %F"
+# sudo sed -i "s|$old_text|$new_text|g" "$desktop_file"
+
+# old_text="Exec=/usr/bin/code --new-window %F"
+# new_text="Exec=/usr/bin/code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --new-window %F"
 # sudo sed -i "s|$old_text|$new_text|g" "$desktop_file"
 
 
