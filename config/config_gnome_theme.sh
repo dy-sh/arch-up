@@ -111,6 +111,11 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Ubuntu Bold 11' # 
 # gsettings set org.gnome.desktop.interface font-antialiasing 'rgba' # default:  'grayscale'
 
 
+# gnome settings
+echo -e "$INFO Configuring gnome settings"
+# minimize button
+gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
+
 
 
 echo -e "$OK DONE"
