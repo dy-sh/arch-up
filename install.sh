@@ -75,6 +75,7 @@ main_cli_aur=(      # ---------- MAIN CLI TOOLS FROM AUR-------------
 
 main_apps=(         # ---------- MAIN GUI APPS -------------
     alacritty       # lightweight terminal
+    gnome-terminal       # terminal
     dconf-editor    # gsettings editor (for GNOME apps)
     gnome-clocks    # timer, stopwatch, clock
     keepassxc       # password manager
@@ -394,6 +395,9 @@ WARN="[${YELLOW}WARN${NC}]"
 ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
+# cd to script directory
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
@@ -473,7 +477,7 @@ if echo "$options_choises" | grep -qw 2; then
             14) apps_to_install=("${apps_to_install[@]}" "${gaming[@]}");;
             15) apps_to_install=("${apps_to_install[@]}" "${dev[@]}");;
             # 16) UNREAL ENGINE
-            17) apps_to_install=("${apps_to_install[@]}" "${hadware[@]}");;
+            17) apps_to_install=("${apps_to_install[@]}" "${hardware[@]}");;
             18) apps_to_install=("${apps_to_install[@]}" "${nvidia[@]}");;
             19) apps_to_install=("${apps_to_install[@]}" "${nvidia_optimus[@]}");;
             20) apps_to_install=("${apps_to_install[@]}" "${android[@]}");;
@@ -503,7 +507,7 @@ if echo "$options_choises" | grep -qw 3; then
             14) apps_to_install=("${apps_to_install[@]}" "${gaming_aur[@]}");;
             15) apps_to_install=("${apps_to_install[@]}" "${dev_aur[@]}");;
             # 16) UNREAL ENGINE
-            17) apps_to_install=("${apps_to_install[@]}" "${hadware_aur[@]}");;
+            17) apps_to_install=("${apps_to_install[@]}" "${hardware_aur[@]}");;
             18) apps_to_install=("${apps_to_install[@]}" "${nvidia_aur[@]}");;
             19) apps_to_install=("${apps_to_install[@]}" "${nvidia_optimus_aur[@]}");;
             20) apps_to_install=("${apps_to_install[@]}" "${android_aur[@]}");;
@@ -600,6 +604,7 @@ fi
 
 if echo "$options_choises" | grep -qw 5; then
     echo -e "$INFO Congfiguring all apps..."
+    cd "$SCRIPT_DIR" 
     ./config.sh
 fi
 

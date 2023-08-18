@@ -59,8 +59,10 @@ echo -e "$INFO Coonfiguting settings..."
 echo -e "$INFO Installing extensions..."
 code --install-extension bonchol.nordic-vscode
 
-killall code
+set +e
+killall code %2 > /dev/null
 sleep 2
+set -e
 
 mkdir -p ~/.config/Code/User/
 cp code/config/* ~/.config/Code/User/
