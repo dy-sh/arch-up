@@ -42,11 +42,9 @@ fi
 xdg-mime default thunar.desktop inode/directory
 
 # for current user
-mkdir -p ~/.config/xfce4
-cp -r thunar/* ~/.config/xfce4
-
+cp -r thunar/config/* ~/.config
 # for root user
-sudo mkdir -p /root/config/xfce4
-sudo cp -r thunar/* /root/config/xfce4
+sudo cp -r thunar/config/* /root/config
+
 
 echo -e "$OK DONE"
