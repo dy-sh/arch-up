@@ -57,6 +57,9 @@ while getopts "b:h:u:" arg; do
   esac
 done
 
+if [[ -f "${ARCHIVE_NAME}.zip" ]]; rm "${ARCHIVE_NAME}.zip"; fi
+if [[ -d "$ARCHIVE_NAME" ]]; rm -r "$ARCHIVE_NAME"; fi
+
 # set -x
 if [ -n "$HASH" ]; then
   curl -sSL -o "${ARCHIVE_NAME}.zip" "https://github.com/${GITHUB_USER}/arch-up/archive/${HASH}.zip"
