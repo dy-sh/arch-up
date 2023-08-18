@@ -57,8 +57,8 @@ while getopts "b:h:u:" arg; do
   esac
 done
 
-if [[ -f "${ARCHIVE_NAME}.zip" ]]; rm "${ARCHIVE_NAME}.zip"; fi
-if [[ -d "$ARCHIVE_NAME" ]]; rm -r "$ARCHIVE_NAME"; fi
+if [[ -f "${ARCHIVE_NAME}.zip" ]]; then rm "${ARCHIVE_NAME}.zip"; fi
+if [[ -d "$ARCHIVE_NAME" ]]; then rm -r "$ARCHIVE_NAME"; fi
 
 # set -x
 if [ -n "$HASH" ]; then
