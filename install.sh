@@ -299,6 +299,7 @@ hardware=(          # ---------- HARDWARE TOOLS AND DRIVERS -------------
     psensor         # graphical hardware temperature monitoring
     barrier         # share mouse between devices
     nvme-cli        # nvmi ssd tools
+    smartmontools   # SMART info, SSD temperature sensors 
     ddcutil         # HDMI/DP display brightness control (not for notebooks)
     i2c-tools       # requred for ddcutil
     iperf           # benchmark network
