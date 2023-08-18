@@ -63,6 +63,8 @@ main_cli=(          # ---------- MAIN CLI TOOLS -------------
     xdotool         # automation tool (for X11)
     xsel            # tool for get/set the contents of selection (for X11)
     zsh zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k zshdb # user friendly shell (bash alternative)
+    ttf-ubuntu-font-family ttf-jetbrains-mono ttf-roboto # most used fonts
+    ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono   # requred fonts with icons
 )
 main_cli_aur=(      # ---------- MAIN CLI TOOLS FROM AUR-------------
     preload         # run applications faster by prefetching binaries

@@ -97,6 +97,8 @@ sudo pacman -S --needed --noconfirm \
 ttf-ubuntu-font-family \
 ttf-jetbrains-mono \
 ttf-roboto \
+ttf-nerd-fonts-symbols \
+ttf-nerd-fonts-symbols-mono \
 
 yay -S --needed --noconfirm --answerdiff=None \
 ttf-ms-fonts \
