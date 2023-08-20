@@ -332,11 +332,11 @@ nvidia_aur=(        # ---------- NVIDIA GPU DRIVERS FROM AUR -------------
 
 
 nvidia_optimus=(    # ---------- NVIDIA OPTIMUS -------------
-    switcheroo-control # nvidia optimus (dGPU enbling/disabling for notebooks)
 
 )
+
 nvidia_optimus_aur=( # ---------- NVIDIA OPTIMUS FROM AUR -------------
-    
+    supergfxctl
 )
 
 
@@ -584,11 +584,11 @@ if echo "$options_choises" | grep -qw 4; then
         echo -e "$OK preload enabled"
     fi
 
-    # switcheroo-control (nvidia optimus)
-    if [[ " ${apps_to_install[*]} " == *" switcheroo-control "* ]]; then
-        echo -e "$INFO Enabling switcheroo-control (nvidia optimus)..."
-        sudo systemctl enable --now switcheroo-control
-        echo -e "$OK switcheroo-control enabled"
+    # supergfxctl (nvidia optimus)
+    if [[ " ${apps_to_install[*]} " == *" supergfxctl "* ]]; then
+        echo -e "$INFO Enabling supergfxd (nvidia optimus)..."
+        sudo systemctl enable --now supergfxd
+        echo -e "$OK supergfxd enabled"
     fi
 
     # bluetooth support
