@@ -1,7 +1,4 @@
-another-window-session-manager@gmail.com
 arcmenu@arcmenu.com
-aztaskbar@aztaskbar.gitlab.com
-dash-to-dock@micxgx.gmail.com
 dash-to-panel@jderose9.github.com
 executor@raujonas.github.io
 gnomebedtime@ionutbortis.gmail.com
@@ -16,7 +13,6 @@ miniview@thesecretaryofwar.com
 osd-volume-number@deminder
 peek-top-bar-on-fullscreen@marcinjahn.com
 rocketbar@chepkun.github.com
-status-area-horizontal-spacing@mathematical.coffee.gmail.com
 supergfxctl-gex@asus-linux.org
 switcher@landau.fi
 todo.txt@bart.libert.gmail.com

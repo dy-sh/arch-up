@@ -38,6 +38,9 @@ if ! gnome-shell --version &> /dev/null; then
     exit
 fi
 
+
+echo -e "$INFO Configuring settings"
+
 # apperance - style: dark
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
@@ -80,6 +83,9 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 1.05
 # interface scaling wayland 
 # gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 
+
+echo -e "$INFO Enabling fractional scaling"
+
 # interface scaling for xorg
 set +e
 sudo pacman -Rdd --noconfirm mutter 2> /dev/null
@@ -90,19 +96,28 @@ fi
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling','scale-monitor-framebuffer']" # wayland and x11
 
 
-# set default GDM session to xorg
-config_file="/etc/gdm/custom.conf"
-insert_string="DefaultSession=gnome-xorg.desktop"
-if [ -f "$config_file" ]; then
-    if ! grep -qF "$insert_string" "$config_file"; then
-        sudo sed -i '/\[daemon\]/a '"$insert_string"'' "$config_file"
-        echo -e "$OK GDM configured to xorg by default"
-    else
-        echo -e "$INFO GDM already configured to xorg by default"
-    fi
-else
-    echo "$ERR /etc/gdm/custom.conf does not exist"
-fi
+echo -e "$INFO Configuring GDM"
 
+# disable wayland in GDM
+# config_file="/etc/gdm/custom.conf"
+# insert_string="WaylandEnable=false"
+# if [ -f "$config_file" ]; then
+#     if ! grep -qF "$insert_string" "$config_file"; then
+#         sudo sed -i '/\[daemon\]/a '"$insert_string"'' "$config_file"
+#         echo -e "$OK GDM configured to xorg by default"
+#     else
+#         echo -e "$INFO GDM already configured to xorg by default"
+#     fi
+# else
+#     echo "$ERR /etc/gdm/custom.conf does not exist"
+# fi
+
+
+# echo -e "$INFO Enabling guestures"
+# # enable guestures on xorg
+# sudo gpasswd -a $USER input
+# sudo pacman -S --needed --noconfirm wmctrl xdotool
+# yay -S --needed --noconfirm --answerdiff=None libinput-gestures 
+# libinput-gestures-setup autostart start
 
 echo -e "$OK DONE"
