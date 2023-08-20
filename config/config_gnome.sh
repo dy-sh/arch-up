@@ -98,19 +98,19 @@ gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-sca
 
 echo -e "$INFO Configuring GDM"
 
-# set default GDM session to xorg
-config_file="/etc/gdm/custom.conf"
-insert_string="DefaultSession=gnome-xorg.desktop"
-if [ -f "$config_file" ]; then
-    if ! grep -qF "$insert_string" "$config_file"; then
-        sudo sed -i '/\[daemon\]/a '"$insert_string"'' "$config_file"
-        echo -e "$OK GDM configured to xorg by default"
-    else
-        echo -e "$INFO GDM already configured to xorg by default"
-    fi
-else
-    echo "$ERR /etc/gdm/custom.conf does not exist"
-fi
+# disable wayland in GDM
+# config_file="/etc/gdm/custom.conf"
+# insert_string="WaylandEnable=false"
+# if [ -f "$config_file" ]; then
+#     if ! grep -qF "$insert_string" "$config_file"; then
+#         sudo sed -i '/\[daemon\]/a '"$insert_string"'' "$config_file"
+#         echo -e "$OK GDM configured to xorg by default"
+#     else
+#         echo -e "$INFO GDM already configured to xorg by default"
+#     fi
+# else
+#     echo "$ERR /etc/gdm/custom.conf does not exist"
+# fi
 
 
 # echo -e "$INFO Enabling guestures"
