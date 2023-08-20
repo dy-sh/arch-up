@@ -230,6 +230,7 @@ disk=(              # ---------- DISK TOOLS -------------
 )
 disk_aur=(          # ---------- DISK TOOLS FROM AUR -------------
     czkawka-gui czkawka-cli # find duplicates
+    freefilesync-bin        # file synchronization and backup tool
     ##### THUNAR FIlE MANAGER ###########
     # thunar-vcs-plugin
     thunar-shares-plugin
