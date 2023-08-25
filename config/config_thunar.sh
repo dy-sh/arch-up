@@ -44,7 +44,7 @@ xdg-mime default thunar.desktop inode/directory
 # for current user
 cp -r thunar/config/* ~/.config
 # for root user
-sudo cp -r thunar/config/* /root/config
+sudo cp -r thunar/config/* /root/.config
 
 
 echo -e "$OK DONE"
