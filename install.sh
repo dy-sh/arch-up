@@ -3,8 +3,8 @@
 
 
 main_cli=(          # ---------- MAIN CLI TOOLS -------------
-    arch-wiki-docs  # arch wifi offline (CLI version)
-    arch-wiki-lite  # arch wifi offline (html version)
+    arch-wiki-docs  # arch wifi offline (html version)
+    arch-wiki-lite  # arch wifi offline (CLI version)
     aria2           # download manager (HTTP, FTP, BitTorrent)
     axel            # download manager
     bat             # display file content with colors (cat alternative)
