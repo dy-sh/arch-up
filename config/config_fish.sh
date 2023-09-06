@@ -33,6 +33,9 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring fish $HEADER"
 
+# prompt
+sudo pacman -S --needed --noconfirm starship
+
 mkdir -p ~/.config/fish
 cp fish/* ~/.config/fish/
 
