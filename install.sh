@@ -46,7 +46,7 @@ main_cli=(          # ---------- MAIN CLI TOOLS -------------
     nmap            # tool for showing open ports
     ntfs-3g         # NTFS filesystem driver and utilities
     nvtop           # GPU usage monitor
-    p7zip           # archiver
+    zip unzip       # archiver
     pv              # monitoring the progress of data through a pipeline
     python-pip      # tool for installing python packages
     ranger          # file manager
