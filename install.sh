@@ -534,9 +534,9 @@ echo -e "$NOTE Packages will be installed: ${apps_to_install[@]}"
 if ! command -v yay &> /dev/null; then
     echo -e "$INFO Installing yay..."
     cd ~/Downloads
-    sudo pacman -S --needed git base-devel
-    git clone https://aur.archlinux.org/yay.git
-    cd yay
+    sudo pacman -S --needed --noconfirm git base-devel
+    git clone https://aur.archlinux.org/yay-bin.git
+    cd yay-bin
     makepkg -si --needed --noconfirm
     yay --save --answerclean None --answerdiff None # dont ask for clean build and show diff
     cd ..
