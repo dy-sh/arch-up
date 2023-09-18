@@ -22,7 +22,7 @@ main_cli=(          # ---------- MAIN CLI TOOLS -------------
     flatpak         # application distribution system (pacman alterative)
     freerdp         # remote desktop protocol (RDP)
     gcc             # c/c++ compiler
-    git             # version control system
+    git git-lfs     # version control system
     ripgrep         # grep alternative
     gnome-keyring   # stores passwords and encryption keys
     gwakeonlan      # utility to awake machines using the Wake on LAN
