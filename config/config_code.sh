@@ -53,7 +53,7 @@ echo -e "$INFO Installing extensions..."
 code --install-extension bonchol.nordic-vscode
 
 set +e
-killall code %2 > /dev/null
+killall code &> /dev/null
 sleep 2
 set -e
 
