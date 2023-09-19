@@ -339,7 +339,7 @@ dev_aur=(
     clion
     gitfiend
     github-desktop-bin
-    gittyup
+    # gittyup # not compiled
     rider
     smartgit
     webstorm
@@ -658,7 +658,14 @@ fi
 
 # install apps
 echo -e "$INFO Installing apps..."
-yay -S --needed --noconfirm --answerdiff=None --quiet --norebuild --noredownload ${apps_to_install[@]}
+
+# regular install (with validity checks)
+# yay -S --needed --noconfirm --answerdiff=None --quiet --norebuild --noredownload ${apps_to_install[@]}
+
+# skip validity checks (less secure but allow to install outdated packages)
+yay -S --mflags --skipinteg --needed --noconfirm --answerdiff=None --quiet --norebuild --noredownload ${apps_to_install[@]}
+
+
 
 
 
