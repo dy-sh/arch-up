@@ -565,7 +565,7 @@ if echo "$options_choises" | grep -qw 2; then
             27) apps_to_install=("${apps_to_install[@]}" "${gaming[@]}");;
             28) apps_to_install=("${apps_to_install[@]}" "${automation[@]}");;
             29) apps_to_install=("${apps_to_install[@]}" "${dev[@]}");;
-            # 30) UNREAL ENGINE
+            30) install_unreal=true;;
             31) apps_to_install=("${apps_to_install[@]}" "${hardware[@]}");;
             32) apps_to_install=("${apps_to_install[@]}" "${nvidia[@]}");;
             33) apps_to_install=("${apps_to_install[@]}" "${nvidia_optimus[@]}");;
@@ -729,7 +729,8 @@ fi
 
 
 # epic games launcher and unreal engine
-if [[ " ${apps_to_install[*]} " == *" unreal-engine-bin "* ]]; then
+# if [[ " ${apps_to_install[*]} " == *" unreal-engine-bin "* ]]; then
+if [[ -v install_unreal ]]; then
     echo -e "$INFO Installing Epic Games Launcher..."
     set +e  # disabling flags to compile UE
     set +u  
@@ -739,8 +740,10 @@ if [[ " ${apps_to_install[*]} " == *" unreal-engine-bin "* ]]; then
     echo -e "$OK Epic Games Launcher installed"
 
     echo -e "$ACTN Installing Unreal Engine..."
-    echo -e "$ACTN Download unreal engine from https://www.unrealengine.com/en-US/linux"
+    mkdir -p ~/.cache/yay/unreal-engine-bin
+    echo -e "$ACTN Download Unreal Engine from https://www.unrealengine.com/en-US/linux"
     echo -e "$ACTN and place it to '~/.cache/yay/unreal-engine-bin'"
+    read -rep "$ACTN Press Enter to continue..."
 
     # xdg-open https://www.unrealengine.com/en-US/linux
     # mkdir -p ~/.cache/yay/unreal-engine-bin
