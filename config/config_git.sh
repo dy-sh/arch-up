@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring git $HEADER"
 
 if ! command -v git &> /dev/null; then
-    echo "$INFO Installing git"
+    echo "$INFO Installing git..."
     sudo pacman -S --needed --noconfirm git git-lfs
 fi
 

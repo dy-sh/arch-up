@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring nemo $HEADER"
 
 if ! command -v nemo &> /dev/null; then
-    echo -e "$NOTE nemo is not installed. Skipping."
+    echo -e "$NOTE Nemo is not installed. Skipping."
     exit 0
 fi
 

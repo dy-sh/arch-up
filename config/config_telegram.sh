@@ -36,7 +36,7 @@ echo -e "$HEADER Configuring Telegram $HEADER"
 
 if ! command -v telegram-desktop --help &> /dev/null
 then
-    echo -e "$OK Telegram is not installed. Skipping."
+    echo -e "$NOTE Telegram is not installed. Skipping."
     exit 0
 fi
 

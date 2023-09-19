@@ -34,6 +34,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring gnome extension 'Todo' $HEADER"
 
+if [[ $DESKTOP_SESSION != "gnome" ]]; then
+    echo -e "$NOTE Gnome is not running. Configuring not required."
+    exit
+fi
+
 mkdir -p ~/Documents/Todo
 touch ~/Documents/Todo/todo_done.txt
 touch ~/Documents/Todo/todo_tasks.txt

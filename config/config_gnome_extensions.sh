@@ -36,6 +36,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring Gnome extensions $HEADER"
 
+if [[ $DESKTOP_SESSION != "gnome" ]]; then
+    echo -e "$NOTE Gnome is not running. Configuring not required."
+    exit
+fi
+
 if ! gnome-shell --version &> /dev/null; then
     echo -e "$OK Gnome is not installed. Configuring not required."
     exit

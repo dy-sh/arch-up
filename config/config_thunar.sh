@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring thunar $HEADER"
 
 if ! command -v thunar &> /dev/null; then
-    echo -e "$OK thunar is not installed. Skipping."
+    echo -e "$NOTE Thunar is not installed. Skipping."
     exit 0
 fi
 
