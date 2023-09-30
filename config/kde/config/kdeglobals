@@ -106,6 +106,9 @@ ColorScheme=nordicbluish
 ColorSchemeHash=120d631c374cec27541f417706e78e47373afb83
 LastUsedCustomAccentColor=143,188,187
 
+[Icons]
+Theme=Newaita-dark
+
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
 
