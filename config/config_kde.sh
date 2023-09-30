@@ -33,7 +33,7 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring KDE $HEADER"
 
-if [[ $DESKTOP_SESSION != "plasma" ]]; then
+if [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; then
     echo -e "$NOTE KDE Plasma is not running. Configuring not required."
     exit
 fi

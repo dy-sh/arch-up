@@ -43,7 +43,7 @@ if [[ $DESKTOP_SESSION == "gnome" ]]; then
     gsettings set org.gnome.desktop.background picture-options "'stretched'"
     gsettings set org.gnome.desktop.screensaver picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
     gsettings set org.gnome.desktop.screensaver picture-options "'stretched'"
-# elif [[ $DESKTOP_SESSION == "plasma" ]]; then 
+# elif [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; then
 #     # todo
 fi
 
