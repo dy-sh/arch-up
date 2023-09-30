@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring pacman $HEADER"
 
 if [ ! -f "/etc/arch-release" ]; then
-    echo -e "$OK Distro is not Arch. Configuring not required."
+    echo -e "$NOTE Distro is not Arch. Configuring not required."
     exit
 fi
 

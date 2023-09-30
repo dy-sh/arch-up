@@ -36,13 +36,16 @@ echo -e "$HEADER Configuring wallpapers $HEADER"
 mkdir -p ~/.wallpapers
 cp wallpapers/* ~/.wallpapers
 
-# wallpaper
-gsettings set org.gnome.desktop.background picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
-gsettings set org.gnome.desktop.background picture-uri-dark "'file://$HOME/.wallpapers/plane_sunset.png'"
-gsettings set org.gnome.desktop.background picture-options "'stretched'"
-gsettings set org.gnome.desktop.screensaver picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
-gsettings set org.gnome.desktop.screensaver picture-options "'stretched'"
-
+# set wallpaper
+if [[ $DESKTOP_SESSION == "gnome" ]]; then 
+    gsettings set org.gnome.desktop.background picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
+    gsettings set org.gnome.desktop.background picture-uri-dark "'file://$HOME/.wallpapers/plane_sunset.png'"
+    gsettings set org.gnome.desktop.background picture-options "'stretched'"
+    gsettings set org.gnome.desktop.screensaver picture-uri "'file://$HOME/.wallpapers/plane_sunset.png'"
+    gsettings set org.gnome.desktop.screensaver picture-options "'stretched'"
+# elif [[ $DESKTOP_SESSION == "plasma" ]]; then 
+#     # todo
+fi
 
 
 echo -e "$OK DONE"

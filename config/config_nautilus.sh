@@ -35,7 +35,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring nautilus $HEADER"
 
 if ! command -v nautilus &> /dev/null; then
-    echo -e "$NOTE nautilus is not installed. Skipping."
+    echo -e "$NOTE Nautilus is not installed. Skipping."
     exit 0
 fi
 

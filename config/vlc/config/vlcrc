@@ -1583,7 +1583,7 @@
 skins2-last=/usr/share/vlc/skins2/HindNordicDarker-NoLogo.vlt
 
 # Config of last used skin (string)
-skins2-config=["equalizerwindow" "equalizerlayout" 200 200 362 227 0]["fullscreenController" "fslayout" 0 0 736 64 0]["mainwindow" "mergedlayout" 100 100 979 488 1]["playlistwindow" "playlistlayout" 150 150 230 261 0]["skinwindow" "skinlayout" 250 250 362 261 0]
+skins2-config=["equalizerwindow" "equalizerlayout" 200 200 362 227 0]["fullscreenController" "fslayout" 0 0 736 64 0]["mainwindow" "mergedlayout" 0 738 979 488 1]["playlistwindow" "playlistlayout" 150 150 230 261 0]["skinwindow" "skinlayout" 250 250 362 261 0]
 
 # Enable transparency effects (boolean)
 #skins2-transparency=0
@@ -2227,10 +2227,10 @@ qt-privacy-ask=0
 #sout-x264-stats=x264_2pass.log
 
 # Default preset setting used (string)
-#sout-x264-preset=
+sout-x264-preset=ultrafast
 
 # Default tune setting used (string)
-#sout-x264-tune=
+sout-x264-tune=film
 
 # x264 advanced options (string)
 #sout-x264-options=
@@ -4399,7 +4399,7 @@ vod-server=any
 #stats=1
 
 # Interface module (string)
-intf=skins2,any
+#intf=
 
 # Extra interface modules (string)
 #extraintf=

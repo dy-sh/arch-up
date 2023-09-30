@@ -35,7 +35,7 @@ echo -e "$HEADER Configuring VSCode $HEADER"
 
 # todo check is code installed instead of code-oss
 if ! command -v code &> /dev/null; then
-    echo -e "$NOTE code is not installed. Skipping."
+    echo -e "$NOTE Code is not installed. Skipping."
     exit 0
 fi
 
@@ -53,7 +53,7 @@ echo -e "$INFO Installing extensions..."
 code --install-extension bonchol.nordic-vscode
 
 set +e
-killall code %2 > /dev/null
+killall code &> /dev/null
 sleep 2
 set -e
 

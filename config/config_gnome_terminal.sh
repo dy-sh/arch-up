@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring gnome terminal $HEADER"
 
 if ! command -v gnome-terminal &> /dev/null; then
-    echo -e "$OK gnome-terminal is not installed. Skipping."
+    echo -e "$NOTE gnome-terminal is not installed. Skipping."
     exit 0
 fi
 

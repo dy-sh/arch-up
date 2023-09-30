@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring QuodLibet $HEADER"
 
 mkdir -p ~/.config/quodlibet
-cp quod-libet/config/* ~/.config/quodlibet
+cp -r quod-libet/config/* ~/.config/quodlibet
 
 
 echo -e "$OK DONE"

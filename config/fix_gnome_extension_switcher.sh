@@ -34,6 +34,12 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring gnome extension 'Switcher' $HEADER"
 
+
+if [[ $DESKTOP_SESSION != "gnome" ]]; then 
+    echo -e "$NOTE Gnome is not running. Configuring not required."
+    exit
+fi
+
 mkdir -p ~/.local/share/gnome-shell/extensions/switcher@landau.fi
 cp gnome/switcher/* ~/.local/share/gnome-shell/extensions/switcher@landau.fi
 

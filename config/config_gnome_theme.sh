@@ -31,7 +31,12 @@ cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
-echo -e "$HEADER Configuring Gnome themes $HEADER"
+echo -e "$HEADER Configuring Gnome theme $HEADER"
+
+if [[ $DESKTOP_SESSION != "gnome" ]]; then
+    echo -e "$NOTE Gnome is not running. Configuring not required."
+    exit
+fi
 
 
 echo -e "$INFO Installing adw-gtk3 theme"
