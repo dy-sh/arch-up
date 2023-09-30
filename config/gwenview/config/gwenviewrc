@@ -1,0 +1,34 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[Crop]
+CropAdvancedSettingsEnabled=true
+CropRatioHeight=2
+CropRatioWidth=1
+
+[General]
+HistoryEnabled=false
+LastUsedVersion=210800
+SideBarPage=operations
+ThumbnailActions=ThumbnailActions::None
+
+[ImageView]
+AnimationMethod=DocumentView::NoAnimation
+EnlargeSmallerImages=true
+MouseWheelBehavior=MouseWheelBehavior::Browse
+ThumbnailSplitterSizes=393,112
+
+[MainWindow]
+1707x960 screen: Height=701
+1707x960 screen: Width=894
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA34AAAKPAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[SideBar]
+InformationSplitterSizes=221,254
+SideBarSplitterSizes=227,666
+
+[ThumbnailView]
+AutoplayVideos=true
+LowResourceUsageMode=true

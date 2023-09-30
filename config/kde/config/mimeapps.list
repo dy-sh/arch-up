@@ -1,0 +1,21 @@
+[Added Associations]
+application/octet-stream=veracrypt.desktop;
+application/x-shellscript=org.kde.kate.desktop;
+inode/directory=org.kde.dolphin.desktop;
+video/mp4=mpv.desktop;
+video/quicktime=mpv.desktop;
+x-scheme-handler/geo=google-maps-geo-handler.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
+
+[Default Applications]
+application/octet-stream=veracrypt.desktop;
+application/x-shellscript=org.kde.kate.desktop;
+inode/directory=org.kde.dolphin.desktop;
+video/mp4=mpv.desktop;
+video/quicktime=mpv.desktop;
+x-scheme-handler/geo=google-maps-geo-handler.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;

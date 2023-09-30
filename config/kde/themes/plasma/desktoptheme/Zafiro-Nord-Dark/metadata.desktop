@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Zafiro-Nord-Dark
+Comment[es]=Un tema oscuro creado usando la paleta de colores de Nord.
+Comment=Dark theme created using the Nord color palette.
+X-KDE-PluginInfo-Author=zayronxio
+X-KDE-PluginInfo-Email=zayronxio@gmail.com
+X-KDE-PluginInfo-Name=Zafiro-Nord-Dark
+X-KDE-PluginInfo-Version=1.0.6
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=CC BY-SA 4.0
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+[AdaptiveTransparency]
+enabled=true

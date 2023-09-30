@@ -1,0 +1,82 @@
+1463x823 screen: Height=541
+1463x823 screen: Width=957
+1707x960 screen: Height=524
+1707x960 screen: Width=911
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[General]
+ConfigVersion=1
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[MainWindow]
+1024x576 screen: Height=501
+1024x576 screen: Width=994
+1024x576 screen: XPosition=30
+1024x576 screen: YPosition=42
+1280x720 screen: Height=523
+1280x720 screen: Width=820
+1280x720 screen: XPosition=23
+1280x720 screen: YPosition=124
+1463x823 screen: Height=544
+1463x823 screen: Width=694
+1463x823 screen: XPosition=60
+1463x823 screen: YPosition=125
+1536x864 screen: Height=418
+1536x864 screen: Width=656
+1536x864 screen: XPosition=37
+1536x864 screen: YPosition=79
+1600x900 screen: Height=626
+1600x900 screen: Width=1242
+1600x900 screen: XPosition=358
+1600x900 screen: YPosition=53
+1707x960 screen: Height=524
+1707x960 screen: Width=911
+1920x1080 screen: Height=626
+1920x1080 screen: Width=1242
+1920x1080 screen: XPosition=23
+1920x1080 screen: YPosition=124
+2048x1152 screen: Height=501
+2048x1152 screen: Width=994
+2048x1152 screen: XPosition=1054
+2048x1152 screen: YPosition=42
+2560x1440 screen: Height=524
+2560x1440 screen: Width=911
+640x480 screen: Height=501
+640x480 screen: Width=640
+640x480 screen: XPosition=0
+640x480 screen: YPosition=42
+731x411 screen: Height=358
+731x411 screen: Width=710
+731x411 screen: XPosition=22
+731x411 screen: YPosition=30
+731x457 screen: Height=403
+731x457 screen: Width=710
+819x461 screen: Height=431
+819x461 screen: Width=819
+819x461 screen: XPosition=0
+819x461 screen: YPosition=30
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[MainWindow][Toolbar sessionToolbar]
+ToolButtonStyle=IconOnly
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[Toolbar sessionToolbar]
+ToolButtonStyle=IconOnly
+
+[UiSettings]
+ColorScheme=

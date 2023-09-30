@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Zafiro-Nord-DarkerPlus
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-Author=zayronxio
+X-KDE-PluginInfo-Email=zayronxio@hotmail.com
+X-KDE-PluginInfo-License=GPL3.0
+X-KDE-PluginInfo-Version=0.9
+X-KDE-PluginInfo-Name=Zafiro-Nord-DarkerPlus
+X-KDE-PluginInfo-Website=www.pling.com/p/1891042/
+X-KDE-fallbackPackage=org.kde.breeze.desktop
+
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1629062,kns://plasma-themes.knsrc/api.kde-look.org/1930230,kns://aurorae.knsrc/api.kde-look.org/1326274,kns://sddmtheme.knsrc/api.kde-look.org/1839347,kns://xcursor.knsrc/api.kde-look.org/1662218,kns://wallpaper.knsrc/api.kde-look.org/1891586,kns://wallpaper.knsrc/api.kde-look.org/1959618,kns://icons.knsrc/api.kde-look.org/1891042,kns://icons.knsrc/api.kde-look.org/1937741,kns://icons.knsrc/api.kde-look.org/1956870,kns://icons.knsrc/api.kde-look.org/1967757

@@ -1,0 +1,37 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[DetailsMode]
+PreviewSize=22
+
+[General]
+BrowseThroughArchives=true
+UseTabForSwitchingSplitView=true
+Version=202
+ViewPropsTimestamp=2023,8,26,5,20,2.401
+
+[IconsMode]
+PreviewSize=208
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+1463x914 screen: Height=616
+1463x914 screen: Width=479
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,marble_thumbnail_shp,exrthumbnail,fontthumbnail,marble_thumbnail_geojson,pothumbnail,marble_thumbnail_gpx,marble_thumbnail_kmz,marble_thumbnail_kml,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,marble_thumbnail_osm,palathumbcreator,gsthumbnail,quithumbnail,rawthumbnail,svgthumbnail,itinerarythumbnail,ffmpegthumbs,webarchivethumbnail
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
