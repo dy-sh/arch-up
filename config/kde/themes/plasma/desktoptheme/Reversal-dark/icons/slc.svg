@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 22 22"
+   version="1.1"
+   id="svg"
+   sodipodi:docname="slc.svg"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="4.4147727"
+     inkscape:cx="-56.288288"
+     inkscape:cy="-18.234234"
+     inkscape:window-width="1920"
+     inkscape:window-height="962"
+     inkscape:window-x="0"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg" />
+  <metadata
+     id="metadata23">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3">
+    <style
+       type="text/css"
+       id="current-color-scheme">.ColorScheme-Text {
+        color:#363636;
+      }</style>
+  </defs>
+  <g
+     transform="translate(-1,-41)"
+     id="slc-like">
+    <rect
+       id="rect5"
+       fill-opacity="0"
+       height="22"
+       width="22"
+       y="1"
+       x="1" />
+    <path
+       style="color:#363636;fill:#ff4e5e;-inkscape-stroke:none"
+       d="m 7,-37 c -2.7614,0 -5,2.2386 -5,5 0,5 7,9 9,11 2,-2 9,-6 9,-11 0,-2.7614 -2.2386,-5 -5,-5 -1.6396,0 -3.0882,0.78077 -4,2 -0.91181,-1.2192 -2.3604,-2 -4,-2 z"
+       id="path7"
+       transform="translate(1,41)" />
+  </g>
+  <g
+     transform="translate(39,-1)"
+     id="slc-share">
+    <rect
+       id="rect10"
+       fill-opacity="0"
+       height="22"
+       width="22"
+       y="1"
+       x="1" />
+    <path
+       style="color:#363636;fill:#ff4e5e;-inkscape-stroke:none"
+       d="m 18,4 c -1.6569,0 -3,1.3431 -3,3 0,0.087382 0.02393,0.16451 0.03125,0.25 l -6.75,2.8125 C 7.73097,9.41522 6.91615,9 6.00005,9 c -1.6569,0 -3,1.3431 -3,3 0,1.6569 1.3431,3 3,3 0.91614,0 1.731,-0.41522 2.2812,-1.0625 l 6.75,2.8125 C 15.023929,16.835486 15,16.91262 15,17 c 0,1.6569 1.3431,3 3,3 1.6569,0 3,-1.3431 3,-3 0,-1.6569 -1.3431,-3 -3,-3 -0.91614,0 -1.731,0.41522 -2.2812,1.0625 L 8.9688,12.25 c 0.00732,-0.08549 0.03125,-0.16262 0.03125,-0.25 0,-0.08738 -0.023929,-0.16451 -0.03125,-0.25 l 6.75,-2.8125 C 16.26908,9.58478 17.0839,10 18,10 19.6569,10 21,8.6569 21,7 21,5.3431 19.6569,4 18,4 Z m 0,2 c 0.55228,0 1,0.44772 1,1 0,0.55228 -0.44772,1 -1,1 C 17.44772,8 17,7.55228 17,7 17,6.44772 17.44772,6 18,6 Z M 6,11 c 0.55228,0 1,0.44772 1,1 0,0.55228 -0.44772,1 -1,1 -0.55228,0 -1,-0.44772 -1,-1 0,-0.55228 0.44772,-1 1,-1 z m 12,5 c 0.55228,0 1,0.44772 1,1 0,0.55228 -0.44772,1 -1,1 -0.55228,0 -1,-0.44772 -1,-1 0,-0.55228 0.44772,-1 1,-1 z"
+       id="path12" />
+  </g>
+  <g
+     id="slc-connect"
+     transform="translate(-29,-6)">
+    <rect
+       y="6"
+       x="29"
+       height="22"
+       width="22"
+       id="rect930"
+       style="fill:#00ffff;fill-opacity:0" />
+    <g
+       id="g1034"
+       transform="translate(-7.298e-4)">
+      <path
+         id="circle1017"
+         style="fill:#ff4e5e;fill-opacity:1;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.34902;paint-order:stroke fill markers"
+         d="m 40.00073,9 a 6,6 0 0 0 -6,6 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 6,6 0 0 0 -6,-6 z M 39.948,12 a 3,3 0 0 1 0.05273,0 3,3 0 0 1 3,3 3,3 0 0 1 -3,3 3,3 0 0 1 -3,-3 3,3 0 0 1 2.947265,-3 z" />
+      <rect
+         style="fill:#ff4e5e;fill-opacity:1;stroke-width:6.87384;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.34902;paint-order:stroke fill markers"
+         id="rect1028"
+         width="3.0000012"
+         height="7"
+         x="38.500729"
+         y="19"
+         ry="1.5000006" />
+    </g>
+  </g>
+</svg>

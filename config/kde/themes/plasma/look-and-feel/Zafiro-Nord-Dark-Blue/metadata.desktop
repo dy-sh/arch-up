@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Zafiro-Nord-Dark-Blue
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-Email=zayronxio@hotmail.com
+X-KDE-PluginInfo-License=GPL3.0
+X-KDE-PluginInfo-Version=1.1.2
+X-KDE-PluginInfo-Name=Zafiro-Nord-Dark-Blue
+X-KDE-fallbackPackage=org.kde.breeze.desktop
+
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1969720,kns://plasma-themes.knsrc/api.kde-look.org/1930230,kns://aurorae.knsrc/api.kde-look.org/1326274,kns://xcursor.knsrc/api.kde-look.org/1662218,kns://wallpaper.knsrc/api.kde-look.org/1891586,kns://icons.knsrc/api.kde-look.org/1891042,kns://icons.knsrc/api.kde-look.org/1937741,kns://plasmoids.knsrc/api.kde-look.org/1995000,kns://plasmoids.knsrc/api.kde-look.org/1545530,kns://wallpaper.knsrc/api.kde-look.org/1980828,kns://wallpaper.knsrc/api.kde-look.org/2071640
