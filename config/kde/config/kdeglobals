@@ -111,6 +111,8 @@ Theme=Faded-Originals-Icons-brown-dark
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=false
+SingleClick=false
 
 [KFileDialog Settings]
 Allow Expansion=false
