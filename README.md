@@ -4,7 +4,11 @@ This script allows you to quickly install and configure all the necessary softwa
 
 ![](screens/screen1.jpg)
 
-A gnome with a Nordic theme is used as a desktop. The list contains all the software used by the author of the script, but you can make a fork and edit it as you need.
+Desktop environments supported:
+- **Gnome**
+- **KDE**
+
+The script contains the most necessary software in my opinion,  but you can make a fork and edit it as you need.
 
 ![](screens/screen2.jpg)
 
