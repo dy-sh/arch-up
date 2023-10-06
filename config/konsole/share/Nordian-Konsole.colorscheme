@@ -35,10 +35,10 @@ Color=235,203,139
 Color=163,190,140
 
 [Color2Faint]
-Color=0,161,129
+Color=78,149,111
 
 [Color2Intense]
-Color=0,198,159
+Color=103,184,137
 
 [Color3]
 Color=180,142,173
@@ -47,7 +47,7 @@ Color=180,142,173
 Color=153,102,76
 
 [Color3Intense]
-Color=253,188,75
+Color=225,192,94
 
 [Color4]
 Color=67,90,99
@@ -65,13 +65,13 @@ Color=182,93,102
 Color=163,125,194
 
 [Color5Intense]
-Color=0,159,114
+Color=59,145,126
 
 [Color6]
 Color=94,129,172
 
 [Color6Faint]
-Color=33,152,134
+Color=96,167,135
 
 [Color6Intense]
 Color=129,161,193
@@ -101,8 +101,12 @@ RandomHueRange=360
 RandomSaturationRange=100
 
 [General]
+Anchor=0.5,0.5
 Blur=true
 ColorRandomization=false
 Description=Nordian-Konsole
+FillStyle=Tile
 Opacity=0.9
 Wallpaper=
+WallpaperFlipType=NoFlip
+WallpaperOpacity=1

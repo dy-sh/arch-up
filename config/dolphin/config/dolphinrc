@@ -1,27 +1,31 @@
-MenuBar=Disabled
-
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
+[Baloo KEditCommentDialog]
+1463x823 screen: Height=252
+1463x823 screen: Width=276
+
+[CompactMode]
+PreviewSize=16
+
 [DetailsMode]
-PreviewSize=22
+PreviewSize=16
 
 [General]
 BrowseThroughArchives=true
 UseTabForSwitchingSplitView=true
 Version=202
-ViewPropsTimestamp=2023,8,26,5,20,2.401
-
-[IconsMode]
-PreviewSize=208
+ViewPropsTimestamp=2023,8,30,5,9,21.509
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
 
 [KPropertiesDialog]
-1463x914 screen: Height=616
-1463x914 screen: Width=479
+1463x823 screen: Height=588
+1463x823 screen: Width=479
+1707x960 screen: Height=458
+1707x960 screen: Width=396
 
 [MainWindow]
 MenuBar=Disabled
@@ -31,7 +35,4 @@ ToolBarsMovable=Disabled
 ToolButtonStyle=IconOnly
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,marble_thumbnail_shp,exrthumbnail,fontthumbnail,marble_thumbnail_geojson,pothumbnail,marble_thumbnail_gpx,marble_thumbnail_kmz,marble_thumbnail_kml,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,marble_thumbnail_osm,palathumbcreator,gsthumbnail,quithumbnail,rawthumbnail,svgthumbnail,itinerarythumbnail,ffmpegthumbs,webarchivethumbnail
-
-[Toolbar mainToolBar]
-ToolButtonStyle=IconOnly
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,marble_thumbnail_shp,exrthumbnail,fontthumbnail,marble_thumbnail_geojson,pothumbnail,marble_thumbnail_gpx,imagethumbnail,jpegthumbnail,marble_thumbnail_kmz,marble_thumbnail_kml,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,marble_thumbnail_osm,palathumbcreator,gsthumbnail,quithumbnail,rawthumbnail,svgthumbnail,itinerarythumbnail,ffmpegthumbs,webarchivethumbnail
