@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=Nordian-Konsole
+ColorScheme=Dysh-Gray-Theme-Dark
 
 [General]
 Name=Profile 4
