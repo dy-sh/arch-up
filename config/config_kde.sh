@@ -33,38 +33,38 @@ cd "$SCRIPT_DIR" || exit
 
 
 
-# echo -e "$HEADER Configuring KDE $HEADER"
+echo -e "$HEADER Configuring KDE $HEADER"
 
-# if [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; then
-#     echo -e "$NOTE KDE Plasma is not running. Configuring not required."
-#     exit
-# fi
+if [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; then
+    echo -e "$NOTE KDE Plasma is not running. Configuring not required."
+    exit
+fi
 
-# echo -e "$INFO Installing themes..."
+echo -e "$INFO Installing themes..."
 
-# cp -r kde/themes/* ~/.local/share
+cp -r kde/themes/* ~/.local/share
 
-# echo -e "$INFO Unpacking icons..."
+echo -e "$INFO Unpacking icons..."
 
-# cd ~/.local/share/icons/
-# for f in *.tar.gz; do tar xf "$f"; done
-# rm *.tar.gz
-# cd "$SCRIPT_DIR"
+cd ~/.local/share/icons/
+for f in *.tar.gz; do tar xf "$f"; done
+rm *.tar.gz
+cd "$SCRIPT_DIR"
 
-# echo -e "$INFO Installing cursors..."
+echo -e "$INFO Installing cursors..."
 
-# mkdir -p ~/.icons
-# cp -r kde/cursors/* ~/.icons
-
-
-# echo -e "$INFO Configuring options..."
-
-# cp -r kde/config/* ~/.config
+mkdir -p ~/.icons
+cp -r kde/cursors/* ~/.icons
 
 
+echo -e "$INFO Configuring options..."
+
+cp -r kde/config/* ~/.config
 
 
-# echo -e "$INFO Configuring KDE theme settings..."
+
+
+echo -e "$INFO Configuring KDE theme settings..."
 
 config_file="$HOME/.config/kwinrc"
 
