@@ -1,8 +1,8 @@
 [Appearance]
-ColorScheme=Dysh-Gray-Theme-Dark
+ColorScheme=Dysh-Nordic-Theme-Dark
 
 [General]
-Name=Profile 4
+Name=Dysh-Nordic-Theme-Dark
 Parent=FALLBACK/
 
 [Interaction Options]
