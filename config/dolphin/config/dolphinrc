@@ -1,3 +1,5 @@
+MenuBar=Disabled
+
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
@@ -25,7 +27,7 @@ Places Icons Static Size=22
 1463x823 screen: Height=588
 1463x823 screen: Width=479
 1707x960 screen: Height=458
-1707x960 screen: Width=396
+1707x960 screen: Width=384
 
 [MainWindow]
 MenuBar=Disabled
@@ -36,3 +38,6 @@ ToolButtonStyle=IconOnly
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,marble_thumbnail_shp,exrthumbnail,fontthumbnail,marble_thumbnail_geojson,pothumbnail,marble_thumbnail_gpx,imagethumbnail,jpegthumbnail,marble_thumbnail_kmz,marble_thumbnail_kml,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,marble_thumbnail_osm,palathumbcreator,gsthumbnail,quithumbnail,rawthumbnail,svgthumbnail,itinerarythumbnail,ffmpegthumbs,webarchivethumbnail
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
