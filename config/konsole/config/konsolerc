@@ -5,7 +5,7 @@
 MenuBar=Disabled
 
 [Desktop Entry]
-DefaultProfile=Profile 4.profile
+DefaultProfile=Dysh-Gray-Theme-Dark.profile
 
 [General]
 ConfigVersion=1
@@ -34,8 +34,8 @@ detailViewIconSize=16
 1600x900 screen: Width=1242
 1600x900 screen: XPosition=358
 1600x900 screen: YPosition=53
-1707x960 screen: Height=774
-1707x960 screen: Width=1156
+1707x960 screen: Height=702
+1707x960 screen: Width=1079
 1707x960 screen: XPosition=59
 1707x960 screen: YPosition=141
 1920x1080 screen: Height=626
