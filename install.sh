@@ -41,6 +41,9 @@ cli_text_editors=(
 cli_system_monitoring=(         
     htop            # system monitor
     btop            # system monitor (htop alternative)
+    s-tui           # system monitor
+    zenith          # system monitor
+    bottom          # system monitor (btm)
     iftop           # network usage monitor
     duf             # disk usage/free info (df alternative)
     ncdu            # disk usage monitor (du alternative)
