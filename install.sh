@@ -701,9 +701,9 @@ if echo "$options_choises" | grep -qw 4; then
     fi
 
     # bluetooth support
-    if [[ " ${apps_to_install[*]} " == *" hardware "* ]]; then
+    if [[ " ${apps_to_install[*]} " == *" bluez "* ]]; then
         echo -e "$INFO Enabling bluetooth support..."
-        sudo modprobe btusb
+        # sudo modprobe btusb
         sudo systemctl enable --now bluetooth
         echo -e "$OK Bluetooth support enabled"
     fi
