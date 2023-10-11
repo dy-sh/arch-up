@@ -53,6 +53,10 @@ cli_system_monitoring=(
     traceroute      # network route tracking tool
 )
 
+cli_system_monitoring_aur=(         
+    gotop           # system monitor
+)
+
 cli_system_info=(          
     neofetch        # system information
     ccze            # log viewver with colors
