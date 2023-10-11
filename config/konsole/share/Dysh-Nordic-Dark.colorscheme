@@ -2,97 +2,97 @@
 Color=34,38,44
 
 [BackgroundFaint]
-Color=40,45,56
+Color=30,34,39
 
 [BackgroundIntense]
-Color=34,38,44
+Color=38,44,50
 
 [Color0]
-Color=40,45,56
+Color=71,83,100
 
 [Color0Faint]
-Color=47,53,66
+Color=52,58,71
 
 [Color0Intense]
-Color=94,129,172
+Color=87,99,121
 
 [Color1]
-Color=158,81,88
+Color=185,112,123
 
 [Color1Faint]
-Color=200,102,112
+Color=120,73,82
 
 [Color1Intense]
-Color=168,86,94
+Color=255,155,168
 
 [Color2]
-Color=72,107,145
+Color=157,182,132
 
 [Color2Faint]
-Color=92,137,186
+Color=114,132,96
 
 [Color2Intense]
-Color=163,190,140
+Color=211,244,177
 
 [Color3]
-Color=0,121,181
+Color=209,185,143
 
 [Color3Faint]
-Color=0,159,238
+Color=148,131,102
 
 [Color3Intense]
-Color=0,155,227
+Color=255,224,175
 
 [Color4]
-Color=87,130,176
+Color=118,136,172
 
 [Color4Faint]
-Color=74,98,145
+Color=87,100,127
 
 [Color4Intense]
-Color=114,149,221
+Color=164,189,239
 
 [Color5]
-Color=180,142,173
+Color=180,138,173
 
 [Color5Faint]
-Color=211,166,203
+Color=122,93,117
 
 [Color5Intense]
-Color=158,125,152
+Color=255,195,244
 
 [Color6]
-Color=89,128,195
+Color=148,178,193
 
 [Color6Faint]
-Color=186,93,139
+Color=100,121,131
 
 [Color6Intense]
-Color=152,76,114
+Color=195,236,255
 
 [Color7]
-Color=186,200,223
+Color=180,186,195
 
 [Color7Faint]
-Color=85,170,255
+Color=113,116,122
 
 [Color7Intense]
-Color=235,203,139
+Color=225,232,243
 
 [Foreground]
-Color=165,179,199
+Color=192,200,213
 
 [ForegroundFaint]
-Color=216,216,216
+Color=109,116,129
 
 [ForegroundIntense]
-Color=163,190,140
+Color=236,243,255
 
 [General]
 Anchor=0.5,0.5
-Blur=false
+Blur=true
 ColorRandomization=false
-Description=Dysh-Bluish-Theme-Dark
+Description=Dysh-Nordic-Dark
 FillStyle=Tile
 Opacity=1
 Wallpaper=
