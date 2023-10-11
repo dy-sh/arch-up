@@ -26,7 +26,6 @@ cli_tools=(
 
 cli_file_managers=(          
     ranger          # file manager
-    lf              # file manager (ranger alternative)
 )
 
 cli_text_editors=(          
