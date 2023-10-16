@@ -44,7 +44,8 @@ fi
 
 echo -e "$INFO Installing plasmoids..."
 
-cp -r kde/plasmoids/* ~/.local/share/plasmoids
+mkdir -p ~/.local/share/plasma/plasmoids
+cp -r kde/plasmoids/* ~/.local/share/plasma/plasmoids
 
 
 
