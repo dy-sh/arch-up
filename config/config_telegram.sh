@@ -42,7 +42,9 @@ fi
 
 # installing nord theme
 echo -e "$INFO Installing Nord theme"
+set +e
 xdg-open https://t.me/addtheme/nordplus
+set -e
 read -rep "$ACTN Apply theme from browser and press Enter to continue..."
 echo -e "$OK DONE"
 
