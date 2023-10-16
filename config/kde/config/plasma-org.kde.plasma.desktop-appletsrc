@@ -192,6 +192,14 @@ showBorders=false
 immutability=1
 plugin=com.github.eatsu.spaceraspager
 
+[Containments][118][Applets][232][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][118][Applets][232][Configuration][General]
+leftClickAction=ShowOverview
+middleClickAction=ShowDesktopGrid
+
 [Containments][118][Applets][233]
 immutability=1
 plugin=com.github.eatsu.spaceraspager
@@ -199,6 +207,10 @@ plugin=com.github.eatsu.spaceraspager
 [Containments][118][Applets][233][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
+
+[Containments][118][Applets][233][Configuration][General]
+leftClickAction=ShowOverview
+middleClickAction=ShowDesktopGrid
 
 [Containments][118][Applets][234]
 immutability=1
