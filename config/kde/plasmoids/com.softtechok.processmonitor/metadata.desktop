@@ -1,0 +1,20 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Process Monitor
+Comment=List Process resource usage (CPU, Mem, etc)
+Icon=view-process-all
+
+Type=Service
+ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+
+X-KDE-PluginInfo-Author=Barry Strong
+X-KDE-PluginInfo-Email=bstrong@softtechok.com
+X-KDE-PluginInfo-Name=com.softtechok.processmonitor
+X-KDE-PluginInfo-License=GPL-3.0+
+X-KDE-PluginInfo-Version=0.8
+X-KDE-PluginInfo-Website=https://www.opencode.net/bstrong5280
+X-KDE-PluginInfo-Category=System Information
+X-KDE-ServiceTypes=Plasma/Applet

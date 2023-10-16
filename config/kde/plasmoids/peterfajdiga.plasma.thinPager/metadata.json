@@ -1,0 +1,22 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Peter Fajdiga",
+                "Email": "peter.fajdiga@gmail.com"
+            }
+        ],
+        "BugReportUrl": "https://github.com/peterfajdiga/thin-pager/issues",
+        "Category": "Windows and Tasks",
+        "Description": "It's a thin pager",
+        "Id": "peterfajdiga.plasma.thinPager",
+        "License": "GPLv3",
+        "Name": "Thin Pager",
+        "ServiceTypes": ["Plasma/Applet"],
+        "Version": "1.0",
+        "Website": "https://github.com/peterfajdiga/thin-pager"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

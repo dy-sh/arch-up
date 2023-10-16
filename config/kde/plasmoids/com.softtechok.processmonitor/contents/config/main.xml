@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="Layout">
+        <entry name="numProcesses" type="Int">
+            <default>10</default>
+        </entry>
+        <entry name="sortbyCPU" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="sortbyMem" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="sortbyIOReads" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="sortbyIOWrites" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="showPID" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="showName" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showCPU" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="showMem" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="showIOReads" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="showIOWrites" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="showBorders" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showHeaders" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="boldHeaders" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="updateInterval" type="Double">
+            <default>30</default>
+        </entry>
+    </group>
+</kcfg>

@@ -1,0 +1,33 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Wunderground Extended
+Comment=Wunderground PWS extended
+Type=Service
+Icon=weather
+
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Rafal (Raf) Liwoch
+X-KDE-PluginInfo-Email=rafal.liwoch@gmail.com
+X-KDE-PluginInfo-License=GPL2-or-later
+X-KDE-PluginInfo-Name=com.github.rliwoch.plasmoid-wunderground-extended
+X-KDE-PluginInfo-Version=0.7.1
+X-KDE-PluginInfo-Website=https://github.com/rliwoch/plasmoid-wunderground-extended
+X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-PluginInfo-Category=Environment and Weather
+X-Plasma-NotificationArea=false
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-RemoteLocation=
+
+Name[en_GB]=Wunderground Extended
+Name[en_US]=Wunderground Extended
+Name[fr_FR]=Wunderground Extended
+Name[id_ID]=Wunderground Extended
+Name[nl_NL]=Wunderground (uitgebreid)
+Name[pl_PL]=Wunerground Extended
+Comment[en_GB]=Wunderground PWS extended
+Comment[en_US]=Wunderground PWS extended
+Comment[fr_FR]=Wunderground PWS extended
+Comment[id_ID]=Wunderground PWS extended
+Comment[nl_NL]=Wunderground PWS (uitgebreid)
+Comment[pl_PL]=Wunderground PWS extended

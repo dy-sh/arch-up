@@ -1,0 +1,25 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "adhemarks@gmail.com",
+                "Name": "Adhe"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Execute commands with one click",
+        "Icon": "start-here-kde",
+        "Id": "adhe.textcommand",
+        "License": "GPL-3.0-or-later",
+        "Name": "Text command",
+        "Name[x-test]": "xxText commandxx",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "1.0",
+        "Website": ""
+    },
+    "X-KDE-ParentApp": "",
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

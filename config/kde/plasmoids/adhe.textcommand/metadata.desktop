@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=Text command
+Name[x-test]=xxText commandxx
+
+Comment=Execute commands with one click
+Comment[x-test]=xxExecute commands with one clickxx
+
+Icon=start-here-kde
+Type=Service
+X-KDE-PluginInfo-Author=Adhe
+X-KDE-PluginInfo-Email=adhemarks@gmail.com
+X-KDE-PluginInfo-License=GPL-3.0-or-later
+X-KDE-PluginInfo-Name=adhe.textcommand
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=plasma.kde.org
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-API=declarativeappletscript
+X-KDE-PluginInfo-Category=Utilities
+X-Plasma-MainScript=ui/main.qml

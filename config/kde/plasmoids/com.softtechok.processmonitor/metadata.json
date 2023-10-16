@@ -1,0 +1,23 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "bstrong@softtechok.com",
+                "Name": "Barry Strong"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "List Process resource usage (CPU, Mem, etc)",
+        "Icon": "view-process-all",
+        "Id": "com.softtechok.processmonitor",
+        "License": "GPL-3.0+",
+        "Name": "Process Monitor",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.8",
+        "Website": "https://www.opencode.net/bstrong5280"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"
+}

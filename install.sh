@@ -356,8 +356,9 @@ dev_aur=(
 hardware=(         
     # intel-ucode     # microcode for Intel CPU
     # amd-ucode       # microcode for AMD CPU
-    pavucontrol     # volume control mixer and audio device settings
-    bluez blueman bluez-utils # bluetooth support
+    pavucontrol       # volume control mixer and audio device settings
+    bluez bluez-utils # bluetooth support
+    # blueman         # bluetooth manager (no need for KDE)
     joyutils        # joystick tweaking
     psensor         # graphical hardware temperature monitoring
     barrier         # share mouse between devices

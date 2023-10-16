@@ -40,9 +40,20 @@ if [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; th
     exit
 fi
 
+
+
+echo -e "$INFO Installing plasmoids..."
+
+cp -r kde/plasmoids/* ~/.local/share/plasmoids
+
+
+
 echo -e "$INFO Installing themes..."
 
 cp -r kde/themes/* ~/.local/share
+
+
+
 
 echo -e "$INFO Unpacking icons..."
 
@@ -51,13 +62,17 @@ for f in *.tar.gz; do tar xf "$f"; done
 rm *.tar.gz
 cd "$SCRIPT_DIR"
 
+
+
 echo -e "$INFO Installing cursors..."
 
 mkdir -p ~/.icons
 cp -r kde/cursors/* ~/.icons
 
 
-echo -e "$INFO Configuring options..."
+
+
+echo -e "$INFO Configuring settings..."
 
 cp -r kde/config/* ~/.config
 
