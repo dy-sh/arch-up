@@ -101,7 +101,8 @@ find_files=(
 )
 
 find_files_aur=(
-    czkawka-gui czkawka-cli # find duplicates
+    czkawka-gui-bin  # find duplicates
+    # czkawka-cli-bin
 )
 
 file_managers=(     
@@ -655,11 +656,11 @@ fi
 
 
 # for installing czkawka
-if [[ " ${apps_to_install[*]} " == *" czkawka-gui "* ]]; then
-    echo -e "$INFO Importing czkawka key..."
-    curl -sS https://github.com/web-flow.gpg | gpg --import - 
-    echo -e "$OK Czkawka key imported"
-fi
+# if [[ " ${apps_to_install[*]} " == *" czkawka-gui "* ]]; then
+#     echo -e "$INFO Importing czkawka key..."
+#     curl -sS https://github.com/web-flow.gpg | gpg --import - 
+#     echo -e "$OK Czkawka key imported"
+# fi
 
 
 
