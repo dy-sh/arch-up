@@ -38,6 +38,32 @@ if ! command -v git &> /dev/null; then
     sudo pacman -S --needed --noconfirm git git-lfs
 fi
 
+echo -e "$INFO Configuring Rider as diff tool..."
+git config --global difftool.rider.cmd  '/usr/bin/rider diff $LOCAL $REMOTE'
+git config --global mergetool.rider.cmd  '/usr/bin/rider merge $LOCAL $REMOTE'
+
+echo -e "$INFO Configuring Clion as diff tool..."
+git config --global difftool.clion.cmd  '/usr/bin/clion diff $LOCAL $REMOTE'
+git config --global mergetool.clion.cmd  '/usr/bin/clion merge $LOCAL $REMOTE'
+
+echo -e "$INFO Configuring VSCode as default diff tool..."
+git config --global core.editor "code --wait"
+git config --global diff.tool "vscode"
+git config --global merge.tool "vscode"
+git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+git config --global mergetool.vscode.cmd 'code --wait $MERGED'
+
+echo -e "$INFO Configuring 'delta' as diff tool..."
+git config --global core.pager "delta"
+git config --global interactive.diffFilter "delta --color-only"
+git config --global delta.navigate "true"  # use n and N to move between diff sections
+git config --global delta.light "false"
+git config --global merge.conflictstyle "diff3"
+git config --global diff.colorMoved "default"
+git config --global delta.side-by-side "true" # disable to one pagge view
+
+
+
 # ----- git config
 echo -e "$INFO Configuring commit message..."
 echo -e "$NOTE Current git user name: $(git config --global user.name)"

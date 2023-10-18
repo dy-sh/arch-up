@@ -336,6 +336,7 @@ dev=(
     httpie
     jdk-openjdk
     meld
+    git-delta
     nodejs
     npm
     pycharm-community-edition
@@ -349,7 +350,7 @@ dev_aur=(
     # gittyup # not compiled
     rider
     smartgit
-    webstorm
+    # webstorm
 )
 
 
