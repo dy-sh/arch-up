@@ -46,13 +46,6 @@ echo -e "$INFO Configuring Clion as diff tool..."
 git config --global difftool.clion.cmd  '/usr/bin/clion diff $LOCAL $REMOTE'
 git config --global mergetool.clion.cmd  '/usr/bin/clion merge $LOCAL $REMOTE'
 
-echo -e "$INFO Configuring VSCode as default diff tool..."
-git config --global core.editor "code --wait"
-git config --global diff.tool "vscode"
-git config --global merge.tool "vscode"
-git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
-git config --global mergetool.vscode.cmd 'code --wait $MERGED'
-
 echo -e "$INFO Configuring 'delta' as diff tool..."
 git config --global core.pager "delta"
 git config --global interactive.diffFilter "delta --color-only"
@@ -61,6 +54,17 @@ git config --global delta.light "false"
 git config --global merge.conflictstyle "diff3"
 git config --global diff.colorMoved "default"
 git config --global delta.side-by-side "true" # disable to one pagge view
+git config --global difftool.delta.cmd  'delta $LOCAL $REMOTE'
+git config --global mergetool.delta.cmd  'delta $MERGED'
+
+echo -e "$INFO Configuring VSCode as default diff tool..."
+git config --global core.editor "code --wait"
+git config --global diff.tool "vscode"
+git config --global merge.tool "vscode"
+git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+git config --global mergetool.vscode.cmd 'code --wait $MERGED'
+
+
 
 
 
