@@ -40,6 +40,21 @@ if [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; th
     exit
 fi
 
+echo -e "$INFO Configuring env variables"
+
+config_file="/etc/environment"
+lines_to_add=(
+    "GTK_USE_PORTAL=1"
+)
+
+for line_to_add in "${lines_to_add[@]}"; do
+  if sudo grep -Fxq "$line_to_add" "$config_file"; then
+    echo -e "$INFO Module '$line_to_add' already added."
+  else
+    sudo bash -c "echo '$line_to_add' >> $config_file"
+    echo -e "$OK Module '$line_to_add' added."
+  fi
+done
 
 
 echo -e "$INFO Installing plasmoids..."
@@ -114,6 +129,10 @@ if ! grep -q "^ButtonsOnRight=" "$config_file"; then
 else
     sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^ButtonsOnRight=.*/ButtonsOnRight='"$ButtonsOnRight"'/' "$config_file"
 fi
+
+
+
+
 
 
 echo -e "$OK DONE"
