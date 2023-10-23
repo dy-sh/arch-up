@@ -26,10 +26,12 @@ cli_tools=(
 
 cli_tools_aur=(
     cp-p-git        # cp alternative (with progress)
+    advcpmv         # cp alternative (with progress bar)
 )
 
 cli_file_managers=(          
     ranger          # file manager
+    lf
 )
 
 cli_text_editors=(          

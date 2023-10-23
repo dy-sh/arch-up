@@ -1,5 +1,15 @@
 # interpreter for shell commands
+# interpreter for shell commands
 set shell sh
+# set icons
+set info size
+set dircounts
+# set hidden
+# set number
+# set relativenumber
+# set ratios 1:1:2:3:5
+set preview
+set previewer ~/.config/lf/preview.sh
 
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
@@ -24,7 +34,9 @@ set scrolloff 10
 set cursorpreviewfmt "\033[7;2m"
 
 # use enter for shell commands
-map <enter> shell
+# map <enter> shell
+map <enter> open
+map <tab> shell
 
 # show the result of execution of previous commands
 map ` !true
@@ -41,12 +53,16 @@ map O $mimeopen --ask $f
 # This command is called when current file is not a directory. You may want to
 # use either file extensions and/or mime types here. Below uses an editor for
 # text files and a file opener for the rest.
-cmd open &{{
-    case $(file --mime-type -Lb $f) in
-        text/*) lf -remote "send $id \$$EDITOR \$fx";;
-        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
-    esac
-}}
+# cmd open &{{
+#     case $(file --mime-type -Lb $f) in
+#         text/*) lf -remote "send $id \$$EDITOR \$fx";;
+#         *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+#     esac
+# }}
+# cmd open $nvim $fx # use nvim for files
+cmd open $xdg-open $f # use xdg-open for files
+
+map e $nvim $fx
 
 # mkdir command. See wiki if you want it to select created dir
 map a :push %mkdir<space>
@@ -122,10 +138,82 @@ map gb :git_branch
 map gp ${{clear; git pull --rebase || true; echo "press ENTER"; read ENTER}}
 map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
 map gl ${{clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit}}
+map go $lazygit
+
+
+cmd paste-override &{{
+	set -f
+	load=$(lf -remote "load")
+	mode=$(echo "$load" | head -1)
+	list=$(echo "$load" | sed '1d')
+	set -- _ $list; shift
+	[ $# -gt 0 ] || exit
+	case $mode in
+		copy)
+			rsync -r "$@" ./
+			;;
+		move)
+			rsync -r --remove-source-files "$@" ./
+			;;
+	esac
+	lf -remote 'save\nmove\n'
+	lf -remote "send $id load"
+	lf -remote "send $id echo \"\033[0;32mpasted $# file(s)\033[0m\""
+}}
 
 # Yet another way to copy and move showing progress but using only cp, mv, and cp-p magic. This also shows the speed and the ETA
 cmd paste $cp-p --lf-paste $id
 
+map p
+map pp paste
+map po paste-override
+
 # calculate direcory fize
-cmd dirsize :calcdirsize; set info size
+cmd dirsize :calcdirsize; set info size; set dircounts; set dircounts!
 map zd :dirsize
+
+map zD :set dircounts
+
+
+
+# fzf support
+cmd fzf ${{
+    res="$(find . | fzf --reverse | sed 's/\\/\\\\/g;s/"/\\"/g')"
+    if [ -d "$res" ] ; then
+        cmd="cd"
+    elif [ -f "$res" ] ; then
+        cmd="select"
+    else
+        exit 0
+    fi
+    lf -remote "send $id $cmd \"$res\""
+}}
+map F fzf
+
+# rg/ripgrep support
+cmd rg ${{
+    res="$( \
+        RG_PREFIX="rg --column --line-number --no-heading --color=always \
+            --smart-case "
+        FZF_DEFAULT_COMMAND="$RG_PREFIX ''" \
+            fzf --reverse --bind "change:reload:$RG_PREFIX {q} || true" \
+            --ansi --layout=reverse --header 'Search in files' \
+            | cut -d':' -f1
+    )"
+    [ ! -z "$res" ] && lf -remote "send $id select \"$res\""
+}}
+map R rg
+
+# custom tags with fzf
+cmd tags ${{
+    res="$(cat ~/.local/share/lf/tags | fzf --reverse | sed 's/:/\n/g' | sed '2d')"
+    if [ -d "$res" ] ; then
+        cmd="cd"
+    elif [ -f "$res" ] ; then
+        cmd="select"
+    else
+        exit 0
+    fi
+    lf -remote "send $id $cmd \"$res\""
+}}
+map T tags
