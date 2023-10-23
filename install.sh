@@ -24,6 +24,10 @@ cli_tools=(
     pv              # monitoring the progress of data through a pipeline
 )
 
+cli_tools_aur=(
+    cp-p-git        # cp alternative (with progress)
+)
+
 cli_file_managers=(          
     ranger          # file manager
 )
