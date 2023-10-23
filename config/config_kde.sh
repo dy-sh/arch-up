@@ -131,7 +131,9 @@ else
 fi
 
 
+echo -e "$INFO Configuring KDE window decortion theme..."
 
+cp -r kde/window-decoration/* ~/.config
 
 
 
