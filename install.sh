@@ -165,6 +165,7 @@ network=(
     remmina         # remote desktop client (VNC/RPD/temviewer/rustdesk and more)
     # moonlight-qt sunshine # fast remote desktop client/server for nvidia GPU
     gwakeonlan      # utility to awake machines using the Wake on LAN
+    sshfs           # mounting remote directories over a SSH 
 )
 network_aur=(      
     xrdp            # remote desktop protocol (RDP) server 
