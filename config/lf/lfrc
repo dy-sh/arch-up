@@ -60,17 +60,19 @@ map a :push %mkdir<space>
 
 # move current file or selected files to trash folder
 # (also see 'man mv' for backup/overwrite options)
-cmd trash %set -f; mv $fx ~/.trash
-map D :trash
+map d
+cmd trash %set -f; mv $fx ~/.local/share/Trash/files/
+map dd :trash
+map dD delete
 
 # define a custom 'delete' command
-cmd delete ${{
-    set -f
-    printf "$fx\n"
-    printf "delete?[y/n]"
-    read ans
-    [ "$ans" = "y" ] && rm -rf $fx
-}}
+# cmd delete ${{
+#     set -f
+#     printf "$fx\n"
+#     printf "delete?[y/n]"
+#     read ans
+#     [ "$ans" = "y" ] && rm -rf $fx
+# }}
 
 # use '<delete>' key for either 'trash' or 'delete' command
 # map <delete> trash
