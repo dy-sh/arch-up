@@ -46,8 +46,14 @@ map x $$f
 map X !$f
 
 # dedicated keys for file opener actions
-map o &mimeopen $f
-map O $mimeopen --ask $f
+map o
+map om &mimeopen $f
+map oM $mimeopen --ask $f
+map oe $nvim $fx
+map oc $code $fx
+map ox $$f
+map oX !$f
+map oo open
 
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to
