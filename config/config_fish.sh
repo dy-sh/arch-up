@@ -36,6 +36,12 @@ echo -e "$HEADER Configuring fish $HEADER"
 # prompt
 sudo pacman -S --needed --noconfirm starship
 
+# plugin manager
+sudo pacman -S --needed --noconfirm fisher
+
+# lf file manager icons
+fisher install joshmedeski/fish-lf-icons
+
 mkdir -p ~/.config/fish
 cp fish/* ~/.config/fish/
 

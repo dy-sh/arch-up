@@ -11,7 +11,7 @@ manuals=(
 
 shell=(             
     # alacritty     # lightweight terminal
-    fish            # user friendly shell (bash alternative)
+    fish fisher     # user friendly shell (bash alternative)
     zsh zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k zshdb # user friendly shell (bash alternative)
 )
 
@@ -31,7 +31,7 @@ cli_tools_aur=(
 
 cli_file_managers=(          
     ranger          # file manager
-    lf
+    lf              # file manager
 )
 
 cli_text_editors=(          

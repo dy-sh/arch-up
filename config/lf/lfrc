@@ -1,7 +1,7 @@
 # interpreter for shell commands
 # interpreter for shell commands
 set shell sh
-# set icons
+set icons
 set info size
 set dircounts
 # set hidden
@@ -141,32 +141,35 @@ map gl ${{clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%C
 map go $lazygit
 
 
-cmd paste-override &{{
-	set -f
-	load=$(lf -remote "load")
-	mode=$(echo "$load" | head -1)
-	list=$(echo "$load" | sed '1d')
-	set -- _ $list; shift
-	[ $# -gt 0 ] || exit
-	case $mode in
-		copy)
-			rsync -r "$@" ./
-			;;
-		move)
-			rsync -r --remove-source-files "$@" ./
-			;;
-	esac
-	lf -remote 'save\nmove\n'
-	lf -remote "send $id load"
-	lf -remote "send $id echo \"\033[0;32mpasted $# file(s)\033[0m\""
-}}
+
 
 # Yet another way to copy and move showing progress but using only cp, mv, and cp-p magic. This also shows the speed and the ETA
 cmd paste $cp-p --lf-paste $id
 
+cmd paste-variant2 &{{
+    set -- $(cat ~/.local/share/lf/files)
+    mode="$1"
+    shift
+    case "$mode" in
+        copy)
+            advcp -ag "$@" . | grep -Po --line-buffered "(?<=^\033\[K).+%$" | sed -nu 'n;p' | 
+            while IFS= read -r line; do
+                lf -remote "send $id echo '$line'"
+            done
+            ;;
+        move)
+            mv -n -- "$@" .
+            ;;
+    esac
+    rm ~/.local/share/lf/files
+    lf -remote "send clear"
+}}
+
+
+
 map p
-map pp paste
-map po paste-override
+map pp :paste
+map pP :paste-variant2
 
 # calculate direcory fize
 cmd dirsize :calcdirsize; set info size; set dircounts; set dircounts!
