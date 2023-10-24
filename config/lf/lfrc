@@ -71,7 +71,7 @@ cmd open $xdg-open $f # use xdg-open for files
 map e $nvim $fx
 
 # mkdir command. See wiki if you want it to select created dir
-map a :push %mkdir<space>
+# map a :push %mkdir<space>
 
 # define a custom 'rename' command without prompt for overwrite
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
@@ -82,10 +82,88 @@ map a :push %mkdir<space>
 
 # move current file or selected files to trash folder
 # (also see 'man mv' for backup/overwrite options)
+
+
+# Custom Functions
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+cmd setwallpaper ${{
+    cp "$f" ~/.config/wall.jpg
+    xwallpaper --zoom "$f"
+    betterlockscreen -u "$f" --fx
+}}
+
+# Archive bindings
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+
+# Trash bindings
+# cmd trash %set -f; mv $fx ~/.local/share/Trash/files/
+cmd trash ${{
+  files=$(printf "$fx" | tr '\n' ';')
+  while [ "$files" ]; do
+    file=${files%%;*}
+
+    trash-put "$(basename "$file")"
+    if [ "$files" = "$file" ]; then
+      files=''
+    else
+      files="${files#*;}"
+    fi
+  done
+}}
+
+cmd restore_trash ${{
+  trash-restore
+}}
+
+
 map d
-cmd trash %set -f; mv $fx ~/.local/share/Trash/files/
-map dd :trash
+map dd trash
 map dD delete
+map dr restore_trash
+
+map m
+map mf mkfile
+map md mkdir
+
+
+map au unarchive
+
+# Basic Functions
+map . set hidden!
+map p paste
+map x cut
+map y copy
+map R reload
+map c clear
+
+# Movement
+map gD cd ~/documents
+map gd cd ~/downloads
+map gp cd ~/pictures
+map gc cd ~/.config
+map gr cd ~/repos
+map gv cd ~/videos
+map gs cd ~/.local/bin
+map gt cd ~/.local/share/Trash/files
 
 # define a custom 'delete' command
 # cmd delete ${{
