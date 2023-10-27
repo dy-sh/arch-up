@@ -40,7 +40,7 @@ sudo pacman -S --needed --noconfirm starship
 sudo pacman -S --needed --noconfirm fisher
 
 # lf file manager icons
-fisher install joshmedeski/fish-lf-icons
+fish -c "fisher install joshmedeski/fish-lf-icons"
 
 mkdir -p ~/.config/fish
 cp fish/* ~/.config/fish/
