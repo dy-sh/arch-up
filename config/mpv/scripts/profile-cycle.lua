@@ -176,3 +176,11 @@ end)
 mp.add_key_binding("P", "profile-cycle-reversed", function()
     load_next_profile(true)
 end)
+
+mp.add_key_binding("з", "profile-cycle2", function()
+    load_next_profile(false)
+end)
+
+mp.add_key_binding("З", "profile-cycle-reversed2", function()
+    load_next_profile(true)
+end)
