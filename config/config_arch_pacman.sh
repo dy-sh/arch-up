@@ -54,11 +54,20 @@ else
     fi
 fi
 
-if grep -q "#ParallelDownloads = 5" "$config_file"; then
-    sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/' "$config_file"
+echo "$config_file"
+
+# ParallelDownloads=5
+# if ! grep -q "^ParallelDownloads =" "$config_file"; then
+#     sudo sed -i '/\[options\]/a ParallelDownloads = '"$ParallelDownloads"'' "$config_file"
+# else
+#     sudo sed -i '/\[options\]/,/^\[/ s/^ParallelDownloads = .*/ParallelDownloads = '"$ParallelDownloads"'/' "$config_file"
+# fi
+
+if grep -q "#ParallelDownloads" "$config_file"; then
+    sudo sed -i 's/#ParallelDownloads/ParallelDownloads/' "$config_file"
     echo -e "$OK Parallel downloads support added."
 else
-    if grep -q "ParallelDownloads = 5" "$config_file"; then
+    if grep -q "ParallelDownloads" "$config_file"; then
         echo -e "$INFO Parallel downloads support already added. Skipping."
     else
         echo -e "$ERR Failed to add parallel downloads support."
