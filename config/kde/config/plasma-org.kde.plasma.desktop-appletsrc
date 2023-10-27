@@ -58,14 +58,6 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=100
 SystrayContainmentId=124
 
-[Containments][118][Applets][154]
-immutability=1
-plugin=org.kde.powerMonitor
-
-[Containments][118][Applets][154][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][118][Applets][157]
 immutability=1
 plugin=org.kde.plasma.systemmonitor.memory
@@ -220,12 +212,38 @@ plugin=peterfajdiga.plasma.thinPager
 DialogHeight=540
 DialogWidth=720
 
+[Containments][118][Applets][236]
+immutability=1
+plugin=org.kde.plasma.systemmonitor
+
+[Containments][118][Applets][236][Configuration]
+CurrentPreset=org.kde.plasma.systemmonitor
+PreloadWeight=100
+
+[Containments][118][Applets][236][Configuration][Appearance]
+chartFace=org.kde.ksysguard.piechart
+showTitle=true
+
+[Containments][118][Applets][236][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][118][Applets][236][Configuration][SensorColors]
+power/F8Y319702KR13QFBF/chargeRate=112,152,134
+
+[Containments][118][Applets][236][Configuration][Sensors]
+highPrioritySensorIds=["power/F8Y319702KR13QFBF/chargeRate"]
+totalSensors=["power/F8Y319702KR13QFBF/chargeRate"]
+
+[Containments][118][Applets][236][Configuration][org.kde.ksysguard.colorgrid][General]
+columnCount=2
+
 [Containments][118][ConfigDialog]
 DialogHeight=52
-DialogWidth=1707
+DialogWidth=1463
 
 [Containments][118][General]
-AppletOrder=229;234;230;154;157;159;158;232;119;121;233;122;123;162;166
+AppletOrder=229;234;230;236;157;159;158;232;119;121;233;122;123;162;166
 
 [Containments][124]
 activityId=
@@ -323,7 +341,7 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][124][Applets][141][Configuration]
-PreloadWeight=34
+PreloadWeight=26
 
 [Containments][124][Applets][142]
 immutability=1
@@ -447,7 +465,7 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][206][Applets][219][Configuration]
-PreloadWeight=26
+PreloadWeight=18
 
 [Containments][206][Applets][220]
 immutability=1
@@ -481,15 +499,10 @@ PreloadWeight=42
 extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.kclock_1x2,org.kde.merkuro.contact,org.kde.plasma.printmanager,luisbocanegra.do-not-unplug-yet
 knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.kclock_1x2,org.kde.merkuro.contact,org.kde.plasma.printmanager,luisbocanegra.do-not-unplug-yet
 
-[Containments][72]
-ItemGeometries-0x0=Applet-104:0,768,192,144,0;
-ItemGeometries-1280x720=
-ItemGeometries-1463x823=
-ItemGeometries-1707x960=
-ItemGeometries-1920x1080=
-ItemGeometries-2560x1440=
+[Containments][235]
+ItemGeometries-1463x914=
 ItemGeometriesHorizontal=
-activityId=035e50e9-4ae5-48ad-8f19-06aebfd008d7
+activityId=8aba37a0-5205-401e-9585-b5dd92637b41
 formfactor=0
 immutability=1
 lastScreen=0
@@ -497,13 +510,9 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][72][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][72][General]
+[Containments][235][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=326
+ToolBoxButtonX=204
 
 [Containments][79]
 activityId=
