@@ -254,7 +254,7 @@ video_editors_aur=(
 picture_viewers=(   
     gwenview        # picture viewer (KDE)
     gthumb          # picture viewer
-    kimageformats   # HEIC support for Qt picture viewvers
+    kimageformats5   # HEIC support for Qt picture viewvers
 )
 picture_viewers_aur=( 
     xnviewmp        # picture viewer
