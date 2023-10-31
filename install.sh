@@ -39,8 +39,7 @@ cli_text_editors=(
     micro           # text editor
     vim             # text editor
     neovim          # text editor (nvim, fork of vim)
-    nano            # text editor
-    nano-syntax-highlighting # syntax highlighting for nano
+    nano nano-syntax-highlighting  # text editor
 )
 
 
@@ -197,11 +196,11 @@ internet=(
     putty           # terminal for ssh/telent/serial
     cool-retro-term # terminal emulator which old cathode display
     filezilla       # ftp client
-    tgpt-bin        # chat-gpt in terminal
     # opensnitch    # firewall
     # haguichi      # hamachi client 
 )
 internet_aur=(     
+    tgpt-bin        # chat-gpt in terminal
     uget-integrator         # uget download manager integration for browsers
     kget-integrator-firefox # kget download manager integration for firefox
     pcloud-drive    # file storage cloud
@@ -476,22 +475,23 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Arch-Up Installer $HEADER"
 
+if ! command -v dialog &> /dev/null; then
+    echo -e "$INFO Updating repository..."
+    sudo pacman -Sy
+    echo -e "$OK Repository updated"
 
-# udpdate repository database
-echo -e "$INFO Updating repository..."
-sudo pacman -Sy
-echo -e "$OK Repository updated"
+    echo -e "$NOTE Installing dialog..."
+    sudo pacman --noconfirm --needed -S dialog
+    echo -e "$OK Dependencies installed"
+fi
 
-
-echo -e "$INFO Installing dependencies..."
-sudo pacman --noconfirm --needed -S dialog
-echo -e "$OK Dependencies installed"
 
 if [[ $DESKTOP_SESSION == "gnome" ]]; then
     gnome_installed="on"
 else
     gnome_installed="off"
 fi
+
 
 cmd=(dialog --clear --separate-output --checklist "Select software to install (use Space key):" 26 86 16)
 dialog_options=(
@@ -548,6 +548,7 @@ options_choises=$("${cmd[@]}" "${dialog_options[@]}" 2>&1 >/dev/tty)
 clear
 
 apps_to_install=() 
+apps_to_install_aur=() 
 
 if echo "$options_choises" | grep -qw 2; then
     for choice in $install_soft_choises
@@ -597,55 +598,57 @@ if echo "$options_choises" | grep -qw 3; then
     for choice in $install_soft_choises
     do
         case $choice in
-            1) apps_to_install=("${apps_to_install[@]}" "${manuals_aur[@]}");;
-            2) apps_to_install=("${apps_to_install[@]}" "${shell_aur[@]}");;
-            3) apps_to_install=("${apps_to_install[@]}" "${cli_tools_aur[@]}");;
-            4) apps_to_install=("${apps_to_install[@]}" "${cli_file_managers_aur[@]}");;
-            5) apps_to_install=("${apps_to_install[@]}" "${cli_text_editors_aur[@]}");;
-            6) apps_to_install=("${apps_to_install[@]}" "${cli_system_monitoring_aur[@]}");;
-            7) apps_to_install=("${apps_to_install[@]}" "${cli_system_info_aur[@]}");;
-            8) apps_to_install=("${apps_to_install[@]}" "${archivers_aur[@]}");;
-            9) apps_to_install=("${apps_to_install[@]}" "${code_compiling_aur[@]}");;
-            10) apps_to_install=("${apps_to_install[@]}" "${file_systems_aur[@]}");;
-            11) apps_to_install=("${apps_to_install[@]}" "${backup_aur[@]}");;
-            12) apps_to_install=("${apps_to_install[@]}" "${find_files_aur[@]}");;
-            13) apps_to_install=("${apps_to_install[@]}" "${file_managers_aur[@]}");;
-            14) apps_to_install=("${apps_to_install[@]}" "${encryption_aur[@]}");;   
-            15) apps_to_install=("${apps_to_install[@]}" "${text_aur[@]}");;
-            16) apps_to_install=("${apps_to_install[@]}" "${network_aur[@]}");;
-            17) apps_to_install=("${apps_to_install[@]}" "${internet_aur[@]}");;
-            18) apps_to_install=("${apps_to_install[@]}" "${audio_players_aur[@]}");;
-            19) apps_to_install=("${apps_to_install[@]}" "${audio_editors_aur[@]}");;
-            20) apps_to_install=("${apps_to_install[@]}" "${video_players_aur[@]}");;
-            21) apps_to_install=("${apps_to_install[@]}" "${video_editors_aur[@]}");;
-            22) apps_to_install=("${apps_to_install[@]}" "${picture_viewers_aur[@]}");;
-            23) apps_to_install=("${apps_to_install[@]}" "${graphics_editors_aur[@]}");;
-            24) apps_to_install=("${apps_to_install[@]}" "${vm_aur[@]}");;
-            25) apps_to_install=("${apps_to_install[@]}" "${fonts_aur[@]}");;
-            26) apps_to_install=("${apps_to_install[@]}" "${gnome_aur[@]}");;
-            27) apps_to_install=("${apps_to_install[@]}" "${gaming_aur[@]}");;
-            28) apps_to_install=("${apps_to_install[@]}" "${automation_aur[@]}");;
-            29) apps_to_install=("${apps_to_install[@]}" "${dev_aur[@]}");;
+            1) apps_to_install_aur=("${apps_to_install_aur[@]}" "${manuals_aur[@]}");;
+            2) apps_to_install_aur=("${apps_to_install_aur[@]}" "${shell_aur[@]}");;
+            3) apps_to_install_aur=("${apps_to_install_aur[@]}" "${cli_tools_aur[@]}");;
+            4) apps_to_install_aur=("${apps_to_install_aur[@]}" "${cli_file_managers_aur[@]}");;
+            5) apps_to_install_aur=("${apps_to_install_aur[@]}" "${cli_text_editors_aur[@]}");;
+            6) apps_to_install_aur=("${apps_to_install_aur[@]}" "${cli_system_monitoring_aur[@]}");;
+            7) apps_to_install_aur=("${apps_to_install_aur[@]}" "${cli_system_info_aur[@]}");;
+            8) apps_to_install_aur=("${apps_to_install_aur[@]}" "${archivers_aur[@]}");;
+            9) apps_to_install_aur=("${apps_to_install_aur[@]}" "${code_compiling_aur[@]}");;
+            10) apps_to_install_aur=("${apps_to_install_aur[@]}" "${file_systems_aur[@]}");;
+            11) apps_to_install_aur=("${apps_to_install_aur[@]}" "${backup_aur[@]}");;
+            12) apps_to_install_aur=("${apps_to_install_aur[@]}" "${find_files_aur[@]}");;
+            13) apps_to_install_aur=("${apps_to_install_aur[@]}" "${file_managers_aur[@]}");;
+            14) apps_to_install_aur=("${apps_to_install_aur[@]}" "${encryption_aur[@]}");;   
+            15) apps_to_install_aur=("${apps_to_install_aur[@]}" "${text_aur[@]}");;
+            16) apps_to_install_aur=("${apps_to_install_aur[@]}" "${network_aur[@]}");;
+            17) apps_to_install_aur=("${apps_to_install_aur[@]}" "${internet_aur[@]}");;
+            18) apps_to_install_aur=("${apps_to_install_aur[@]}" "${audio_players_aur[@]}");;
+            19) apps_to_install_aur=("${apps_to_install_aur[@]}" "${audio_editors_aur[@]}");;
+            20) apps_to_install_aur=("${apps_to_install_aur[@]}" "${video_players_aur[@]}");;
+            21) apps_to_install_aur=("${apps_to_install_aur[@]}" "${video_editors_aur[@]}");;
+            22) apps_to_install_aur=("${apps_to_install_aur[@]}" "${picture_viewers_aur[@]}");;
+            23) apps_to_install_aur=("${apps_to_install_aur[@]}" "${graphics_editors_aur[@]}");;
+            24) apps_to_install_aur=("${apps_to_install_aur[@]}" "${vm_aur[@]}");;
+            25) apps_to_install_aur=("${apps_to_install_aur[@]}" "${fonts_aur[@]}");;
+            26) apps_to_install_aur=("${apps_to_install_aur[@]}" "${gnome_aur[@]}");;
+            27) apps_to_install_aur=("${apps_to_install_aur[@]}" "${gaming_aur[@]}");;
+            28) apps_to_install_aur=("${apps_to_install_aur[@]}" "${automation_aur[@]}");;
+            29) apps_to_install_aur=("${apps_to_install_aur[@]}" "${dev_aur[@]}");;
             # 30) UNREAL ENGINE
-            31) apps_to_install=("${apps_to_install[@]}" "${hardware_aur[@]}");;
-            32) apps_to_install=("${apps_to_install[@]}" "${nvidia_aur[@]}");;
-            33) apps_to_install=("${apps_to_install[@]}" "${nvidia_optimus_aur[@]}");;
-            34) apps_to_install=("${apps_to_install[@]}" "${android_aur[@]}");;
-            35) apps_to_install=("${apps_to_install[@]}" "${asus_notebooks_aur[@]}");;
-            36) apps_to_install=("${apps_to_install[@]}" "${iot_aur[@]}");;
+            31) apps_to_install_aur=("${apps_to_install_aur[@]}" "${hardware_aur[@]}");;
+            32) apps_to_install_aur=("${apps_to_install_aur[@]}" "${nvidia_aur[@]}");;
+            33) apps_to_install_aur=("${apps_to_install_aur[@]}" "${nvidia_optimus_aur[@]}");;
+            34) apps_to_install_aur=("${apps_to_install_aur[@]}" "${android_aur[@]}");;
+            35) apps_to_install_aur=("${apps_to_install_aur[@]}" "${asus_notebooks_aur[@]}");;
+            36) apps_to_install_aur=("${apps_to_install_aur[@]}" "${iot_aur[@]}");;
         esac
     done
 fi
 
+echo -e "$NOTE Packages will be installed from upsteram: ${apps_to_install[@]}"
+echo -e "$NOTE Packages will be installed from aur: ${apps_to_install_aur[@]}"
+
+
 
 if echo "$options_choises" | grep -qw 1; then
-    echo -e "$INFO Updating installed packages"
-    sudo pacman -Syyu
+    echo -e "$INFO Updating installed packages..."
+    sudo pacman -Syu --noconfirm
     echo -e "$OK Packages updated"
 fi
 
-
-echo -e "$NOTE Packages will be installed: ${apps_to_install[@]}"
 
 
 # install yay
@@ -674,24 +677,25 @@ fi
 
 
 # install apps
-echo -e "$INFO Installing apps..."
+echo -e "$INFO Installing apps from upstream..."
+
+sudo pacman -S --needed --noconfirm ${apps_to_install[@]}
+
+echo -e "$OK apps from upstream installed"
+
+echo -e "$INFO Installing apps from AUR..."
+
 
 # regular install (with validity checks)
 # yay -S --needed --noconfirm --answerdiff=None --quiet --norebuild --noredownload ${apps_to_install[@]}
 
 # skip validity checks (less secure but allow to install outdated packages)
-yay -S --mflags --skipinteg --needed --noconfirm --answerdiff=None --quiet --norebuild --noredownload ${apps_to_install[@]}
+yay -S --mflags --skipinteg --needed --noconfirm --answerdiff=None --norebuild --noredownload ${apps_to_install_aur[@]}
+
+echo -e "$OK apps from AUR installed"
 
 
 
-
-
-# nano-syntax-highlighting
-if [[ " ${apps_to_install[*]} " == *" nano-syntax-highlighting "* ]]; then
-    echo -e "$INFO Configuring nano-syntax-highlighting..."
-    sudo sh -c 'echo "include /usr/share/nano-syntax-highlighting/*.nanorc" >> /etc/nanorc'
-    echo -e "$OK nano-syntax-highlighting configured"
-fi
 
 if echo "$options_choises" | grep -qw 4; then
     echo -e "$INFO Enabling services..."
