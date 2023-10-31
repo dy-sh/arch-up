@@ -681,7 +681,7 @@ echo -e "$INFO Installing apps from upstream..."
 
 sudo pacman -S --needed --noconfirm ${apps_to_install[@]}
 
-echo -e "$OK apps from upstream installed"
+echo -e "$OK Apps from upstream successfully installed"
 
 echo -e "$INFO Installing apps from AUR..."
 
@@ -692,7 +692,7 @@ echo -e "$INFO Installing apps from AUR..."
 # skip validity checks (less secure but allow to install outdated packages)
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload ${apps_to_install_aur[@]}
 
-echo -e "$OK apps from AUR installed"
+echo -e "$OK Apps from AUR successfully installed"
 
 
 
