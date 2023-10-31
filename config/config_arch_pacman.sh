@@ -54,8 +54,6 @@ else
     fi
 fi
 
-echo "$config_file"
-
 # ParallelDownloads=5
 # if ! grep -q "^ParallelDownloads =" "$config_file"; then
 #     sudo sed -i '/\[options\]/a ParallelDownloads = '"$ParallelDownloads"'' "$config_file"
@@ -87,4 +85,22 @@ else
     fi
 fi
 
+
+# mutithread compile
+config_file="/etc/makepkg.conf"
+if ! grep -q "^MAKEFLAGS" "$config_file"; then
+    echo -e "\n# multithread compile" | sudo tee -a "$config_file" > /dev/null
+    echo "MAKEFLAGS=-j$(nproc)" | sudo tee -a "$config_file" > /dev/null
+    echo -e "$OK Multithread compile support added."
+else
+    if grep -q "^MAKEFLAGS" "$config_file"; then
+        echo -e "$INFO Multithread compile support already added. Skipping."
+    else
+        echo -e "$ERR Failed to add multithread compile support."
+        exit 1
+    fi
+fi
+
+
 echo -e "$OK DONE"
+
