@@ -690,7 +690,7 @@ echo -e "$INFO Installing apps from AUR..."
 # yay -S --needed --noconfirm --answerdiff=None --quiet --norebuild --noredownload ${apps_to_install[@]}
 
 # skip validity checks (less secure but allow to install outdated packages)
-yay -S --mflags --skipinteg --needed --noconfirm --answerdiff=None --norebuild --noredownload ${apps_to_install_aur[@]}
+yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload ${apps_to_install_aur[@]}
 
 echo -e "$OK apps from AUR installed"
 
