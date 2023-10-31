@@ -60,7 +60,7 @@ cli_system_monitoring=(
 )
 
 cli_system_monitoring_aur=(         
-    gotop           # system monitor
+    gotop-bin           # system monitor
 )
 
 cli_system_info=(          
