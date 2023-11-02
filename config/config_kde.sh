@@ -136,5 +136,9 @@ echo -e "$INFO Configuring KDE window decortion theme..."
 cp -r kde/window-decoration/* ~/.config
 
 
+echo -e "$INFO Restarting KDE..."
+
+kquitapp5 plasmashell || killall plasmashell
+kstart5 plasmashell > /dev/null 2>&1 &
 
 echo -e "$OK DONE"
