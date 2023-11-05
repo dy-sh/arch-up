@@ -114,6 +114,7 @@ find_files_aur=(
 file_managers=(     
     # ##### DOLPHIN FIlE MANAGER (KDE) ###########         
     dolphin   
+    krename
     # ##### THUNAR FIlE MANAGER (XFCE) ###########
     # thunar           
     # thunar-archive-plugin      
