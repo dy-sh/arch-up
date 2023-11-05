@@ -7,5 +7,6 @@ LayoutDefaultGlobal=1
 LayoutList=us,ru
 Options=grp:win_space_toggle,grp:caps_toggle
 ResetOldOptions=true
+SwitchMode=WinClass
 Use=true
 VariantList=,
