@@ -358,6 +358,7 @@ dev_aur=(
     # gittyup # not compiled
     rider
     smartgit
+    extra-cmake-modules-git # required cmake libraries for building apps
     # webstorm
 )
 
