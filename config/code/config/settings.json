@@ -5,6 +5,8 @@
     // "editor.fontWeight": "400",
     // "editor.letterSpacing": 0.2,
     // "editor.lineHeight": 20,
+    "security.workspace.trust.enabled": false,
+    "vim.useSystemClipboard": true,
     "markdown.preview.breaks": true,
     "workbench.colorTheme": "nordic-vscode",
     "security.workspace.trust.untrustedFiles": "open",
