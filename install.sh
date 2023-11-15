@@ -400,7 +400,7 @@ nvidia=(
     # nvidia-lts    # nvidia drivers for linux-lts kernel  (preinstalled by installer)
     # nvidia-dkms   # nvidia drivers for all other kernels (preinstalled by installer)
     nvidia-settings # nvidia settins app
-
+    lib32-nvidia-utils # 32 bit libraries requird for games
 )
 nvidia_aur=(       
     gwe             # tweaking nvidia GPU
