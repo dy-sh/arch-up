@@ -358,8 +358,9 @@ dev_aur=(
     # gittyup # not compiled
     rider
     smartgit
-    extra-cmake-modules-git # required cmake libraries for building apps
     # webstorm
+    # required libraries for building KDE apps:
+    # extra-cmake-modules-git plasma5support-git kcoreaddons-git kunitconversion-git  kirigami2-git kconfig-git
 )
 
 
