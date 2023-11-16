@@ -91,11 +91,16 @@ file_systems=(
 backup=(          
     unison          # file synchronization and backup tool
     rsync           # file copying and backup tool
+    grub-btrfs      # auto update grub menu with btrfs snapshots
+    snapper         # btrfs snapshot manager
+    snap-pac        # pacman hook for automated snapshots
 )
 backup_aur=(      
     freefilesync-bin  # file synchronization and backup tool
     # timeshift     # GUI for disk snapshots
     downgrade       # bash script for downgrading packages to a version in cache
+    btrfs-assistant # GUI for btrfs management and snapper 
+    snap-pac-grub   # auto upadate brub menu when snsp-pac creates snapshots
 )
 
 find_files=(
