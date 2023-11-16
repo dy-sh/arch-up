@@ -59,6 +59,7 @@ if [ "$configs_count" -eq 0 ]; then
         sudo rm -r /.snapshots
     fi
     sudo snapper -c root create-config /
+    sudo mount -a
     echo -e "$OK Snapper configuration created"
 else
     echo -e "$OK Snapper configuration already exists"
