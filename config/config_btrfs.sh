@@ -47,9 +47,22 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo systemctl enable --now grub-btrfsd
 
 # Creating snapper config
-# umount /.snapshots
-# rm /.snapshots
-sudo snapper -c root create-config /
+config_count=0
+if [ -d "/etc/snapper/configs" ]; then
+    configs_count=$(find /etc/snapper/configs -type f | wc -l)
+fi
+
+if [ "$configs_count" -eq 0 ]; then
+    echo -e "$INFO Snapper configuration does not exist. Creating new one..."
+    if [ -d "/.snapshots" ]; then
+        sudo umount /.snapshots
+        sudo rm -r /.snapshots
+    fi
+    sudo snapper -c root create-config /
+    echo -e "$OK Snapper configuration created"
+else
+    echo -e "$OK Snapper configuration already exists"
+fi
 
 
 
