@@ -65,6 +65,7 @@ else
     echo -e "$OK Snapper configuration already exists"
 fi
 
-
+sudo systemctl enable --now snapper-timeline.timer
+sudo systemctl enable --now snapper-cleanup.timer
 
 echo -e "$OK DONE"

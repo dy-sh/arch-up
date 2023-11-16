@@ -100,7 +100,7 @@ backup_aur=(
     # timeshift     # GUI for disk snapshots
     downgrade       # bash script for downgrading packages to a version in cache
     btrfs-assistant # GUI for btrfs management and snapper 
-    snap-pac-grub   # auto upadate brub menu when snsp-pac creates snapshots
+    snap-pac-grub   # auto upadate grub menu when snsp-pac creates snapshots
 )
 
 find_files=(
