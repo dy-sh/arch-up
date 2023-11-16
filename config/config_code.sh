@@ -44,8 +44,8 @@ fi
 echo -e "$INFO Coonfiguting settings..."
 
 # reset settings
-if [[ -d /home/user/.vscode      ]]; then rm -r /home/user/.vscode;      fi
-if [[ -d /home/user/.config/Code ]]; then rm -r /home/user/.config/Code; fi
+if [[ -d ~/.vscode      ]]; then rm -r ~/.vscode;      fi
+if [[ -d ~/.config/Code ]]; then rm -r ~/.config/Code; fi
 
 
 

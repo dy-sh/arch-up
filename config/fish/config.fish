@@ -11,9 +11,6 @@ fish_config theme choose Nord
 # prompt
 starship init fish | source
 
-# PATH
-set -x PATH "/home/user/.scripts" $PATH
-
 # cnage VSCode file/folder picker to KDE default 
 set -Ux GTK_USE_PORTAL 1
 

@@ -3,11 +3,9 @@ columns = genre,mood,artist,~title~version,~year,isrc,comment,~#length,grouping,
 	
 default_rating = 0.0
 ratings = 5
-scan = /home/user/Music
 
 [memory]
 browser = Paned
-chooser_dir = /home/user/Music
 column_expands = genre,1,mood,1,artist,1,~title~version,1,~year,1,isrc,1,comment,1,grouping,1,source,1,explicit,1
 	
 column_widths = genre,-1,mood,-1,artist,-1,~title~version,-1,~year,-1,isrc,-1,comment,-1,grouping,-1,source,-1,explicit,-1
