@@ -5,6 +5,7 @@
     // ------------ FONT ----------------
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
+    "window.zoomLevel": 0.3,
     "editor.fontLigatures": false,
     // "editor.fontWeight": "400",
     // "editor.letterSpacing": 0.2,
