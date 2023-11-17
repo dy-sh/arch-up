@@ -1,118 +1,105 @@
 {
+    // ------------ FORMAT CODE ----------------
+    "editor.formatOnSave": true,
+    "json.format.keepLines": true,
+    // ------------ FONT ----------------
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
     "editor.fontLigatures": false,
     // "editor.fontWeight": "400",
     // "editor.letterSpacing": 0.2,
     // "editor.lineHeight": 20,
+    // ------------ DISABLE TRUST CONFIRM ----------------
     "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    // ------------ SUGGESTIONS ----------------
+    "editor.suggest.insertMode": "replace",
+    // ------------ RENAME SYMBOL IN ALL CODE BY F2  ----------------
+    "editor.linkedEditing": true,
+    // ------------ VIM ----------------
     "vim.useSystemClipboard": true,
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    // disable handling clipboard keys, use it as default
     "vim.handleKeys": {
         "<C-c>": false,
         "<C-x>": false,
         "<C-v>": false
     },
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["u"],
-            "after": [],
-            "commands": [{
-                "command": "undo",
-                "args": []
-            }]
-        },
-        {
-            "before": ["<C-r>"],
-            "after": [],
-            "commands": [{
-                "command": "redo",
-                "args": []
-            }]
-        },
-        {
-            "before": ["d"],
-            "after": ["\"", "_", "d"]
-        },
-        {
-            "before": ["D"],
-            "after": ["\"", "_", "D"]
-        },
-        {
-            "before": ["d", "d"],
-            "after": ["\"", "_", "d", "d"]
-        },
-        {
-            "before": ["<BS>"],
-            "after": ["\"", "_", "d"]
-        },
-        {
-            "before": ["c"],
-            "after": ["\"", "_", "c"]
-        },
-        {
-            "before": ["C"],
-            "after": ["\"", "_", "C"]
-        },
+        // open previous/next tab
+        { "before": [ "<S-h>" ], "commands": [ ":bprevious" ] }, { "before": [ "<S-l>" ], "commands": [ ":bnext" ] },
+        // split window
+        { "before": [ "leader", "v" ], "commands": [ ":vsplit" ] },
+        { "before": [ "leader", "s" ], "commands": [ ":split" ] },
+        // panes
+        { "before": [ "leader", "h" ], "commands": [ "workbench.action.focusLeftGroup" ] },
+        { "before": [ "leader", "j" ], "commands": [ "workbench.action.focusBelowGroup" ] },
+        { "before": [ "leader", "k" ], "commands": [ "workbench.action.focusAboveGroup" ] },
+        { "before": [ "leader", "l" ], "commands": [ "workbench.action.focusRightGroup" ] },
+        // fix undo bug, that undo too many times at once
+        { "before": [ "u" ], "after": [ ], "commands": [ { "command": "undo", "args": [ ] } ] },
+        { "before": [ "<C-r>" ], "after": [ ], "commands": [ { "command": "redo", "args": [ ] } ] },
+        // do not copy in clipboard when deleting
+        { "before": [ "d" ], "after": [ "\"", "_", "d" ] },
+        { "before": [ "D" ], "after": [ "\"", "_", "D" ] },
+        { "before": [ "d", "d" ], "after": [ "\"", "_", "d", "d" ] },
+        { "before": [ "<BS>" ], "after": [ "\"", "_", "d" ] },
+        // do not copy in clipboard when changing
+        { "before": [ "c" ], "after": [ "\"", "_", "c" ] },
+        { "before": [ "C" ], "after": [ "\"", "_", "C" ] },
+        // usefull shortcuts
+        { "before": [ "leader", "w" ], "commands": [ ":w!" ] },
+        { "before": [ "leader", "q" ], "commands": [ ":q!" ] },
+        { "before": [ "leader", "x" ], "commands": [ ":x!" ] },
+        { "before": [ "[", "d" ], "commands": [ "editor.action.marker.prev" ] },
+        { "before": [ "]", "d" ], "commands": [ "editor.action.marker.next" ] },
+        { "before": [ "<leader>", "c", "a" ], "commands": [ "editor.action.quickFix" ] },
+        { "before": [ "leader", "f" ], "commands": [ "workbench.action.quickOpen" ] },
+        { "before": [ "leader", "p" ], "commands": [ "editor.action.formatDocument" ] },
+        { "before": [ "g", "h" ], "commands": [ "editor.action.showDefinitionPreviewHover" ] }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": ["d"],
-            "after": ["\"", "_", "d"]
-        },
-        {
-            "before": ["D"],
-            "after": ["\"", "_", "D"]
-        },
-        {
-            "before": ["d", "d"],
-            "after": ["\"", "_", "d", "d"]
-        },
-        {
-            "before": ["<BS>"],
-            "after": ["\"", "_", "d"]
-        },
-        {
-            "before": ["c"],
-            "after": ["\"", "_", "c"]
-        },
-        {
-            "before": ["C"],
-            "after": ["\"", "_", "C"]
-        },
+        // do not copy in clipboard when deleting
+        { "before": [ "d" ], "after": [ "\"", "_", "d" ] },
+        { "before": [ "D" ], "after": [ "\"", "_", "D" ] },
+        { "before": [ "d", "d" ], "after": [ "\"", "_", "d", "d" ] },
+        { "before": [ "<BS>" ], "after": [ "\"", "_", "d" ] },
+        // do not copy in clipboard when changing
+        { "before": [ "c" ], "after": [ "\"", "_", "c" ] },
+        { "before": [ "C" ], "after": [ "\"", "_", "C" ] },
     ],
     "vim.visualModeKeyBindings": [
-        {
-            "before": ["p"],
-            "after":["P"]
-        }
-    ],
+        // do not copy in clipboard when paste
+        { "before": [ "p" ], "after": [ "P" ] } ],
+    // ------------ MARKDOWN ----------------
     "markdown.preview.breaks": true,
-    "workbench.colorTheme": "nordic-vscode",
-    "security.workspace.trust.untrustedFiles": "open",
+    // ------------ MOUSE SCROLLING ----------------
     "workbench.list.smoothScrolling": true,
     "editor.smoothScrolling": true,
     "editor.mouseWheelScrollSensitivity": 2,
-    "settingsSync.ignoredSettings": [
-    
-    ],
+    // ------------ THEME ----------------
+    "workbench.colorTheme": "nordic-vscode",
     "workbench.colorCustomizations": {
-        "terminal.background":"#242933",
-        "terminal.foreground":"#D8DEE9",
-        "terminal.ansiBrightBlack":"#3B4252",
-        "terminal.ansiBrightRed":"#D06F79",
-        "terminal.ansiBrightGreen":"#B1D196",
-        "terminal.ansiBrightYellow":"#F0D399",
-        "terminal.ansiBrightBlue":"#88C0D0",
-        "terminal.ansiBrightMagenta":"#C895BF",
-        "terminal.ansiBrightCyan":"#93CCDC",
-        "terminal.ansiBrightWhite":"#E5E9F0",
-        "terminal.ansiBlack":"#191D24",
-        "terminal.ansiRed":"#BF616A",
-        "terminal.ansiGreen":"#A3BE8C",
-        "terminal.ansiYellow":"#EBCB8B",
-        "terminal.ansiBlue":"#81A1C1",
-        "terminal.ansiMagenta":"#B48EAD",
-        "terminal.ansiCyan":"#8FBCBB",
-        "terminal.ansiWhite":"#D8DEE9"
+        "terminal.background": "#242933",
+        "terminal.foreground": "#D8DEE9",
+        "terminal.ansiBrightBlack": "#3B4252",
+        "terminal.ansiBrightRed": "#D06F79",
+        "terminal.ansiBrightGreen": "#B1D196",
+        "terminal.ansiBrightYellow": "#F0D399",
+        "terminal.ansiBrightBlue": "#88C0D0",
+        "terminal.ansiBrightMagenta": "#C895BF",
+        "terminal.ansiBrightCyan": "#93CCDC",
+        "terminal.ansiBrightWhite": "#E5E9F0",
+        "terminal.ansiBlack": "#191D24",
+        "terminal.ansiRed": "#BF616A",
+        "terminal.ansiGreen": "#A3BE8C",
+        "terminal.ansiYellow": "#EBCB8B",
+        "terminal.ansiBlue": "#81A1C1",
+        "terminal.ansiMagenta": "#B48EAD",
+        "terminal.ansiCyan": "#8FBCBB",
+        "terminal.ansiWhite": "#D8DEE9"
     },
+    // ------------ SETTINGS SYNC ----------------
+    "settingsSync.ignoredSettings": [ ],
 }
