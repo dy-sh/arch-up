@@ -7,43 +7,43 @@
     // "editor.lineHeight": 20,
     "security.workspace.trust.enabled": false,
     "vim.useSystemClipboard": true,
-    "markdown.preview.breaks": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-        "before": ["d"],
-        "after": ["\"", "_", "d"]
+            "before": ["d"],
+            "after": ["\"", "_", "d"]
         },
         {
-        "before": ["D"],
-        "after": ["\"", "_", "D"]
+            "before": ["D"],
+            "after": ["\"", "_", "D"]
         },
         {
-        "before": ["d", "d"],
-        "after": ["\"", "_", "d", "d"]
+            "before": ["d", "d"],
+            "after": ["\"", "_", "d", "d"]
         },
         {
-        "before": ["<BS>"],
-        "after": ["\"", "_", "d"]
+            "before": ["<BS>"],
+            "after": ["\"", "_", "d"]
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
-        "before": ["d"],
-        "after": ["\"", "_", "d"]
+            "before": ["d"],
+            "after": ["\"", "_", "d"]
         },
         {
-        "before": ["D"],
-        "after": ["\"", "_", "D"]
+            "before": ["D"],
+            "after": ["\"", "_", "D"]
         },
         {
-        "before": ["d", "d"],
-        "after": ["\"", "_", "d", "d"]
+            "before": ["d", "d"],
+            "after": ["\"", "_", "d", "d"]
         },
         {
-        "before": ["<BS>"],
-        "after": ["\"", "_", "d"]
+            "before": ["<BS>"],
+            "after": ["\"", "_", "d"]
         }
     ],
+    "markdown.preview.breaks": true,
     "workbench.colorTheme": "nordic-vscode",
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.list.smoothScrolling": true,
