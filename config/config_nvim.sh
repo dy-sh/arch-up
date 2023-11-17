@@ -36,4 +36,7 @@ echo -e "$HEADER Configuring nvim $HEADER"
 mkdir -p ~/.config/nvim
 cp -r nvim/* ~/.config/nvim/
 
+sudo mkdir -p /root/nvim
+sudo cp -r nvim/* /root/nvim/
+
 echo -e "$OK DONE"
