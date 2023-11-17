@@ -21,6 +21,7 @@
     "vim.useSystemClipboard": true,
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
+    "vim.easymotion": true,
     // disable handling clipboard keys, use it as default
     "vim.handleKeys": {
         "<C-c>": false,
