@@ -357,7 +357,7 @@ dev=(
 )
 dev_aur=(          
     visual-studio-code-bin
-    clion
+    clion clion-jre 
     gitfiend
     github-desktop-bin
     # gittyup # not compiled
