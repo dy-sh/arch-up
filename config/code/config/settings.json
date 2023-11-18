@@ -17,6 +17,10 @@
     "editor.suggest.insertMode": "replace",
     // ------------ RENAME SYMBOL IN ALL CODE BY F2  ----------------
     "editor.linkedEditing": true,
+    // ------------ NEOVIM ----------------
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
     // ------------ VIM ----------------
     "vim.useSystemClipboard": true,
     "vim.leader": "<Space>",
