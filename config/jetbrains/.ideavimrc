@@ -1,0 +1,61 @@
+let mapleader=" "
+
+""" Plugins --------------------------------
+set easymotion
+set NERDTree
+set surround
+set multiple-cursors
+set commentary
+set highlightedyank
+set quickscope
+
+""" quickscope 
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" clipboard settings -----------------------
+" use system clipboard
+nnoremap yy "+yy
+vnoremap y "+y
+
+nnoremap dd "+dd
+vnoremap d "+d
+
+nnoremap p "+p
+vnoremap p "+p
+nnoremap P "+P
+vnoremap P "+P
+
+" use P instead of p for pasting to keep the yank register
+map p P
+
+""" Mappings --------------------------------
+map <leader>s <Plug>(easymotion-s)
+
+map <leader>e :NERDTreeToggle<CR>
+
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>d <Action>(Debug)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+""" map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GotoNextError)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
+
+
