@@ -332,6 +332,7 @@ gaming_aur=(
 
 automation=(            
     inotify-tools   # watch file system changes in realtime
+    fzf             # fuzzy finder (file selection CLI tool)
     dconf-editor    # gsettings editor (for GNOME apps)
     d-spy           # d-bus debugger (for automation)
     xbindkeys       # launch commands with keyboard/mouse (for X11)
