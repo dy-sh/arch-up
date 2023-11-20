@@ -25,8 +25,8 @@ cli_tools=(
 )
 
 cli_tools_aur=(
-    cp-p-git        # cp alternative (with progress)
-    advcpmv         # cp alternative (with progress bar)
+    cp-p-git        # cp-p, mv-p - cp/mv alternative (with progress)
+    advcpmv         # advcp, advmv - cp/mv alternative (with progress
     rmtrash         # use trash from cli
 )
 
