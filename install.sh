@@ -241,6 +241,7 @@ video_players=(
 video_players_aur=(      
     vlc-pause-click-plugin  # vlc plugin 
     vlc-bittorrent          # vlc plugin 
+    webtorrent-mpv-hook     # mpv plugin for watching torrents
     # vlc-materia-skin-git    # vlc theme
 )
 
