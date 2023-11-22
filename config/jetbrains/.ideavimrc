@@ -59,3 +59,14 @@ map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
 
 
+" Map Alt-Up to move the current line or selected lines up
+nnoremap <A-Up> :action MoveLineUp<CR>
+vnoremap <A-Up> :action MoveLineUp<CR>
+nnoremap <A-k> :action MoveLineUp<CR>
+vnoremap <A-k> :action MoveLineUp<CR>
+
+" Map Alt-Down to move the current line or selected lines down
+nnoremap <A-Down> :action MoveLineDown<CR>
+vnoremap <A-Down> :action MoveLineDown<CR>
+nnoremap <A-j> :action MoveLineDown<CR>
+vnoremap <A-j> :action MoveLineDown<CR>
