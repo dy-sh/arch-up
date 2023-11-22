@@ -356,6 +356,8 @@ dev=(
     npm
     pycharm-community-edition
     qtcreator
+    rust
+    sqlitebrowser
 )
 dev_aur=(          
     visual-studio-code-bin
