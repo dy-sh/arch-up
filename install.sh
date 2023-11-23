@@ -368,7 +368,7 @@ dev_aur=(
     rider
     smartgit
     # webstorm
-    # rustrover
+    # rustrover rustrover-jre
     # required libraries for building KDE apps:
     # extra-cmake-modules-git plasma5support-git kcoreaddons-git kunitconversion-git  kirigami2-git kconfig-git
 )
