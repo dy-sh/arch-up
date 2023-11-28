@@ -33,6 +33,7 @@ cli_tools_aur=(
 cli_file_managers=(          
     ranger          # file manager
     lf              # file manager
+    xplr            # file manager
 )
 
 cli_text_editors=(          
@@ -178,6 +179,7 @@ network=(
     # moonlight-qt sunshine # fast remote desktop client/server for nvidia GPU
     gwakeonlan      # utility to awake machines using the Wake on LAN
     sshfs           # mounting remote directories over a SSH 
+    gping           # ping with graph
 )
 network_aur=(      
     xrdp            # remote desktop protocol (RDP) server 
