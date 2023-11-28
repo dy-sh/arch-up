@@ -17,3 +17,8 @@ set -Ux GTK_USE_PORTAL 1
 # advcpmv
 alias cp '/usr/bin/advcp -g'
 alias mv '/usr/bin/advmv -g'
+
+function tere
+    set --local result (command tere $argv)
+    [ -n "$result" ] && cd -- "$result"
+end

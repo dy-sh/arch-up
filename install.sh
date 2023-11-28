@@ -34,6 +34,7 @@ cli_file_managers=(
     ranger          # file manager
     lf              # file manager
     xplr            # file manager
+    tere            # fast navigation in terminal (cd + ls alternative)
 )
 
 cli_text_editors=(          
