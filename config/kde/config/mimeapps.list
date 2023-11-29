@@ -1,8 +1,16 @@
 [Added Associations]
 application/octet-stream=code.desktop;
-application/x-shellscript=org.kde.kate.desktop;
+application/x-shellscript=code.desktop;org.kde.kate.desktop;
+application/xml=code.desktop;
+application/yaml=code.desktop;
 inode/directory=org.kde.dolphin.desktop;
 text/css=code.desktop;
+text/markdown=code.desktop;
+text/rust=code.desktop;
+text/x-c++src=code.desktop;
+text/x-chdr=code.desktop;
+text/x-cmake=code.desktop;
+text/x-python=code.desktop;
 video/mp4=mpv.desktop;
 video/quicktime=mpv.desktop;
 x-scheme-handler/geo=google-maps-geo-handler.desktop;
@@ -12,9 +20,17 @@ x-scheme-handler/tel=org.kde.kdeconnect.handler.desktop;
 
 [Default Applications]
 application/octet-stream=code.desktop;
-application/x-shellscript=org.kde.kate.desktop;
+application/x-shellscript=code.desktop;
+application/xml=code.desktop;
+application/yaml=code.desktop;
 inode/directory=org.kde.dolphin.desktop;
 text/css=code.desktop;
+text/markdown=code.desktop;
+text/rust=code.desktop;
+text/x-c++src=code.desktop;
+text/x-chdr=code.desktop;
+text/x-cmake=code.desktop;
+text/x-python=code.desktop;
 video/mp4=mpv.desktop;
 video/quicktime=mpv.desktop;
 x-scheme-handler/geo=google-maps-geo-handler.desktop;
