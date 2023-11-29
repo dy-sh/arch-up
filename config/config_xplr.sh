@@ -40,8 +40,8 @@ cp xplr/* ~/.config/xplr/
 touch ~/.xplr-bookmarks
 
 sudo mkdir -p /root/.config/xplr
-sudo cp init.lua /root/.config/xplr
-
+sudo cp xplr/* /root/.config/xplr/
+sudo touch /root/.xplr-bookmarks
 
 
 echo -e "$OK DONE"
