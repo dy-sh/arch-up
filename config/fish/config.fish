@@ -30,6 +30,17 @@ end
 # navigate bu xplr (cd on quit from tere)
 # run "xcd" to naviafate
 function xcd
-    cd (xplr --print-pwd-as-result)
+    set output (xplr --print-pwd-as-result)
+    if test $status -eq 0
+        cd "$output"
+    end
 end
 
+# this varian will go to home if xplr will return error (exited tirh Q key)
+# function xcd
+#     cd (xplr --print-pwd-as-result)
+# end
+
+
+# zoxide
+zoxide init fish | source

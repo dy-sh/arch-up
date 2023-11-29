@@ -22,6 +22,8 @@ cli_tools=(
     lsd             # list files (ls alternative)
     tree            # directory listing
     pv              # monitoring the progress of data through a pipeline
+    sd              # find and replace in files tool
+    zoxide          # cd alternative
 )
 
 cli_tools_aur=(
@@ -31,8 +33,6 @@ cli_tools_aur=(
 )
 
 cli_file_managers=(          
-    ranger          # file manager
-    lf              # file manager
     xplr            # file manager
     tere            # fast navigation in terminal (cd + ls alternative)
 )
@@ -53,6 +53,7 @@ cli_system_monitoring=(
     bottom          # system monitor (btm)
     iftop           # network usage monitor
     duf             # disk usage/free info (df alternative)
+    dua-cli         # disk usage/free info   
     ncdu            # disk usage monitor (du alternative)
     nethogs         # network usage monitor
     nmap            # tool for showing open ports
@@ -74,6 +75,7 @@ archivers=(
     zip unzip       # archiver
     unrar           # archiver
     cdrtools        # mkisofs tool for creating iso images
+    ouch            # archiver (tar .zip .gz .xz, .lzma .bz, .bz2 .lz4 .sz .zst)
 )
 
 code_compiling=(         
@@ -83,6 +85,7 @@ code_compiling=(
     lazygit         # terminal UI for git
     ninja           # code compile and build tool
     python-pip      # tool for installing python packages
+    rust            # code compile and build tool
 )
 
 file_systems=(          
@@ -185,6 +188,7 @@ network=(
 network_aur=(      
     xrdp            # remote desktop protocol (RDP) server 
     wsdd            # web service discovery (WSD) daemon for SMB/Samba
+    sfz-bin         # simple web server for serving files
 )
 
 
@@ -290,7 +294,7 @@ vm=(
 
 fonts=(         
     ttf-ubuntu-font-family ttf-jetbrains-mono ttf-roboto # most used fonts
-    ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono   # requred fonts with icons
+    ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-jetbrains-mono-nerd # requred fonts with icons
 )
 
 
@@ -359,7 +363,6 @@ dev=(
     npm
     pycharm-community-edition
     qtcreator
-    rust
     sqlitebrowser
 )
 dev_aur=(          
@@ -370,8 +373,8 @@ dev_aur=(
     # gittyup # not compiled
     rider
     smartgit
+    rustrover rustrover-jre
     # webstorm
-    # rustrover rustrover-jre
     # required libraries for building KDE apps:
     # extra-cmake-modules-git plasma5support-git kcoreaddons-git kunitconversion-git  kirigami2-git kconfig-git
 )
