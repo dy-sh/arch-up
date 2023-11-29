@@ -38,7 +38,8 @@ echo -e "$HEADER Configuring btrfs $HEADER"
 echo -e "$INFO Configuring grub for btrfs snapshots"
 
 sudo pacman -S --needed --noconfirm grub-btrfs snapper snap-pac
-yay -S --needed --noconfirm snap-pac-grub
+yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
+snap-pac-grub
 
 # Updating grub config
 sudo grub-mkconfig -o /boot/grub/grub.cfg

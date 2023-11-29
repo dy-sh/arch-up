@@ -33,6 +33,13 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring xplr $HEADER"
 
+
+# utils
+sudo pacman -S --needed --noconfirm fzf sd  
+yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
+sfz-bin
+# cant install from AUR: vim-renamer-git
+
 mkdir -p ~/.config/xplr
 # version="$(xplr --version | awk '{print $2}')"
 # echo "version = '${version:?}'" > ~/.config/xplr/init.lua

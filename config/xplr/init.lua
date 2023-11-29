@@ -1,7 +1,5 @@
 version = "0.21.3"
 
--- many hacks require:
--- pacman -S fzf
 
 -------------- PLUGINS ----------------------
 
@@ -95,7 +93,7 @@ require("nuke").setup{
 	  run_executables = true, -- default: false
 	  custom = {
 		-- {extension = "jpg", command = "sxiv {}"},
-		{mime = "video/mp4", command = "mpv {}"},
+		-- {mime = "video/mp4", command = "mpv {}"},
 		{mime_regex = ".*", command = "xdg-open {}"},
 	  }
 	},
@@ -122,6 +120,8 @@ key["enter"] = xplr.config.modes.custom.nuke.key_bindings.on_key.o
 -- Bookmark
 -- Bookmark files using m and fuzzy search bookmarks using backtick
 -- https://xplr.dev/en/awesome-hacks#bookmark
+-- require:
+-- pacman -S fzf
 
 xplr.config.modes.builtin.default.key_bindings.on_key.B = {
 	help = "bookmark",
@@ -231,6 +231,8 @@ xplr.config.modes.custom.bookmark = {
 -- Fuzzy search history
 -- Fuzzy search the last visited directories.
 -- https://xplr.dev/en/awesome-hacks#fuzzy-search-history
+-- require:
+-- pacman -S fzf
 
 xplr.config.modes.builtin.go_to.key_bindings.on_key.h = {
 	help = "history",
@@ -273,6 +275,7 @@ xplr.config.modes.builtin.default.key_bindings.on_key.R = {
 -- Serve $PWD using a static web server via LAN.
 -- https://xplr.dev/en/awesome-hacks#serve-pwd
 -- requere:
+-- pacman -S fzf
 -- yay -S sfz-bin
 
 xplr.config.modes.builtin.default.key_bindings.on_key.S = {

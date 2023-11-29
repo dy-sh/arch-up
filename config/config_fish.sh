@@ -42,6 +42,13 @@ sudo pacman -S --needed --noconfirm fisher
 # lf file manager icons
 fish -c "fisher install joshmedeski/fish-lf-icons"
 
+
+
+# utils
+sudo pacman -S --needed --noconfirm zoxide tere xplr
+
+
+
 mkdir -p ~/.config/fish
 cp fish/* ~/.config/fish/
 

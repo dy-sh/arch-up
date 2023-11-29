@@ -33,7 +33,8 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring sleap/wakeup triggers $HEADER"
 
-yay -S --needed --noconfirm --answerdiff=None wakeup-triggers
+yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
+wakeup-triggers
 sudo systemctl enable --now wakeup-triggers
 
 echo -e "$OK DONE"
