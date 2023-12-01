@@ -13,6 +13,7 @@ shell=(
     # alacritty     # lightweight terminal
     fish fisher     # user friendly shell (bash alternative)
     zsh zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k zshdb # user friendly shell (bash alternative)
+    tmux           # terminal multiplexer
 )
 
 cli_tools=(    
