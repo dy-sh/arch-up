@@ -19,6 +19,14 @@ alias cp '/usr/bin/advcp -g'
 alias mv '/usr/bin/advmv -g'
 
 
+# set TERM variable if TMUX 
+# (by default it is tmux-256color, but some apps wont work with if, for example gotop)
+if test -n "$TMUX"
+    # echo "xterm-256color"
+    set -x TERM xterm-256color
+end
+
+
 # navigate bu tere util (cd on quit from tere)
 # run "tere" to naviafate
 function tere
