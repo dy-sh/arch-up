@@ -34,5 +34,6 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring tmux $HEADER"
 
 cp tmux/.tmux.conf ~/
+tmux source-file ~/.tmux.conf
 
 echo -e "$OK DONE"
