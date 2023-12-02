@@ -14,6 +14,9 @@ starship init fish | source
 # cnage VSCode file/folder picker to KDE default 
 set -Ux GTK_USE_PORTAL 1
 
+# set nvim as default editor
+set -Ux EDITOR nvim
+
 # advcpmv
 alias cp '/usr/bin/advcp -g'
 alias mv '/usr/bin/advmv -g'
@@ -23,7 +26,7 @@ alias mv '/usr/bin/advmv -g'
 # (by default it is tmux-256color, but some apps wont work with if, for example gotop)
 if test -n "$TMUX"
     # echo "xterm-256color"
-    set -x TERM xterm-256color
+    set -Ux TERM xterm-256color
 end
 
 
