@@ -53,6 +53,7 @@ cli_system_monitoring=(
     s-tui           # system monitor
     zenith          # system monitor
     bottom          # system monitor (btm)
+    dstat           # system monitor 
     iftop           # network usage monitor
     duf             # disk usage/free info (df alternative)
     dua-cli         # disk usage/free info   
