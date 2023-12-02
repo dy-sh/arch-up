@@ -26,7 +26,7 @@ alias mv '/usr/bin/advmv -g'
 # (by default it is tmux-256color, but some apps wont work with if, for example gotop)
 if test -n "$TMUX"
     # echo "xterm-256color"
-    set -Ux TERM xterm-256color
+    set -x TERM xterm-256color
 end
 
 
