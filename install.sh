@@ -26,6 +26,7 @@ cli_tools=(
     pv              # monitoring the progress of data through a pipeline
     sd              # find and replace in files tool
     zoxide          # cd alternative
+    wl-clipboard    # clipboard tool for wayland (required for nvim to use clipboard)
 )
 
 cli_tools_aur=(
