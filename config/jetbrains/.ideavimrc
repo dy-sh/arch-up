@@ -25,48 +25,53 @@ set idearefactormode=keep
 
 """ clipboard settings -----------------------
 " use system clipboard
-nnoremap yy "+yy
-vnoremap y "+y
+" nnoremap yy "+yy
+" vnoremap y "+y
+"
+" nnoremap dd "+dd
+" vnoremap d "+d
+"
+" nnoremap p "+p
+" vnoremap p "+p
+" nnoremap P "+P
+" vnoremap P "+P
 
-nnoremap dd "+dd
-vnoremap d "+d
-
-nnoremap p "+p
-vnoremap p "+p
-nnoremap P "+P
-vnoremap P "+P
+" another wy to use system clipboard
+set clipboard=unnamedplus
 
 " use P instead of p for pasting to keep the yank register
-map p P
+" map p P
 
 """ Mappings --------------------------------
-map <leader>s <Plug>(easymotion-s)
 
+" Map Shift-Alt-Up to move the current line or selected lines up
+nnoremap <S-A-Up> :action MoveLineUp<CR>
+vnoremap <S-A-Up> :action MoveLineUp<CR>
+nnoremap <S-A-k> :action MoveLineUp<CR>
+vnoremap <S-A-k> :action MoveLineUp<CR>
+
+" Map Shift-Alt-Down to move the current line or selected lines down
+nnoremap <S-A-Down> :action MoveLineDown<CR>
+vnoremap <S-A-Down> :action MoveLineDown<CR>
+nnoremap <S-A-j> :action MoveLineDown<CR>
+vnoremap <S-A-j> :action MoveLineDown<CR>
+
+
+" Plugins
+map <leader>s <Plug>(easymotion-s)
 map <leader>e :NERDTreeToggle<CR>
 
+
+"" Actions
 map <leader>d <Action>(Debug)
 map <leader>r <Action>(RenameElement)
-map <leader>d <Action>(Debug)
 map <leader>c <Action>(Stop)
 map <leader>z <Action>(ToggleDistractionFreeMode)
-
-""" map <leader>s <Action>(SelectInProjectView)
 map <leader>a <Action>(Annotate)
 map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
 map <S-Space> <Action>(GotoNextError)
-
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
+""" map <leader>s <Action>(SelectInProjectView)
 
 
-" Map Alt-Up to move the current line or selected lines up
-nnoremap <A-Up> :action MoveLineUp<CR>
-vnoremap <A-Up> :action MoveLineUp<CR>
-nnoremap <A-k> :action MoveLineUp<CR>
-vnoremap <A-k> :action MoveLineUp<CR>
-
-" Map Alt-Down to move the current line or selected lines down
-nnoremap <A-Down> :action MoveLineDown<CR>
-vnoremap <A-Down> :action MoveLineDown<CR>
-nnoremap <A-j> :action MoveLineDown<CR>
-vnoremap <A-j> :action MoveLineDown<CR>
