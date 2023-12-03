@@ -33,7 +33,8 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring tmux $HEADER"
 
-cp tmux/.tmux.conf ~/
-tmux source-file ~/.tmux.conf
+mkdir -p ~/.config/tmux
+cp -r tmux/* ~/.config/tmux/
+tmux source-file ~/.config/tmux/tmux.conf
 
 echo -e "$OK DONE"

@@ -3,7 +3,7 @@
 
 # e - stop script if error
 # u - stop script if using uninitialized variable
-set -eu 
+set -eu
 
 # set colors
 NC=$(tput sgr0)
@@ -26,12 +26,15 @@ ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
 # cd to script directory
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
 echo -e "$HEADER Configuring nvim $HEADER"
+
+# for wayland system clipboard support
+sudo pacman -S --needed --noconfirm wl-clipboard
 
 mkdir -p ~/.config/nvim
 cp -r nvim/* ~/.config/nvim/
@@ -40,3 +43,4 @@ sudo mkdir -p /root/.config/nvim
 sudo cp -r nvim/* /root/.config/nvim/
 
 echo -e "$OK DONE"
+

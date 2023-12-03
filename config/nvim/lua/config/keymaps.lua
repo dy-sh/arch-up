@@ -3,22 +3,30 @@
 -- Add any additional keymaps here
 
 -- Use P instead of p to preserve yank register
-vim.keymap.set("v", "p", "P", { silent = true })
+-- vim.keymap.set("v", "p", "P", { silent = true })
+
+---------- move line up/down ----------
 
 -- Normal mode mappings
-vim.api.nvim_set_keymap("n", "<A-j>", ":m .+1<CR>==", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-Down>", ":m .+1<CR>==", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-k>", ":m .-2<CR>==", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<A-Up>", ":m .-2<CR>==", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-A-j>", ":m .+1<CR>==", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-A-Down>", ":m .+1<CR>==", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-A-k>", ":m .-2<CR>==", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<S-A-Up>", ":m .-2<CR>==", { noremap = true, silent = true })
 
 -- Insert mode mappings
-vim.api.nvim_set_keymap("i", "<A-j>", "<Esc>:m .+1<CR>==gi", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<A-Down>", "<Esc>:m .+1<CR>==gi", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<A-Up>", "<Esc>:m .-2<CR>==gi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<S-A-j>", "<Esc>:m .+1<CR>==gi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<S-A-Down>", "<Esc>:m .+1<CR>==gi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<S-A-k>", "<Esc>:m .-2<CR>==gi", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<S-A-Up>", "<Esc>:m .-2<CR>==gi", { noremap = true, silent = true })
 
 -- Visual mode mappings
-vim.api.nvim_set_keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("x", "<A-Down>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("x", "<A-Up>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<S-A-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<S-A-Down>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<S-A-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "<S-A-Up>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+
+---------- tmux ----------
+vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>", { silent = true })
+vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR>", { silent = true })
+vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR>", { silent = true })
+vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR>", { silent = true })
