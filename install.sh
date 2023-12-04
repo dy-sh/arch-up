@@ -30,7 +30,7 @@ cli_tools=(
 cli_tools_aur=(
     cp-p-git        # cp-p, mv-p - cp/mv alternative (with progress)
     advcpmv         # advcp, advmv - cp/mv alternative (with progress
-    rmtrash         # use trash from cli
+    rmtrash         # use trash from terminal
 )
 
 cli_file_managers=(          
