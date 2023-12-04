@@ -27,6 +27,8 @@ alias l 'ls -la'
 alias la 'ls -la'
 alias lt 'ls -la --total-size --sort=size --reverse'
 
+# xplr
+alias x xcd
 
 # set TERM variable if TMUX 
 # (by default it is tmux-256color, but some apps wont work with if, for example gotop)
