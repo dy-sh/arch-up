@@ -32,7 +32,6 @@ cli_tools_aur=(
     cp-p-git        # cp-p, mv-p - cp/mv alternative (with progress)
     advcpmv         # advcp, advmv - cp/mv alternative (with progress
     pipe-rename-git # batch rename files in default editor
-    rnm             # batch rename files
     rnr-bin         # batch rename files
 )
 
