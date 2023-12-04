@@ -36,8 +36,7 @@ echo -e "$HEADER Configuring xplr $HEADER"
 # utils
 sudo pacman -S --needed --noconfirm fzf sd trash-cli
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-	sfz-bin
-# cant install from AUR: vim-renamer-git
+	sfz-bin pipe-rename-git
 
 mkdir -p ~/.config/xplr
 # version="$(xplr --version | awk '{print $2}')"
@@ -50,4 +49,3 @@ sudo cp xplr/* /root/.config/xplr/
 sudo touch /root/.xplr-bookmarks
 
 echo -e "$OK DONE"
-

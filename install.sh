@@ -25,12 +25,13 @@ cli_tools=(
     sd              # find and replace in files tool
     zoxide          # cd alternative
     wl-clipboard    # clipboard tool for wayland (required for nvim to use clipboard)
+    trash-cli       # trash files from terminal
 )
 
 cli_tools_aur=(
     cp-p-git        # cp-p, mv-p - cp/mv alternative (with progress)
     advcpmv         # advcp, advmv - cp/mv alternative (with progress
-    rmtrash         # use trash from terminal
+    pipe-rename-git # batch rename files in default editor
 )
 
 cli_file_managers=(          
