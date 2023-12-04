@@ -17,16 +17,22 @@ set -Ux GTK_USE_PORTAL 1
 # set nvim as default editor
 set -Ux EDITOR nvim
 
-# advcpmv
+# advcpmv (cp, mv alternative with progress bar)
 alias cp '/usr/bin/advcp -g'
 alias mv '/usr/bin/advmv -g'
+
+# exa (ls alternative with colors)
+alias ls 'exa --icons=always --group-directories-first --smart-group --classify --git'
+alias l 'ls -la'
+alias la 'ls -la'
+alias lt 'ls -la --total-size --sort=size --reverse'
 
 
 # set TERM variable if TMUX 
 # (by default it is tmux-256color, but some apps wont work with if, for example gotop)
 if test -n "$TMUX"
     # echo "xterm-256color"
-    set -x TERM xterm-256color
+    set -Ux TERM xterm-256color
 end
 
 

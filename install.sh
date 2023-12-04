@@ -21,7 +21,6 @@ cli_tools=(
     bat             # display file content with colors (cat alternative)
     exa             # list files (ls alternative)
     ripgrep         # grep alternative
-    lsd             # list files (ls alternative)
     tree            # directory listing
     pv              # monitoring the progress of data through a pipeline
     sd              # find and replace in files tool
