@@ -14,9 +14,7 @@ os.execute(string.format("[ -e '%s' ] || git clone '%s' '%s'", xpm_path, xpm_url
 require("xpm").setup({
 	plugins = {
 		"dtomvan/xpm.xplr", -- plugin manager
-		-- "prncss-xyz/icons.xplr", -- icons
-		-- "dtomvan/extra-icons.xplr", -- icons
-		-- "gitlab:hartan/web-devicons.xplr", -- icons
+		"dy-sh/dysh-style.xplr", -- icons
 		"sayanarijit/dua-cli.xplr", -- :D - disk usage
 		"sayanarijit/fzf.xplr", -- c-f - fuzzy finder
 		"sayanarijit/find.xplr", -- F - find files
@@ -28,7 +26,8 @@ require("xpm").setup({
 		"igorepst/context-switch.xplr", -- c-s - content swith
 		"sayanarijit/map.xplr", -- M - map selected files
 		"sayanarijit/registers.xplr", -- "a, "b... - put/swap selection to register
-		-- 'sayanarijit/tri-pane.xplr',	-- ranger like tree
+		"duganchen/one-table-column.xplr",
+		"sayanarijit/trash-cli.xplr", -- dd - delete to trash
 	},
 	auto_install = true,
 	auto_cleanup = true,
@@ -102,6 +101,18 @@ xplr.config.modes.builtin.default.key_bindings.on_key["n"] = {
 	},
 }
 
+-- n - neovim (selected file)
+xplr.config.modes.builtin.default.key_bindings.on_key["e"] = {
+	help = "edit file in default editor",
+	messages = {
+		{
+			BashExec = [===[
+       $EDITOR ${XPLR_FOCUS_PATH:?}
+     ]===],
+		},
+	},
+}
+
 -- C - vscode (current dir)
 xplr.config.modes.builtin.default.key_bindings.on_key["C"] = {
 	help = "code",
@@ -116,7 +127,7 @@ xplr.config.modes.builtin.default.key_bindings.on_key["C"] = {
 
 -- c - vscode (selected file)
 xplr.config.modes.builtin.default.key_bindings.on_key["c"] = {
-	help = "edit file in nvim",
+	help = "edit file in code",
 	messages = {
 		{
 			BashExec = [===[
@@ -134,6 +145,27 @@ xplr.config.modes.builtin.default.key_bindings.on_key["E"] = {
 			BashExec = [===[
        bash ${XPLR_FOCUS_PATH:?}
        read -p "Press enter to continue"
+     ]===],
+		},
+	},
+}
+
+-- Batch rename
+-- require:
+-- yay -S pipe-rename-git
+-- https://github.com/marcusbuffett/pipe-rename
+
+xplr.config.modes.builtin.default.key_bindings.on_key.R = {
+	help = "batch rename",
+	messages = {
+		{
+			BashExec = [===[
+       SELECTION=$(cat "${XPLR_PIPE_SELECTION_OUT:?}")
+       NODES=${SELECTION:-$(cat "${XPLR_PIPE_DIRECTORY_NODES_OUT:?}")}
+       if [ "$NODES" ]; then
+         echo -e "$NODES" | pipe-rename
+         "$XPLR" -m ExplorePwdAsync
+       fi
      ]===],
 		},
 	},
@@ -301,28 +333,6 @@ xplr.config.modes.builtin.go_to.key_bindings.on_key.h = {
 	},
 }
 
--- Batch rename
--- Batch rename the selected or visible files and directories in $PWD.
--- https://xplr.dev/en/awesome-hacks#batch-rename
--- require:
--- yay -S vim-renamer-git
-
-xplr.config.modes.builtin.default.key_bindings.on_key.R = {
-	help = "batch rename",
-	messages = {
-		{
-			BashExec = [===[
-       SELECTION=$(cat "${XPLR_PIPE_SELECTION_OUT:?}")
-       NODES=${SELECTION:-$(cat "${XPLR_PIPE_DIRECTORY_NODES_OUT:?}")}
-       if [ "$NODES" ]; then
-         echo -e "$NODES" | renamer
-         "$XPLR" -m ExplorePwdAsync
-       fi
-     ]===],
-		},
-	},
-}
-
 -- Serve $PWD
 -- Serve $PWD using a static web server via LAN.
 -- https://xplr.dev/en/awesome-hacks#serve-pwd
@@ -346,162 +356,3 @@ xplr.config.modes.builtin.default.key_bindings.on_key.W = {
 		},
 	},
 }
-
---------------------- STYLE -----------------------
-
--- selection color
-xplr.config.general.selection_ui.style = { bg = "Magenta", fg = "Black" }
-xplr.config.general.focus_selection_ui.style = { bg = "Magenta", fg = "LightYellow" }
-xplr.config.general.focus_ui.style = { fg = "LightYellow" }
-
--- icons
-xplr.config.node_types.directory.meta.icon = " "
--- xplr.config.node_types.directory.meta.icon = "📁"
-xplr.config.node_types.directory.style = { fg = { Rgb = { 164, 189, 239 } } }
-xplr.config.node_types.file.meta.icon = " "
--- xplr.config.node_types.mime_essence = {
--- 	["text"] = {
--- 		["plain"] = {
--- 			meta = { icon = "📄" },
--- 		},
--- 	},
--- }
-
-xplr.config.node_types.extension = {
-	xml = { meta = { icon = "󰗀 " } },
-	conf = { meta = { icon = " " } },
-	sh = { meta = { icon = " " } },
-	md = { meta = { icon = " " } },
-	doc = { meta = { icon = " " } },
-	iso = { meta = { icon = " " } },
-	key = { meta = { icon = " " } },
-	txt = { meta = { icon = " " } },
-	cmake = { meta = { icon = " " } },
-	ninja = { meta = { icon = "󰝴 " } },
-	c = { meta = { icon = " " } },
-	cpp = { meta = { icon = " " } },
-	h = { meta = { icon = " " } },
-	png = { meta = { icon = " " } },
-	bmp = { meta = { icon = " " } },
-	jpg = { meta = { icon = " " } },
-	jpeg = { meta = { icon = " " } },
-	svg = { meta = { icon = " " } },
-	gif = { meta = { icon = " " } },
-	tiff = { meta = { icon = " " } },
-	psd = { meta = { icon = " " } },
-	pdf = { meta = { icon = " " } },
-	so = { meta = { icon = " " } },
-	bin = { meta = { icon = " " } },
-	json = { meta = { icon = " " } },
-	js = { meta = { icon = " " } },
-	bat = { meta = { icon = " " } },
-	cs = { meta = { icon = "󰌛 " } },
-	csv = { meta = { icon = " " } },
-	dll = { meta = { icon = " " } },
-	exe = { meta = { icon = " " } },
-	gz = { meta = { icon = " " } },
-	ini = { meta = { icon = " " } },
-	py = { meta = { icon = " " } },
-	rar = { meta = { icon = " " } },
-	yaml = { meta = { icon = " " } },
-	zip = { meta = { icon = " " } },
-	tar = { meta = { icon = " " } },
-	xz = { meta = { icon = " " } },
-	bz2 = { meta = { icon = " " } },
-	lhz = { meta = { icon = " " } },
-	z = { meta = { icon = " " } },
-	pem = { meta = { icon = " " } },
-	qcow2 = { meta = { icon = " " } },
-	avi = { meta = { icon = " " } },
-	mp4 = { meta = { icon = " " } },
-	mkv = { meta = { icon = " " } },
-	mov = { meta = { icon = " " } },
-	wmv = { meta = { icon = " " } },
-	flv = { meta = { icon = " " } },
-	webm = { meta = { icon = " " } },
-	mpg = { meta = { icon = " " } },
-	mpeg = { meta = { icon = " " } },
-	srt = { meta = { icon = "󰨖 " } },
-	mp3 = { meta = { icon = " " } },
-	wav = { meta = { icon = " " } },
-	ogg = { meta = { icon = " " } },
-	flac = { meta = { icon = " " } },
-	aac = { meta = { icon = " " } },
-	m4a = { meta = { icon = " " } },
-	wma = { meta = { icon = " " } },
-	ape = { meta = { icon = " " } },
-	au = { meta = { icon = " " } },
-	aif = { meta = { icon = " " } },
-	apk = { meta = { icon = " " } },
-	css = { meta = { icon = " " } },
-	db = { meta = { icon = " " } },
-	deb = { meta = { icon = " " } },
-	docx = { meta = { icon = " " } },
-	html = { meta = { icon = " " } },
-	java = { meta = { icon = " " } },
-	log = { meta = { icon = " " } },
-	rpm = { meta = { icon = " " } },
-	rtf = { meta = { icon = " " } },
-	sql = { meta = { icon = " " } },
-	dart = { meta = { icon = " " } },
-	desktop = { meta = { icon = "desktop" } },
-	ejs = { meta = { icon = " " } },
-	go = { meta = { icon = " " } },
-	jar = { meta = { icon = " " } },
-	jsx = { meta = { icon = " " } },
-	rb = { meta = { icon = " " } },
-	scss = { meta = { icon = " " } },
-	service = { meta = { icon = " " } },
-	ts = { meta = { icon = " " } },
-	tsx = { meta = { icon = " " } },
-	vue = { meta = { icon = "󰡄 " } },
-	yml = { meta = { icon = " " } },
-	lua = { meta = { icon = " " } },
-}
-
------------- FIX FOR SELECTED FILES COLOR ----------------
--- https://github.com/sayanarijit/xplr/issues/651
--- https://github.com/sayanarijit/xplr/pull/656
-
-xplr.fn.builtin.fmt_general_table_row_cols_1 = function(m)
-	local nl = xplr.util.paint("\\n", { add_modifiers = { "Italic", "Dim" } })
-	local r = m.tree .. m.prefix
-
-	-- start of edited part
-
-	local style = m.style
-	-- local style = xplr.util.lscolor(m.absolute_path)
-	-- style = xplr.util.style_mix({ style, m.style })
-
-	-- end of edited part
-
-	if m.meta.icon == nil then
-		r = r .. ""
-	else
-		r = r .. m.meta.icon .. " "
-	end
-
-	local rel = m.relative_path
-	if m.is_dir then
-		rel = rel .. "/"
-	end
-	r = r .. xplr.util.paint(xplr.util.shell_escape(rel), style)
-
-	r = r .. m.suffix .. " "
-
-	if m.is_symlink then
-		r = r .. "-> "
-
-		if m.is_broken then
-			r = r .. "×"
-		else
-			local symlink_path = xplr.util.shorten(m.symlink.absolute_path, { base = m.parent })
-			if m.symlink.is_dir then
-				symlink_path = symlink_path .. "/"
-			end
-			r = r .. symlink_path:gsub("\n", nl)
-		end
-	end
-
-	return r
-end
