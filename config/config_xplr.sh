@@ -3,7 +3,7 @@
 
 # e - stop script if error
 # u - stop script if using uninitialized variable
-set -eu 
+set -eu
 
 # set colors
 NC=$(tput sgr0)
@@ -26,18 +26,17 @@ ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
 # cd to script directory
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
 echo -e "$HEADER Configuring xplr $HEADER"
 
-
 # utils
-sudo pacman -S --needed --noconfirm fzf sd  
+sudo pacman -S --needed --noconfirm fzf sd trash-cli
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-sfz-bin
+	sfz-bin
 # cant install from AUR: vim-renamer-git
 
 mkdir -p ~/.config/xplr
@@ -50,5 +49,5 @@ sudo mkdir -p /root/.config/xplr
 sudo cp xplr/* /root/.config/xplr/
 sudo touch /root/.xplr-bookmarks
 
-
 echo -e "$OK DONE"
+

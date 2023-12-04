@@ -22,10 +22,10 @@ alias cp '/usr/bin/advcp -g'
 alias mv '/usr/bin/advmv -g'
 
 # exa (ls alternative with colors)
-alias ls 'exa --icons=always --group-directories-first --smart-group --classify --git'
-alias l 'ls -la'
-alias la 'ls -la'
-alias lt 'ls -la --total-size --sort=size --reverse'
+alias ls 'exa --group-directories-first --smart-group --classify --git'
+alias l 'exa --icons=always --group-directories-first --smart-group --classify --git -la'
+alias la 'exa --icons=always --group-directories-first --smart-group --classify --git -la'
+alias lt 'exa --icons=always --group-directories-first --smart-group --classify --gi t-la --total-size --sort=size --reverse'
 
 # xplr
 alias x xcd
