@@ -38,7 +38,8 @@ cli_tools_aur=(
 
 cli_file_managers=(          
     xplr            # file manager
-    tere            # fast navigation in terminal (cd + ls alternative)
+    broot           # fast file naviagtion and operations in terminal
+    tere            # fast file navigation in terminal (cd + ls alternative)
 )
 
 cli_text_editors=(          
