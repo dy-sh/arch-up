@@ -324,7 +324,7 @@ shell:
  program: /bin/fish
  args:
    - -c 
-   - "zellij attach || zellij"
+   - "zellij attach default || zellij -s default"
 
 # Startup directory
 #
