@@ -297,6 +297,7 @@ vm=(
 
 
 fonts=(         
+    ttf-cascadia-mono-nerd # required for symbols like ⣀⣀⣀⣀⣀⣀⣀⣀ (graph in btop)
     ttf-ubuntu-font-family ttf-jetbrains-mono ttf-roboto # most used fonts
     ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-jetbrains-mono-nerd # requred fonts with icons
 )
