@@ -33,6 +33,7 @@ cli_tools_aur=(
     advcpmv         # advcp, advmv - cp/mv alternative (with progress
     pipe-rename-git # batch rename files in default editor
     rnr-bin         # batch rename files
+    hwatch          # watch alternative
 )
 
 cli_file_managers=(          
