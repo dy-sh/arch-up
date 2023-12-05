@@ -3,7 +3,7 @@
 
 # e - stop script if error
 # u - stop script if using uninitialized variable
-set -eu 
+set -eu
 
 # set colors
 NC=$(tput sgr0)
@@ -26,18 +26,21 @@ ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
 # cd to script directory
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
 echo -e "$HEADER Configuring Kitty $HEADER"
 
-if [[ -d ~/.config/kitty ]]; then 
-    rm -r ~/.config/kitty
+sudo pacman --noconfirm --needed -S zellij
+
+if [[ -d ~/.config/kitty ]]; then
+	rm -r ~/.config/kitty
 fi
 
 mkdir -p ~/.config/kitty
 cp -r kitty/config/* ~/.config/kitty
 
 echo -e "$OK DONE"
+
