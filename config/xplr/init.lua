@@ -15,6 +15,8 @@ require("xpm").setup({
 	plugins = {
 		"dtomvan/xpm.xplr", -- plugin manager
 		"dy-sh/dysh-style.xplr", -- icons
+		"dy-sh/get-rid-of-index.xplr",
+		-- "duganchen/one-table-column.xplr",
 		"sayanarijit/dua-cli.xplr", -- :D - disk usage
 		"sayanarijit/fzf.xplr", -- c-f - fuzzy finder
 		"sayanarijit/find.xplr", -- F - find files
@@ -26,7 +28,6 @@ require("xpm").setup({
 		"igorepst/context-switch.xplr", -- c-s - content swith
 		"sayanarijit/map.xplr", -- M - map selected files
 		"sayanarijit/registers.xplr", -- "a, "b... - put/swap selection to register
-		"duganchen/one-table-column.xplr",
 		"sayanarijit/trash-cli.xplr", -- dd - delete to trash
 	},
 	auto_install = true,
