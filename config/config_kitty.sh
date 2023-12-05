@@ -33,7 +33,7 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring Kitty $HEADER"
 
-sudo pacman --noconfirm --needed -S zellij
+sudo pacman --noconfirm --needed -S zellij ttf-cascadia-mono-nerd ttf-jetbrains-mono
 
 if [[ -d ~/.config/kitty ]]; then
 	rm -r ~/.config/kitty
@@ -42,5 +42,23 @@ fi
 mkdir -p ~/.config/kitty
 cp -r kitty/config/* ~/.config/kitty
 
-echo -e "$OK DONE"
+# Configure font size
 
+echo -e "$INFO Confugring font size"
+
+if [ "$XDG_SESSION_TYPE" == "x11" ]; then
+	config_file="$HOME/.config/kitty/kitty.conf"
+	search_string="font_size"
+	new_value="11.5"
+
+	if grep -q "$search_string" "$config_file"; then
+		sed -i "s/\($search_string[[:space:]]*\)[0-9.]\+/\1$new_value/" "$config_file"
+		echo -e "$OK Value '$search_string' cnahged to '$new_value'"
+	else
+		echo -e "$ERR Value '$search_string' not found in '$config_file'"
+	fi
+else
+	echo -e "Not required on wayland. Skipping."
+fi
+
+echo -e "$OK DONE"
