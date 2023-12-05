@@ -359,7 +359,7 @@ shell:
  program: /bin/fish
  args:
    - -c 
-   - "tmux attach || tmux"
+   - "zellij attach || zellij"
 
 # Startup directory
 #
