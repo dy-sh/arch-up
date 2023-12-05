@@ -40,6 +40,7 @@ cli_file_managers=(
     xplr            # file manager
     broot           # fast file naviagtion and operations in terminal
     tere            # fast file navigation in terminal (cd + ls alternative)
+    lf              # file manager
 )
 
 cli_text_editors=(          
@@ -489,6 +490,7 @@ INFO="[....]"
 NOTE="[${WHITE}NOTE${NC}]"
 OK="[${GREEN} OK ${NC}]"
 ACTN="[${CYAN}ACTN${NC}]"
+
 WARN="[${YELLOW}WARN${NC}]"
 ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
