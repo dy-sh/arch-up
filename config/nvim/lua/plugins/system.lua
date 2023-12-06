@@ -9,4 +9,8 @@ return {
     "jasonccox/vim-wayland-clipboard",
     -- lazy = false,
   },
+  -- save files with sudo
+  {
+    "lambdalisue/suda.vim",
+  },
 }
