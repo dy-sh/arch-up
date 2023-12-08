@@ -361,27 +361,29 @@ automation=(
 
 
 dev=(              
-    blender
-    glade
-    httpie
-    jdk-openjdk
-    meld
-    git-delta
-    nodejs
-    npm
-    pycharm-community-edition
-    qtcreator
-    sqlitebrowser
+    blender         # 3D modelling
+    glade           # GUI builder for GTK+ applications
+    httpie          # http client
+    jdk-openjdk     # java development kit
+    meld            # diff compare
+    git-delta       # git diff in terminal
+    nodejs          # nodejs
+    npm             # nodejs package manager
+    pycharm-community-edition # python IDE
+    qtcreator       # qt IDE
+    sqlitebrowser   # sqlite database browser
 )
 dev_aur=(          
-    visual-studio-code-bin
-    clion clion-jre 
-    gitfiend
-    github-desktop-bin
+    visual-studio-code-bin  # vscode
+    clion clion-jre         # c++ IDE
+    gitfiend                # git clinet
+    github-desktop-bin      # git clinet
     # gittyup # not compiled
-    rider
-    smartgit
-    rustrover rustrover-jre
+    rider                   # IDE for Unreal Enigne and Unity
+    smartgit                # git clinet
+    rustrover rustrover-jre # rust IDE
+    static-web-server-bin   # simple static web server
+    simple-http-server-bin  # simple static web server
     # webstorm
     # required libraries for building KDE apps:
     # extra-cmake-modules-git plasma5support-git kcoreaddons-git kunitconversion-git  kirigami2-git kconfig-git
