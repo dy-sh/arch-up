@@ -191,11 +191,13 @@ network=(
     gwakeonlan      # utility to awake machines using the Wake on LAN
     sshfs           # mounting remote directories over a SSH 
     gping           # ping with graph
+    bore           # tunneling internet protocols (share port on gray ip)
 )
 network_aur=(      
     xrdp            # remote desktop protocol (RDP) server 
     wsdd            # web service discovery (WSD) daemon for SMB/Samba
     sfz-bin         # simple web server for serving files
+    ngrok           # tunneling internet protocols (share port on gray ip)
 )
 
 
