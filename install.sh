@@ -98,6 +98,7 @@ code_compiling=(
 file_systems=(          
     exfat-utils     # utilities for exFAT file system
     ntfs-3g         # NTFS filesystem driver and utilities
+    btrfs-progs     # btrfs filesystem driver and utilities
 )
 
 backup=(          
