@@ -26,6 +26,7 @@ cli_tools=(
     zoxide          # cd alternative
     wl-clipboard    # clipboard tool for wayland (required for nvim to use clipboard)
     trash-cli       # trash files from terminal
+    xorg-xkill      # kill processes using xkill command
 )
 
 cli_tools_aur=(
