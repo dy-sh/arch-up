@@ -409,6 +409,7 @@ hardware=(
     smartmontools   # SMART info, SSD temperature sensors 
     ddcutil         # HDMI/DP display brightness control (not for notebooks)
     i2c-tools       # requred for ddcutil
+    stress          # stress test
     iperf3          # benchmark network
     speedtest-cli   # benchmark internet
     kdiskmark       # benchmark disks
