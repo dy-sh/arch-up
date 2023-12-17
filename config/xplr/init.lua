@@ -21,7 +21,7 @@ require("xpm").setup({
 		"sayanarijit/fzf.xplr", -- c-f - fuzzy finder
 		"sayanarijit/find.xplr", -- F - find files
 		"Junker/nuke.xplr", -- Enter - open file in default app
-		"dtomvan/ouch.xplr", -- :o - un/acruve file
+		"dtomvan/ouch.xplr", -- :o - un/archive file
 		"sayanarijit/scp.xplr",
 		"sayanarijit/xclip.xplr", -- y - copy file, p - paste
 		"sayanarijit/zoxide.xplr", -- Z - zoxide
