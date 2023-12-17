@@ -49,8 +49,14 @@ sudo mkdir -p /root/.config/nvim
 sudo cp -r nvim/* /root/.config/nvim/
 
 # install plugins
-nvim "+Lazy install"
+echo -e "$WARN Installing nvim plugins. It is automated process. Just wait!"
+nvim &
+sleep 20
+killall nvim || echo ""
+# nvim "+Lazy install"
 # install nu language highlight
-nvim "+TSInstall nu"
+nvim "+TSInstall nu" &
+sleep 4
+killall nvim || echo ""
 
 echo -e "$OK DONE"
