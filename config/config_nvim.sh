@@ -36,11 +36,21 @@ echo -e "$HEADER Configuring nvim $HEADER"
 # for wayland system clipboard support
 sudo pacman -S --needed --noconfirm wl-clipboard
 
+# remove cache (installed plugins, etc...)
+if [[ -d ~/.local/state/nvim ]]; then rm -rf ~/.local/state/nvim; fi
+if [[ -d ~/.cache/nvim ]]; then rm -rf ~/.cache/nvim; fi
+if [[ -d ~/.config/nvim ]]; then rm -rf ~/.config/nvim; fi
+if [[ -d ~/.local/share/nvim ]]; then rm -rf ~/.local/share/nvim; fi
+
 mkdir -p ~/.config/nvim
 cp -r nvim/* ~/.config/nvim/
 
 sudo mkdir -p /root/.config/nvim
 sudo cp -r nvim/* /root/.config/nvim/
 
-echo -e "$OK DONE"
+# install plugins
+nvim "+Lazy install"
+# install nu language highlight
+nvim "+TSInstall nu"
 
+echo -e "$OK DONE"
