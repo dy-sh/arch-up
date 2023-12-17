@@ -1,0 +1,17 @@
+[package]
+name = "nu_plugin_regex"
+version = "0.1.1"
+authors = ["Darren Schroeder"]
+edition = "2021"
+repository = "https://github.com/fdncred/nu_plugin_regex"
+description = "nu plugin to search text with regex"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# nu-plugin = "0.74.0"
+# nu-protocol = "0.74.0"
+nu-plugin =  "0.87.1" 
+nu-protocol = "0.87.1" 
+fancy-regex = "0.12.0"

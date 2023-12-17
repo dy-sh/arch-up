@@ -1,0 +1,21 @@
+[package]
+name = "nu_plugin_highlight"
+version = "1.0.7"
+authors = ["Tim 'Piepmatz' Hesse"]
+edition = "2021"
+repository = "https://github.com/cptpiepmatz/nu-plugin-highlight"
+description = "A nushell plugin for syntax highlighting"
+license = "MIT"
+keywords = ["nu", "plugin", "syntax", "highlighting"]
+categories = ["command-line-utilities", "development-tools", "value-formatting"]
+
+[dependencies]
+# nu
+nu-plugin =  "0.86"
+nu-protocol =  "0.86"
+
+# highlighting
+syntect = "5"
+nu-ansi-term = "0.49"
+ansi_colours = "1"
+bat = { version = "0.23", default-features = false }

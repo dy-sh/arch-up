@@ -1,0 +1,18 @@
+[dependencies]
+nu-plugin = "0.87.1"
+
+[dependencies.nu-protocol]
+features = ["plugin"]
+version = "0.87.1"
+
+[package]
+authors = ["Motalleb Fallahnezhad <fmotalleb@gmail.com>"]
+description = "A nushell plugin for scanning ports on a target"
+edition = "2021"
+homepage = "https://github.com/FMotalleb/nu_plugin_port_scan"
+keywords = ["nushell", "network", "plugin"]
+license = "MIT"
+name = "nu_plugin_port_scan"
+readme = "README.md"
+repository = "https://github.com/FMotalleb/nu_plugin_port_scan"
+version = "1.0.7"

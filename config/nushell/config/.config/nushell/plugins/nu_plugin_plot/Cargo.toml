@@ -1,0 +1,15 @@
+[package]
+authors = ["Max Brown"]
+description = "Plot graphs in nushell using numerical lists."
+repository = "https://github.com/euphrasiologist/nu_plugin_plot"
+edition = "2021"
+license = "MIT"
+name = "nu_plugin_plot"
+version = "0.76.0"
+
+[dependencies]
+nu-plugin = "0.87.1"
+nu-protocol = { version = "0.87.1", features = ["plugin"] }
+owo-colors = "3.5.0"
+fnv = "1.0.7"
+term_size = "0.3.2"

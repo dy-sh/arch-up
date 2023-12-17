@@ -1,0 +1,20 @@
+[dependencies]
+netstat2 = "0.9.1"
+nu-plugin = "0.87.1"
+sysinfo = "0.29.11"
+
+[dependencies.nu-protocol]
+features = ["plugin"]
+version = "0.87.1"
+
+[package]
+authors = ["Motalleb Fallahnezhad <fmotalleb@gmail.com>"]
+description = "A nushell plugin to list all active connections"
+edition = "2021"
+homepage = "https://github.com/FMotalleb/nu_plugin_port_list"
+keywords = ["nushell", "network", "plugin"]
+license = "MIT"
+name = "nu_plugin_port_list"
+readme = "README.md"
+repository = "https://github.com/FMotalleb/nu_plugin_port_list"
+version = "1.2.7"
