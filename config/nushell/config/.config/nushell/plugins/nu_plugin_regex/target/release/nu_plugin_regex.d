@@ -1,0 +1,1 @@
+/home/user/.config/nushell/plugins/nu_plugin_regex/target/release/nu_plugin_regex: /home/user/.config/nushell/plugins/nu_plugin_regex/src/main.rs /home/user/.config/nushell/plugins/nu_plugin_regex/src/regex_.rs
