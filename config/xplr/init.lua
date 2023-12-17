@@ -25,7 +25,7 @@ require("xpm").setup({
 		"sayanarijit/scp.xplr",
 		"sayanarijit/xclip.xplr", -- y - copy file, p - paste
 		"sayanarijit/zoxide.xplr", -- Z - zoxide
-		"igorepst/context-switch.xplr", -- c-s - content swith
+		"igorepst/context-switch.xplr", -- t - content swith
 		"sayanarijit/map.xplr", -- M - map selected files
 		"sayanarijit/registers.xplr", -- "a, "b... - put/swap selection to register
 		"sayanarijit/trash-cli.xplr", -- dd - delete to trash
@@ -34,6 +34,9 @@ require("xpm").setup({
 	auto_cleanup = true,
 })
 
+require("context-switch").setup({
+	key = "t",
+})
 --------------  CONFIG ----------------------
 
 -- enable mouse support
