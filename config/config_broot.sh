@@ -31,15 +31,11 @@ cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
-echo -e "$HEADER Configuring nushell $HEADER"
+echo -e "$HEADER Configuring broot $HEADER"
 
-sudo pacman -S --needed --noconfirm starship zoxide broot
-
-# broot
 broot --install
+
 # fix for nushell
 sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4
-
-cp -rT nushell ~
 
 echo -e "$OK DONE"

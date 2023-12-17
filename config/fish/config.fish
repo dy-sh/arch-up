@@ -25,10 +25,16 @@ alias mv '/usr/bin/advmv -g'
 alias ls 'exa --group-directories-first --smart-group --classify --git'
 alias l 'exa --icons=always --group-directories-first --smart-group --classify --git -la'
 alias la 'exa --icons=always --group-directories-first --smart-group --classify --git -la'
-alias lt 'exa --icons=always --group-directories-first --smart-group --classify --gi t-la --total-size --sort=size --reverse'
+alias ld 'exa --icons=always --group-directories-first --smart-group --classify --gi t-la --total-size --sort=size --reverse'
 
 # xplr
 alias x xcd
+
+# lazygit
+alias lz lazygit
+
+# neovim
+alias nv nvim
 
 # set TERM variable if TMUX 
 # (by default it is tmux-256color, but some apps wont work with if, for example gotop)

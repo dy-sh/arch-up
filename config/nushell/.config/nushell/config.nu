@@ -767,3 +767,36 @@ use ~/.cache/starship/init.nu
 # zoxide
 source ~/.zoxide.nu
 
+# advcpmv (cp, mv alternative with progress bar)
+alias acp = /usr/bin/advcp -g
+alias amv = /usr/bin/advmv -g
+
+def l [] { ls -a | sort-by type }
+def la [] { ls -la | sort-by type }
+def ld [] { ls -d | sort-by type }
+
+# xcd
+def --env xcd [] {
+    let result = (^xplr)
+    if not ($result | is-empty) {
+        cd $result    
+    }
+}
+alias x = xcd
+
+# lazygit
+alias lz = lazygit
+
+# neovim
+alias nv = nvim
+
+# tere
+def --env tere [] {
+    let result = (^tere)
+    if not ($result | is-empty) {
+        cd $result    
+    }
+}
+
+# broot
+source ~/.config/broot/launcher/nushell/br
