@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring nushell $HEADER"
 
 echo -e "$INFO Installing dependencies"
-sudo pacman -S --needed --noconfirm starship zoxide broot
+sudo pacman -S --needed --noconfirm starship zoxide broot vivid
 
 # broot
 broot --install
