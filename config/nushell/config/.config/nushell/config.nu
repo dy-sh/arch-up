@@ -761,11 +761,27 @@ $env.config = {
     ]
 }
 
+
+# ------------------------- THEME ----------------------
+
+# colors for ls command
+$env.LS_COLORS = (vivid generate jellybeans | str trim)
+# $env.LS_COLORS = (vivid generate nord | str trim)
+# $env.LS_COLORS = (vivid generate iceberg-dark | str trim)
+# $env.LS_COLORS = (vivid generate one-dark | str trim)
+
+# ------------------------ PLUGINS ---------------------
+
 # starship
 use ~/.cache/starship/init.nu
 
 # zoxide
 source ~/.zoxide.nu
+
+# broot
+source ~/.config/broot/launcher/nushell/br
+
+# ------------------------ ALIASES ---------------------
 
 # advcpmv (cp, mv alternative with progress bar)
 alias acp = /usr/bin/advcp -g
@@ -798,5 +814,4 @@ def --env tere [] {
     }
 }
 
-# broot
-source ~/.config/broot/launcher/nushell/br
+
