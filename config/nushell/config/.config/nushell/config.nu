@@ -765,7 +765,7 @@ $env.config = {
 # ------------------------- THEME ----------------------
 
 # colors for ls command
-# vivid vthemes - https://github.com/sharkdp/vivid/tree/master/themes
+# vivid themes - https://github.com/sharkdp/vivid/tree/master/themes
 # $env.LS_COLORS = (vivid generate nord | str trim)
 # $env.LS_COLORS = (vivid generate one-dark | str trim)
 
