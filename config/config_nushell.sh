@@ -38,6 +38,7 @@ sudo pacman -S --needed --noconfirm starship zoxide broot vivid
 
 # broot
 broot --install
+broot --set-install-state installed
 # fix for nushell
 sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4
 

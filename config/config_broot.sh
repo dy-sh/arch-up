@@ -34,6 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring broot $HEADER"
 
 broot --install
+broot --set-install-state installed
 
 # fix for nushell
 sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4
