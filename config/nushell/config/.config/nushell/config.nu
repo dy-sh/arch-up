@@ -351,17 +351,29 @@ $env.config = {
             keycode: char_s
             mode: emacs
             event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "cd (ls | where type == dir | each { |it| $it.name} | str join (char nl) | fzf | decode utf-8 | str trim)"
+                {
+                  send: executehostcommand
+                  cmd: 'commandline -c 0; commandline -i "sudo "; commandline -e'
                 }
-                { send: Enter }
             ]
         }
         {
             name: custom_alt_enter_walk
             modifier: alt
             keycode: enter
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "walk"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_walk
+            modifier: alt
+            keycode: char_w
             mode: emacs
             event:[
                 { edit: Clear }
@@ -405,20 +417,7 @@ $env.config = {
             event:[
                 { edit: Clear }
                 { edit: InsertString,
-                  value: "xcd"
-                }
-                { send: Enter }
-            ]
-        }
-        {
-            name: custom_walk
-            modifier: alt
-            keycode: char_w
-            mode: emacs
-            event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "walk"
+                  value: "xplr"
                 }
                 { send: Enter }
             ]
