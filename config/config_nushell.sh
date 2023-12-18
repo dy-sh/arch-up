@@ -55,6 +55,7 @@ cp -rT nushell/config ~
 
 echo -e "$WARN WARNING! Nushell will be set as default shell!"
 echo -e "$WARN You can switch it back with 'sudo chsh -s /usr/bin/bash'"
-sudo chsh -s /usr/bin/nu
+user=$(whoami)
+sudo chsh -s /usr/bin/nu $user
 
 echo -e "$OK DONE"
