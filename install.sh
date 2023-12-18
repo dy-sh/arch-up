@@ -66,8 +66,10 @@ cli_system_monitoring=(
     dstat           # system monitor 
     iftop           # network usage monitor
     duf             # disk usage/free info (df alternative)
-    dua-cli         # disk usage/free info   
-    ncdu            # disk usage monitor (du alternative)
+    dua-cli         # disk usage/free info
+    ncdu            # disk usage info (du alternative)
+    dust            # disk usage info (du alternative)
+    gdu             # disk usage info (du alternative)
     nethogs         # network usage monitor
     nmap            # tool for showing open ports
     nvtop           # GPU usage monitor
@@ -75,7 +77,8 @@ cli_system_monitoring=(
 )
 
 cli_system_monitoring_aur=(         
-    gotop-bin           # system monitor
+    gotop-bin       # system monitor
+    btsdu-git       # btrfs snapshot disk usage analyzer 
 )
 
 cli_system_info=(          
