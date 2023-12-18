@@ -935,14 +935,21 @@ alias lz = lazygit
 # neovim
 alias nv = nvim
 
-# tere
-def --env tere [] {
-    let result = (^tere)
-    if not ($result | is-empty) {
-        cd $result    
-    }
+# yazi
+def --env yazi [args?] {
+	let tmp = mktemp -t yazi.XXXXXX
+  if ($args == null) {
+    ^yazi --cwd-file $tmp
+  } else {
+    ^yazi --cwd-file $tmp $args
+  }
+	let cwd = (open $tmp)
+	if $cwd != "" and $cwd != $env.PWD {
+		cd $cwd
+	}
+	rm -f $tmp
 }
-
+alias y = yazi
 
 # walk
 def --env walk [] {
