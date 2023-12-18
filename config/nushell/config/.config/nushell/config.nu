@@ -358,14 +358,14 @@ $env.config = {
             ]
         }
         {
-            name: custom_alt_enter_walk
+            name: custom_alt_enter_broot
             modifier: alt
             keycode: enter
             mode: emacs
             event:[
                 { edit: Clear }
                 { edit: InsertString,
-                  value: "walk"
+                  value: "br"
                 }
                 { send: Enter }
             ]
@@ -379,19 +379,6 @@ $env.config = {
                 { edit: Clear }
                 { edit: InsertString,
                   value: "walk"
-                }
-                { send: Enter }
-            ]
-        }
-        {
-            name: custom_broot
-            modifier: alt
-            keycode: char_r
-            mode: emacs
-            event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "br"
                 }
                 { send: Enter }
             ]
@@ -935,6 +922,13 @@ alias lz = lazygit
 # neovim
 alias nv = nvim
 
+# tere
+def --env tere [] {
+    let result = (^tere)
+    if not ($result | is-empty) {
+        cd $result    
+    }
+}
 
 
 # walk

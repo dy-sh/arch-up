@@ -106,3 +106,7 @@ $env.NU_PLUGIN_DIRS = [
 # https://github.com/cptpiepmatz/nu-plugin-highlight
 $env.NU_PLUGIN_HIGHLIGHT_THEME = Nord
 
+
+# --------------------- ENV VARIABLES --------------------
+$env.EDITOR = 'nvim'
+
