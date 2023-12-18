@@ -44,10 +44,6 @@ cli_file_managers=(
     yazi            # file manager
 )
 
-cli_file_managers_aur=(          
-    walk-bin        # fast file navigation in terminal (cd + ls alternative)
-)
-
 cli_text_editors=(          
     micro           # text editor
     vim             # text editor
@@ -64,11 +60,10 @@ cli_system_monitoring=(
     bottom          # system monitor (btm)
     dstat           # system monitor 
     iftop           # network usage monitor
-    duf             # disk usage/free info (df alternative)
-    dua-cli         # disk usage/free info
-    ncdu            # disk usage info (du alternative)
-    dust            # disk usage info (du alternative)
-    gdu             # disk usage info (du alternative)
+    duf             # disk usage info (df alternative)
+    dua-cli         # folder size info (du alternative)
+    gdu             # folder size info (du alternative)
+    dust            # folder size info (du alternative)
     nethogs         # network usage monitor
     nmap            # tool for showing open ports
     nvtop           # GPU usage monitor

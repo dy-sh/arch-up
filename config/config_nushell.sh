@@ -34,9 +34,13 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring nushell $HEADER"
 
 echo -e "$INFO Installing dependencies"
-sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr yazi
+# tools
+sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli
+# yazi dependencies
+sudo pacman -S --needed --noconfirm yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
+# tools from aur
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-	carapace-bin walk-bin
+	carapace-bin
 
 # broot
 broot --install

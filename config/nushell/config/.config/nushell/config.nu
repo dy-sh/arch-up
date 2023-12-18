@@ -346,83 +346,6 @@ $env.config = {
 
     keybindings: [
         {
-            name: custom_add_sudo
-            modifier: alt
-            keycode: char_s
-            mode: emacs
-            event:[
-                {
-                  send: executehostcommand
-                  cmd: 'commandline -c 0; commandline -i "sudo "; commandline -e'
-                }
-            ]
-        }
-        {
-            name: custom_alt_enter_broot
-            modifier: alt
-            keycode: enter
-            mode: emacs
-            event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "br"
-                }
-                { send: Enter }
-            ]
-        }
-        {
-            name: custom_yazi
-            modifier: alt
-            keycode: char_q
-            mode: emacs
-            event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "yazi"
-                }
-                { send: Enter }
-            ]
-        }
-        {
-            name: custom_walk
-            modifier: alt
-            keycode: char_w
-            mode: emacs
-            event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "walk"
-                }
-                { send: Enter }
-            ]
-        }
-        {
-            name: custom_zoxide
-            modifier: alt
-            keycode: char_z
-            mode: emacs
-            event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "zi"
-                }
-                { send: Enter }
-            ]
-        }
-        {
-            name: custom_xplr
-            modifier: alt
-            keycode: char_x
-            mode: emacs
-            event:[
-                { edit: Clear }
-                { edit: InsertString,
-                  value: "xplr"
-                }
-                { send: Enter }
-            ]
-        }
-        {
             name: completion_menu
             modifier: none
             keycode: tab
@@ -877,6 +800,97 @@ $env.config = {
             keycode: char_c
             mode: emacs
             event: {edit: capitalizechar}
+        }
+# --------------------------- CUSTOM KEY-BINDINGS ------------------------
+        {
+            name: custom_add_sudo
+            modifier: alt
+            keycode: char_s
+            mode: emacs
+            event:[
+                {
+                  send: executehostcommand
+                  cmd: 'commandline -c 0; commandline -i "sudo "; commandline -e'
+                }
+            ]
+        }
+        {
+            name: custom_alt_enter_broot
+            modifier: alt
+            keycode: enter
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "br"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_dua
+            modifier: alt
+            keycode: char_d
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "dua i"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_broot
+            modifier: alt
+            keycode: char_v
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "br"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_yazi
+            modifier: alt
+            keycode: char_c
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "yazi"
+                }
+                { send: Enter }
+            ]
+        } 
+        {
+            name: custom_xplr
+            modifier: alt
+            keycode: char_x
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "xplr"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_zoxide
+            modifier: alt
+            keycode: char_z
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "zi"
+                }
+                { send: Enter }
+            ]
         }
     ]
 }
