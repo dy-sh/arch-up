@@ -41,7 +41,7 @@ cli_tools_aur=(
 cli_file_managers=(          
     xplr            # file manager
     broot           # fast file naviagtion and operations in terminal
-    lf              # file manager
+    yazi            # file manager
 )
 
 cli_file_managers_aur=(          
