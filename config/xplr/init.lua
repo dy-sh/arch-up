@@ -24,7 +24,7 @@ require("xpm").setup({
 		"dtomvan/ouch.xplr", -- :o - un/archive file
 		"sayanarijit/scp.xplr",
 		"sayanarijit/xclip.xplr", -- y - copy file, p - paste
-		"sayanarijit/zoxide.xplr", -- Z - zoxide
+		"sayanarijit/zoxide.xplr", -- Alt+Z - zoxide
 		"igorepst/context-switch.xplr", -- t - content swith
 		"sayanarijit/map.xplr", -- M - map selected files
 		"sayanarijit/registers.xplr", -- "a, "b... - put/swap selection to register
@@ -36,6 +36,12 @@ require("xpm").setup({
 
 require("context-switch").setup({
 	key = "t",
+})
+
+require("zoxide").setup({
+	-- bin = "zoxide",
+	-- mode = "default",
+	key = "alt-z",
 })
 --------------  CONFIG ----------------------
 
