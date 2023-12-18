@@ -321,10 +321,14 @@ colors:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
 shell:
- program: /bin/fish
+ # program: /bin/fish
+ # args:
+ #   - -c 
+ #   - "zellij attach default || zellij -s default" program: /usr/bin/nu
+ program: /usr/bin/nu
  args:
-   - -c 
-   - "zellij attach default || zellij -s default"
+   - -e 
+   - "try { zellij attach default } catch { zellij -s default }"
 
 # Startup directory
 #
