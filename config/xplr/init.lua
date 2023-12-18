@@ -52,6 +52,14 @@ xplr.config.modes.builtin.default.key_bindings.on_key["q"] = {
 	},
 }
 
+-- alt-x - print pwd and quit
+xplr.config.modes.builtin.default.key_bindings.on_key["alt-x"] = {
+	help = "quit",
+	messages = {
+		"PrintPwdAndQuit",
+	},
+}
+
 -- xplr.config.modes.builtin.default.key_bindings.on_key["esc"] = {
 -- 	help = "quit",
 -- 	messages = {

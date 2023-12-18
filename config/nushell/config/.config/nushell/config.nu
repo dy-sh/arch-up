@@ -935,13 +935,6 @@ alias lz = lazygit
 # neovim
 alias nv = nvim
 
-# tere
-def --env tere [] {
-    let result = (^tere)
-    if not ($result | is-empty) {
-        cd $result    
-    }
-}
 
 
 # walk

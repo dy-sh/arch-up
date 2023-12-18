@@ -46,16 +46,10 @@ if test -n "$TMUX"
 end
 
 
-# navigate bu tere util (cd on quit from tere)
-# run "tere" to naviagate
-function tere
-    set --local result (command tere $argv)
-    [ -n "$result" ] && cd -- "$result"
-end
 
 
 # navigate bu walk util (cd on quit from walk)
-# run "tere" to naviagate
+# run "walk" to naviagate
 function walk
     set --local result (command walk $argv)
     [ -n "$result" ] && cd -- "$result"
