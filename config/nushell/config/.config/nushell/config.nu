@@ -136,10 +136,53 @@ let light_theme = {
     shape_vardecl: purple
 }
 
-# External completer example
-# let carapace_completer = {|spans|
-#     carapace $spans.0 nushell $spans | from json
-# }
+
+# --------------- COMPLETERS ----------------
+
+
+let fish_completer = {|spans|
+    fish --command $'complete "--do-complete=($spans | str join " ")"'
+    | $"value(char tab)description(char newline)" + $in
+    | from tsv --flexible --no-infer
+}
+
+let zoxide_completer = {|spans|
+    $spans | skip 1 | zoxide query -l $in | lines | where {|x| $x != $env.PWD}
+}
+
+
+let carapace_completer = {|spans: list<string>|
+    carapace $spans.0 nushell $spans
+    | from json
+    | if ($in | default [] | where value =~ '^-.*ERR$' | is-empty) { $in } else { null }
+}
+
+
+# This completer will use carapace by default
+let external_completer = {|spans|
+
+     # if the current command is an alias, get it's expansion
+    let expanded_alias = (scope aliases | where name == $spans.0 | get -i 0 | get -i expansion)
+
+    # overwrite
+    let spans = (if $expanded_alias != null  {
+        # put the first word of the expanded alias first in the span
+        $spans | skip 1 | prepend ($expanded_alias | split row " ")
+    } else { $spans })
+
+
+
+    match $spans.0 {
+        nu => $fish_completer
+        git => $fish_completer
+        z => $zoxide_completer
+        zi => $zoxide_completer
+        _ => $carapace_completer
+    } | do $in $spans
+}
+
+
+# -------------------- GLOBAL CONFIGURATION ----------------
 
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
@@ -206,11 +249,11 @@ $env.config = {
         case_sensitive: false # set to true to enable case-sensitive completions
         quick: true    # set this to false to prevent auto-selecting completions when only one remains
         partial: true    # set this to false to prevent partial filling of the prompt
-        algorithm: "prefix"    # prefix or fuzzy
+        algorithm: "fuzzy"    # prefix or fuzzy
         external: {
             enable: true # set to false to prevent nushell looking into $env.PATH to find more suggestions, `false` recommended for WSL users as this look up may be very slow
             max_results: 100 # setting it lower can improve completion performance at the cost of omitting some options
-            completer: null # check 'carapace_completer' above as an example
+            completer: $external_completer # check 'carapace_completer' above as an example
         }
     }
 
@@ -236,7 +279,7 @@ $env.config = {
     shell_integration: false # enables terminal shell integration. Off by default, as some terminals have issues with this.
     render_right_prompt_on_last_line: false # true or false to enable or disable right prompt to be rendered on last line of the prompt.
     use_kitty_protocol: false # enables keyboard enhancement protocol implemented by kitty console, only if your terminal support this.
-    highlight_resolved_externals: false # true enables highlighting of external commands in the repl resolved by which.
+    highlight_resolved_externals: true # true enables highlighting of external commands in the repl resolved by which.
 
     hooks: {
         pre_prompt: [{ null }] # run before the prompt is shown
@@ -302,6 +345,84 @@ $env.config = {
     ]
 
     keybindings: [
+        {
+            name: custom_add_sudo
+            modifier: alt
+            keycode: char_s
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "cd (ls | where type == dir | each { |it| $it.name} | str join (char nl) | fzf | decode utf-8 | str trim)"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_alt_enter_walk
+            modifier: alt
+            keycode: enter
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "walk"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_broot
+            modifier: alt
+            keycode: char_r
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "br"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_zoxide
+            modifier: alt
+            keycode: char_z
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "zi"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_xplr
+            modifier: alt
+            keycode: char_x
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "xcd"
+                }
+                { send: Enter }
+            ]
+        }
+        {
+            name: custom_walk
+            modifier: alt
+            keycode: char_w
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "walk"
+                }
+                { send: Enter }
+            ]
+        }
         {
             name: completion_menu
             modifier: none
@@ -799,14 +920,15 @@ def l [] { ls -a | sort-by type }
 def la [] { ls -la | sort-by type }
 def ld [] { ls -d | sort-by type }
 
-# xcd
-def --env xcd [] {
+# xplr
+def --env xplr [] {
     let result = (^xplr)
     if not ($result | is-empty) {
         cd $result    
     }
 }
-alias x = xcd
+alias xcd = xplr
+alias x = xplr
 
 # lazygit
 alias lz = lazygit
@@ -823,3 +945,12 @@ def --env tere [] {
 }
 
 
+# walk
+def --env walk [] {
+    let result = (^walk --icons)
+    if not ($result | is-empty) {
+        cd $result    
+    }
+}
+
+source /home/user/.config/broot/launcher/nushell/br

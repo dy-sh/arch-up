@@ -31,8 +31,6 @@ alias l 'exa --icons=always --group-directories-first --smart-group --classify -
 alias la 'exa --icons=always --group-directories-first --smart-group --classify --git -la'
 alias ld 'exa --icons=always --group-directories-first --smart-group --classify --git -la --total-size --sort=size --reverse'
 
-# xplr
-alias x xcd
 
 # lazygit
 alias lz lazygit
@@ -49,21 +47,35 @@ end
 
 
 # navigate bu tere util (cd on quit from tere)
-# run "tere" to naviafate
+# run "tere" to naviagate
 function tere
     set --local result (command tere $argv)
     [ -n "$result" ] && cd -- "$result"
 end
 
 
+# navigate bu walk util (cd on quit from walk)
+# run "tere" to naviagate
+function walk
+    set --local result (command walk $argv)
+    [ -n "$result" ] && cd -- "$result"
+end
+
+
 # navigate bu xplr (cd on quit from tere)
-# run "xcd" to naviafate
+# run "xcd" or "xplr" to naviagate
+function xplr
+    set --local result (command xplr $argv)
+    [ -n "$result" ] && cd -- "$result"
+end
 function xcd
     set output (xplr --print-pwd-as-result)
     if test $status -eq 0
         cd "$output"
     end
 end
+alias x xcd
+
 
 # this varian will go to home if xplr will return error (exited tirh Q key)
 # function xcd
