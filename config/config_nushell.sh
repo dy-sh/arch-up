@@ -36,7 +36,7 @@ echo -e "$HEADER Configuring nushell $HEADER"
 echo -e "$INFO Installing dependencies"
 sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-	carapace-bin walk
+	carapace-bin walk-bin
 
 # broot
 broot --install
@@ -52,5 +52,9 @@ cp -rT nushell/config ~
 # echo -e "$INFO Installing plugins"
 # nu ./nushell/install_nupm.nu
 # nu ./nushell/install_plugins.nu
+
+echo -e "$WARN WARNING! Nushell will be set as default shell!"
+echo -e "$WARN You can switch it back with 'sudo chsh -s /usr/bin/bash'"
+sudo chsh -s /usr/bin/nu
 
 echo -e "$OK DONE"
