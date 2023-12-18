@@ -371,6 +371,19 @@ $env.config = {
             ]
         }
         {
+            name: custom_yazi
+            modifier: alt
+            keycode: char_q
+            mode: emacs
+            event:[
+                { edit: Clear }
+                { edit: InsertString,
+                  value: "yazi"
+                }
+                { send: Enter }
+            ]
+        }
+        {
             name: custom_walk
             modifier: alt
             keycode: char_w
