@@ -45,6 +45,10 @@ cli_file_managers=(
     lf              # file manager
 )
 
+cli_file_managers_aur=(          
+    walk-bin        # fast file navigation in terminal (cd + ls alternative)
+)
+
 cli_text_editors=(          
     micro           # text editor
     vim             # text editor
