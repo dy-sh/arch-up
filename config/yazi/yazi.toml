@@ -18,8 +18,8 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ exec = '$EDITOR "$@"', block = true,  for = "unix" },
-	{ exec = 'code "%*"',    orphan = true, for = "windows" },
+	{ exec = '$EDITOR "$@"', block = true,  desc = "Edit", for = "unix" },
+	{ exec = 'code "%*"',    orphan = true, desc = "Edit", for = "windows" },
 ]
 open = [
 	{ exec = 'xdg-open "$@"',             desc = "Open", for = "linux" },
@@ -40,10 +40,24 @@ play = [
 	{ exec = 'mpv "%1"', orphan = true, for = "windows" },
 	{ exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
 ]
+bash = [
+	{ exec = 'bash "$@" ; read -n 1 -s -r -p "Press any key to exit"', block = true, desc = "Execute in bash" ,for = "unix" },
+]
+nushell = [
+	{ exec = '''nu "$@" ; nu -c "print 'Press enter to exit' ; let var = input"''', block = true, desc = "Execute in nushelll" ,for = "unix" },
+]
+dua = [
+	{ exec = 'dua i "$@"', block = true, desc = "Disk usage (dua)", for = "unix" },
+]
+
 
 [open]
 rules = [
-	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+	{ name = "*/", use = [ "open", "dua", "edit", "reveal" ] },
+
+  { mime = "text/x-shellscript",   use = [ "bash", "edit", "reveal" ] },
+  { mime = "text/x-bash",          use = [ "bash", "edit", "reveal" ] },
+	{ name = "*.nu", use = [ "nushell", "edit", "reveal" ] },
 
 	{ mime = "text/*",  use = [ "edit", "reveal" ] },
 	{ mime = "image/*", use = [ "open", "reveal" ] },
@@ -61,6 +75,7 @@ rules = [
 	{ mime = "application/x-bzip2",         use = [ "extract", "reveal" ] },
 	{ mime = "application/x-7z-compressed", use = [ "extract", "reveal" ] },
 	{ mime = "application/x-rar",           use = [ "extract", "reveal" ] },
+
 
 	{ mime = "*", use = [ "open", "reveal" ] },
 ]

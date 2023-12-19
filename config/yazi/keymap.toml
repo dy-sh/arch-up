@@ -8,6 +8,8 @@ keymap = [
   { on = [ "<C-c>" ],  exec = "quit --no-cwd-file",                   desc = "Exit the process without writing cwd-file" },
   { on = [ "<A-c>" ],  exec = "quit",                                 desc = "Exit the process" },
   { on = [ "<A-s>" ],  exec = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
+	{ on = [ "<A-Enter>" ], exec = "open --interactive",                desc = "Open the selected files interactively" },
+	{ on = [ "<S-Enter>" ], exec = "open --interactive",                desc = "Open the selected files interactively" },
 
   # General
   { on = [ "<Esc>" ], exec = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
