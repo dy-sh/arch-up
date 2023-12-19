@@ -37,7 +37,7 @@ echo -e "$INFO Installing dependencies"
 # tools
 sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli
 # yazi dependencies
-sudo pacman -S --needed --noconfirm yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
+sudo pacman -S --needed --noconfirm yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide ouch
 # tools from aur
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
 	carapace-bin

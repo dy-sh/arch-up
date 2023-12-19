@@ -52,15 +52,18 @@ dua = [
 zip = [
 	{ exec = 'ouch c "$@" "$@.zip"', desc = "Compress to zip", for = "unix" },
 ]
+chmod_x = [
+	{ exec = 'chmod +x "$@"', desc = "Make executable (chmod +x)", for = "unix" },
+]
 
 
 [open]
 rules = [
 	{ name = "*/", use = [ "open", "dua", "edit", "zip", "reveal" ] },
 
-  { mime = "text/x-shellscript",   use = [ "bash", "edit", "reveal" ] },
-  { mime = "text/x-bash",          use = [ "bash", "edit", "reveal" ] },
-	{ name = "*.nu", use = [ "nushell", "edit", "reveal" ] },
+  { mime = "text/x-shellscript",   use = [ "bash", "edit", "chmod_x", "reveal" ] },
+  { mime = "text/x-bash",          use = [ "bash", "edit", "chmod_x", "reveal" ] },
+	{ name = "*.nu", use = [ "nushell", "edit", "chmod_x", "reveal" ] },
 
 	{ mime = "text/*",  use = [ "edit", "reveal" ] },
 	{ mime = "image/*", use = [ "open", "reveal" ] },
