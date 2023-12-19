@@ -3,10 +3,11 @@
 keymap = [
 
   # Custom
-	{ on = [ "<A-d>" ],  exec = "shell --block --confirm 'dua i'",  desc = "Disk usage (dua)" },
- 	{ on = [ "<A-z>" ],  exec = "jump zoxide",                      desc = "Jump to a directory using zoxide" },
-  { on = [ "<C-c>" ],  exec = "quit --no-cwd-file",               desc = "Exit the process without writing cwd-file" },
-  { on = [ "<A-c>" ],  exec = "quit",                             desc = "Exit the process" },
+	{ on = [ "<A-d>" ],  exec = "shell --block --confirm 'dua i'",      desc = "Disk usage (dua)" },
+ 	{ on = [ "<A-z>" ],  exec = "jump zoxide",                          desc = "Jump to a directory using zoxide" },
+  { on = [ "<C-c>" ],  exec = "quit --no-cwd-file",                   desc = "Exit the process without writing cwd-file" },
+  { on = [ "<A-c>" ],  exec = "quit",                                 desc = "Exit the process" },
+  { on = [ "<A-s>" ],  exec = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
 
   # General
   { on = [ "<Esc>" ], exec = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
