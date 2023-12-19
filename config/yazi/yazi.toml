@@ -32,8 +32,8 @@ reveal = [
 	{ exec = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF", for = "unix" },
 ]
 extract = [
-	{ exec = 'unar "$1"', desc = "Extract here", for = "unix" },
-	{ exec = 'unar "%1"', desc = "Extract here", for = "windows" },
+	{ exec = 'ouch d "$1"', desc = "Extract here", for = "unix" },
+	{ exec = 'ouch d "%1"', desc = "Extract here", for = "windows" },
 ]
 play = [
 	{ exec = 'mpv "$@"', orphan = true, for = "unix" },
@@ -49,11 +49,14 @@ nushell = [
 dua = [
 	{ exec = 'dua i "$@"', block = true, desc = "Disk usage (dua)", for = "unix" },
 ]
+zip = [
+	{ exec = 'ouch c "$@" "$@.zip"', desc = "Compress to zip", for = "unix" },
+]
 
 
 [open]
 rules = [
-	{ name = "*/", use = [ "open", "dua", "edit", "reveal" ] },
+	{ name = "*/", use = [ "open", "dua", "edit", "zip", "reveal" ] },
 
   { mime = "text/x-shellscript",   use = [ "bash", "edit", "reveal" ] },
   { mime = "text/x-bash",          use = [ "bash", "edit", "reveal" ] },
