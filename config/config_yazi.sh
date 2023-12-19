@@ -34,8 +34,9 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring yazi $HEADER"
 
 # utils
-sudo pacman -S --needed --noconfirm ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
+sudo pacman -S --needed --noconfirm ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide dua-cli
 
-# cp yazi/* ~/.config/yazi/
+mkdir -p ~/.config/yazi
+cp yazi/* ~/.config/yazi/
 
 echo -e "$OK DONE"
