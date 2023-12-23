@@ -61,16 +61,12 @@ cli_system_monitoring=(
     zenith          # system monitor
     bottom          # system monitor (btm)
     dstat           # system monitor 
-    iftop           # network usage monitor
-    bandwhich       # network usage monitor
     duf             # disk usage info (df alternative)
     dua-cli         # folder size info (du alternative)
     gdu             # folder size info (du alternative)
     dust            # folder size info (du alternative)
-    nethogs         # network usage monitor
     nmap            # tool for showing open ports
     nvtop           # GPU usage monitor
-    traceroute      # network route tracking tool
 )
 
 cli_system_monitoring_aur=(         
@@ -186,6 +182,11 @@ text_aur=(
 
 
 network=(         
+    nethogs         # network usage monitor
+    bandwhich       # network usage monitor
+    iftop           # network usage monitor
+    traceroute      # network route tracking tool
+    trippy          # network route tracking tool
     curl            # http requests and download manager
     aria2           # download manager (HTTP, FTP, BitTorrent)
     wget            # download manager
@@ -198,7 +199,7 @@ network=(
     gwakeonlan      # utility to awake machines using the Wake on LAN
     sshfs           # mounting remote directories over a SSH 
     gping           # ping with graph
-    bore           # tunneling internet protocols (share port on gray ip)
+    bore            # tunneling internet protocols (share port on gray ip)
 )
 network_aur=(      
     xrdp            # remote desktop protocol (RDP) server 
