@@ -43,7 +43,7 @@ sudo pacman -S --needed --noconfirm fisher
 fish -c "fisher install joshmedeski/fish-lf-icons"
 
 # utils
-sudo pacman -S --needed --noconfirm zoxide broot xplr
+sudo pacman -S --needed --noconfirm zoxide broot xplr atuin
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
 	walk-bin
 

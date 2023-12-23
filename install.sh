@@ -16,6 +16,7 @@ shell=(
     nushell       # a new type of shell (bash alternative)
     zsh zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k zshdb # user friendly shell (bash alternative)
     tmux           # terminal multiplexer
+    atuin          # shell history manager
 )
 
 cli_tools=(    

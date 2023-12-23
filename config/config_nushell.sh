@@ -35,7 +35,7 @@ echo -e "$HEADER Configuring nushell $HEADER"
 
 echo -e "$INFO Installing dependencies"
 # tools
-sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli
+sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli atuin
 # yazi dependencies
 sudo pacman -S --needed --noconfirm yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide ouch
 # tools from aur
@@ -48,7 +48,12 @@ broot --set-install-state installed
 # fix for nushell
 sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4
 
-# cnushell onfig
+# atuin
+mkdir -p ~/.local/share/atuin/
+# nu -c "atuin init nu | save ~/.local/share/atuin/init.nu"
+atuin init nu >~/.local/share/atuin/init.nu
+
+# nushell config
 echo -e "$INFO Configuring nushell"
 cp -rT nushell/config ~
 

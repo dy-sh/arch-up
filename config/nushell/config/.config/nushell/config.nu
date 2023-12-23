@@ -973,4 +973,9 @@ def --env walk [] {
     }
 }
 
+# broot
 source /home/user/.config/broot/launcher/nushell/br
+
+# atuin
+source ~/.local/share/atuin/init.nu
+
