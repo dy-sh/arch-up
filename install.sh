@@ -61,6 +61,7 @@ cli_system_monitoring=(
     bottom          # system monitor (btm)
     dstat           # system monitor 
     iftop           # network usage monitor
+    bandwhich       # network usage monitor
     duf             # disk usage info (df alternative)
     dua-cli         # folder size info (du alternative)
     gdu             # folder size info (du alternative)
