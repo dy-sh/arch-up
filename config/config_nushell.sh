@@ -38,6 +38,11 @@ if ! command -v nu &> /dev/null; then
     exit 0
 fi
 
+# nushell config
+echo -e "$INFO Configuring nushell"
+cp -rT nushell/config ~
+
+
 echo -e "$INFO Installing dependencies"
 # tools
 sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli atuin
@@ -58,9 +63,7 @@ mkdir -p ~/.local/share/atuin/
 # nu -c "atuin init nu | save ~/.local/share/atuin/init.nu"
 atuin init nu >~/.local/share/atuin/init.nu
 
-# nushell config
-echo -e "$INFO Configuring nushell"
-cp -rT nushell/config ~
+
 
 # plugins (already installed)
 # echo -e "$INFO Installing plugins"
