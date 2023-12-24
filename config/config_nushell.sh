@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring nushell $HEADER"
 
+if ! command -v nu &> /dev/null; then
+    echo -e "$NOTE Nushell is not installed. Skipping."
+    exit 0
+fi
+
 echo -e "$INFO Installing dependencies"
 # tools
 sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli atuin

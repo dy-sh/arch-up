@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring lazygit $HEADER"
 
+if ! command -v lazygit &> /dev/null; then
+    echo -e "$NOTE lazygit is not installed. Skipping."
+    exit 0
+fi
+
 # diff util
 sudo pacman -S --needed --noconfirm git-delta
 

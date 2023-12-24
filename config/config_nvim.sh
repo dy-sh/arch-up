@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring nvim $HEADER"
 
+if ! command -v nvim &> /dev/null; then
+    echo -e "$NOTE nvim is not installed. Skipping."
+    exit 0
+fi
+
 # for wayland system clipboard support
 sudo pacman -S --needed --noconfirm wl-clipboard
 

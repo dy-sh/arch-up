@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring yazi $HEADER"
 
+if ! command -v yazi &> /dev/null; then
+    echo -e "$NOTE yazi is not installed. Skipping."
+    exit 0
+fi
+
 # utils
 sudo pacman -S --needed --noconfirm ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide dua-cli
 

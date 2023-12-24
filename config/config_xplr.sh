@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring xplr $HEADER"
 
+if ! command -v xplr &> /dev/null; then
+    echo -e "$NOTE xplr is not installed. Skipping."
+    exit 0
+fi
+
 # utils
 sudo pacman -S --needed --noconfirm fzf sd trash-cli
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \

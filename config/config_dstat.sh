@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring dstat $HEADER"
 
+if ! command -v dstat &> /dev/null; then
+    echo -e "$NOTE dstat is not installed. Skipping."
+    exit 0
+fi
+
 # plugins
 yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
 	python-nvidia-ml-py

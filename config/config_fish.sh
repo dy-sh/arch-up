@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring fish $HEADER"
 
+if ! command -v fish &> /dev/null; then
+    echo -e "$NOTE Fish is not installed. Skipping."
+    exit 0
+fi
+
 # prompt
 sudo pacman -S --needed --noconfirm starship
 
