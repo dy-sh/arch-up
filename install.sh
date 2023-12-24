@@ -206,7 +206,7 @@ network_aur=(
     wsdd            # web service discovery (WSD) daemon for SMB/Samba
     sfz-bin         # simple web server for serving files
     ngrok           # tunneling internet protocols (share port on gray ip)
-    termscp         # TUI util for file transfering over SCP/SFTP/FTP/S3/SMB
+    termscp-bin     # TUI util for file transfering over SCP/SFTP/FTP/S3/SMB
 )
 
 
