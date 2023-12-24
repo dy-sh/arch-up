@@ -37,6 +37,11 @@ broot --install
 broot --set-install-state installed
 
 # fix for nushell
-sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4
+if [[ -f ~/.local/share/broot/launcher/nushell/4 ]]
+    sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4
+fi
+if [[ -f ~/.local/share/broot/launcher/nushell/5 ]]
+    sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/5
+fi
 
 echo -e "$OK DONE"
