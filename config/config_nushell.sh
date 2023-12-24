@@ -56,11 +56,11 @@ yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --no
 broot --install
 broot --set-install-state installed
 # fix for nushell
-if [[ -f ~/.local/share/broot/launcher/nushell/4 ]]
-    sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4
+if [[ -f ~/.local/share/broot/launcher/nushell/4 ]]; then
+    sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/4;
 fi
-if [[ -f ~/.local/share/broot/launcher/nushell/5 ]]
-    sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/5
+if [[ -f ~/.local/share/broot/launcher/nushell/5 ]]; then
+    sed -i 's/def-env/def --env/' ~/.local/share/broot/launcher/nushell/5;
 fi
 
 # atuin
