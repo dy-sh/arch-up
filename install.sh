@@ -60,7 +60,7 @@ cli_system_monitoring=(
     s-tui           # system monitor
     zenith          # system monitor
     bottom          # system monitor (btm)
-    dstat           # system monitor 
+    dool            # system monitor 
     duf             # disk usage info (df alternative)
     dua-cli         # folder size info (du alternative)
     gdu             # folder size info (du alternative)

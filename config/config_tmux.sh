@@ -35,6 +35,6 @@ echo -e "$HEADER Configuring tmux $HEADER"
 
 mkdir -p ~/.config/tmux
 cp -r tmux/* ~/.config/tmux/
-tmux source-file ~/.config/tmux/tmux.conf
+# tmux source-file ~/.config/tmux/tmux.conf
 
 echo -e "$OK DONE"
