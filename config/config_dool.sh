@@ -31,9 +31,9 @@ cd "$SCRIPT_DIR" || exit
 
 # ---------------------------------------------------------------------
 
-echo -e "$HEADER Configuring dstat $HEADER"
+echo -e "$HEADER Configuring dool $HEADER"
 
-if ! command -v dstat &> /dev/null; then
+if ! command -v dool &> /dev/null; then
     echo -e "$NOTE dstat is not installed. Skipping."
     exit 0
 fi
@@ -46,12 +46,12 @@ yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --no
 dst=$(mktemp -d)
 cd $dst
 
-echo -e "$INFO Installing dstat plugins"
+echo -e "$INFO Installing dool plugins"
 
 wget https://raw.githubusercontent.com/datumbox/dstat/master/plugins/dstat_nvidia_gpu.py
-sudo mv dstat_nvidia_gpu.py /usr/share/dstat/
+sudo mv dstat_nvidia_gpu.py /usr/share/dool/dool_nvidia_gpu.py
 
 wget https://raw.githubusercontent.com/xplorld/dstat_plugins/master/dstat_nvidia_gpu_mem.py
-sudo mv dstat_nvidia_gpu_mem.py /usr/share/dstat/
+sudo mv dstat_nvidia_gpu_mem.py /usr/share/dool/dool_nvidia_gpu_mem.py
 
 echo -e "$OK DONE"
