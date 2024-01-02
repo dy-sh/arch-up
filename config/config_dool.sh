@@ -34,7 +34,7 @@ cd "$SCRIPT_DIR" || exit
 echo -e "$HEADER Configuring dool $HEADER"
 
 if ! command -v dool &> /dev/null; then
-    echo -e "$NOTE dstat is not installed. Skipping."
+    echo -e "$NOTE dool is not installed. Skipping."
     exit 0
 fi
 
@@ -48,10 +48,10 @@ cd $dst
 
 echo -e "$INFO Installing dool plugins"
 
-wget https://raw.githubusercontent.com/datumbox/dstat/master/plugins/dstat_nvidia_gpu.py
-sudo mv dstat_nvidia_gpu.py /usr/share/dool/dool_nvidia_gpu.py
+wget https://raw.githubusercontent.com/datumbox/dool/master/plugins/dool_nvidia_gpu.py
+sudo mv dool_nvidia_gpu.py /usr/share/dool/dool_nvidia_gpu.py
 
-wget https://raw.githubusercontent.com/xplorld/dstat_plugins/master/dstat_nvidia_gpu_mem.py
-sudo mv dstat_nvidia_gpu_mem.py /usr/share/dool/dool_nvidia_gpu_mem.py
+wget https://raw.githubusercontent.com/xplorld/dool_plugins/master/dool_nvidia_gpu_mem.py
+sudo mv dool_nvidia_gpu_mem.py /usr/share/dool/dool_nvidia_gpu_mem.py
 
 echo -e "$OK DONE"
