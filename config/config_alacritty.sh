@@ -33,6 +33,11 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring Allacrity $HEADER"
 
+if ! command -v alacritty &>/dev/null; then
+	echo -e "$NOTE Allacrity is not installed. Skipping."
+	exit 0
+fi
+
 sudo pacman --noconfirm --needed -S zellij ttf-cascadia-mono-nerd ttf-jetbrains-mono
 
 if [[ -d ~/.config/alacritty ]]; then
