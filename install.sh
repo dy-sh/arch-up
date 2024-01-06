@@ -300,6 +300,9 @@ graphics_editors=(
 )
 
 
+graphics_editors_aur=(
+    xnconvert       # convert images
+)
 
 
 
