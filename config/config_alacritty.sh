@@ -49,21 +49,21 @@ cp -r alacritty/config/* ~/.config/alacritty
 
 # Configure font size
 
-echo -e "$INFO Confugring font size"
-
-if [ "$XDG_SESSION_TYPE" == "x11" ]; then
-	config_file="$HOME/.config/alacritty/alacritty.yml"
-	search_string="size:"
-	new_value="10.0"
-
-	if grep -q "$search_string" "$config_file"; then
-		sed -i "s/\($search_string[[:space:]]*\)[0-9.]\+/\1$new_value/" "$config_file"
-		echo -e "$OK Value '$search_string' cnahged to '$new_value'"
-	else
-		echo -e "$ERR Value '$search_string' not found in '$config_file'"
-	fi
-else
-	echo -e "Not required on wayland. Skipping."
-fi
+# echo -e "$INFO Confugring font size"
+#
+# if [ "$XDG_SESSION_TYPE" == "x11" ]; then
+# 	config_file="$HOME/.config/alacritty/alacritty.yml"
+# 	search_string="size:"
+# 	new_value="10.0"
+#
+# 	if grep -q "$search_string" "$config_file"; then
+# 		sed -i "s/\($search_string[[:space:]]*\)[0-9.]\+/\1$new_value/" "$config_file"
+# 		echo -e "$OK Value '$search_string' cnahged to '$new_value'"
+# 	else
+# 		echo -e "$ERR Value '$search_string' not found in '$config_file'"
+# 	fi
+# else
+# 	echo -e "Not required on wayland. Skipping."
+# fi
 
 echo -e "$OK DONE"
