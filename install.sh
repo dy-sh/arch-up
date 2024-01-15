@@ -174,10 +174,12 @@ text=(
     # espeak-ng       # text to speach (TTS)
     # festival festival-us #  text to speach (TTS)
     # zathura zathura-pdf-mupdf # simple pdf viewer
+    tesseract tesseract-data-en tesseract-data-rus # text recognition cli tool
 )
 text_aur=(          
     typora          # markdown editor
     # festvox-ru      # text to speach (TTS)
+    dpscreenocr # text recognition from screenshoot GUI app
 )
 
 
