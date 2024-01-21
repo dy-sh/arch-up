@@ -44,13 +44,21 @@ cp -rT nushell/config ~
 
 
 echo -e "$INFO Installing dependencies"
-# tools
-sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli atuin
-# yazi dependencies
-sudo pacman -S --needed --noconfirm yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide ouch
-# tools from aur
-yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-	carapace-bin
+if command -v pacman &>/dev/null; then
+    # tools
+    sudo pacman -S --needed --noconfirm starship zoxide broot vivid xplr dua-cli atuin
+    # yazi dependencies
+    sudo pacman -S --needed --noconfirm yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide ouch
+    # tools from aur
+    yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
+        carapace-bin
+fi
+if command -v dnf &>/dev/null; then
+    # tools
+    sudo dnf install -y zoxide dua-cli
+    # yazi dependencies
+    sudo dnf install -y jq poppler ripgrep fzf zoxide
+fi
 
 # broot
 broot --install

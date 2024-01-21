@@ -27,10 +27,10 @@ alias cp '/usr/bin/advcp -g'
 alias mv '/usr/bin/advmv -g'
 
 # exa (ls alternative with colors)
-alias ls 'exa --group-directories-first --smart-group --classify --git'
-alias l 'exa --icons=always --group-directories-first --smart-group --classify --git -la'
-alias la 'exa --icons=always --group-directories-first --smart-group --classify --git -la'
-alias ld 'exa --icons=always --group-directories-first --smart-group --classify --git -la --total-size --sort=size --reverse'
+alias ls 'exa --group-directories-first --group --classify --git'
+alias l 'exa --icons --group-directories-first --group --classify --git -la'
+alias la 'exa --icons --group-directories-first --group --classify --git -la'
+alias ld 'exa --icons --group-directories-first --group --classify --git -la --total-size --sort=size --reverse'
 
 
 # lazygit

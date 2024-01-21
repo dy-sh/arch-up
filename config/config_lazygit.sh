@@ -39,7 +39,13 @@ if ! command -v lazygit &> /dev/null; then
 fi
 
 # diff util
-sudo pacman -S --needed --noconfirm git-delta
+if command -v pacman &>/dev/null; then
+    sudo pacman -S --needed --noconfirm git-delta
+fi
+if command -v dnf &>/dev/null; then
+    sudo dnf install git-delta -y
+fi
+
 
 mkdir -p ~/.config/lazygit
 cp lazygit/* ~/.config/lazygit/

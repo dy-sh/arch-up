@@ -39,7 +39,12 @@ if ! command -v yazi &> /dev/null; then
 fi
 
 # utils
-sudo pacman -S --needed --noconfirm ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide dua-cli
+if command -v pacman &> /dev/null; then
+    sudo pacman -S --needed --noconfirm ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide dua-cli
+fi
+if command -v dnf &> /dev/null; then
+    sudo dnf install -y jq poppler fd-find ripgrep fzf zoxide dua-cli
+fi
 
 mkdir -p ~/.config/yazi
 cp yazi/* ~/.config/yazi/

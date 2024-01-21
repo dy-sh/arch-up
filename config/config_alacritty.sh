@@ -38,7 +38,9 @@ if ! command -v alacritty &>/dev/null; then
 	exit 0
 fi
 
-sudo pacman --noconfirm --needed -S zellij ttf-cascadia-mono-nerd ttf-jetbrains-mono
+if command -v pacman &>/dev/null; then
+	sudo pacman --noconfirm --needed -S zellij ttf-cascadia-mono-nerd ttf-jetbrains-mono
+fi
 
 if [[ -d ~/.config/alacritty ]]; then
 	rm -r ~/.config/alacritty

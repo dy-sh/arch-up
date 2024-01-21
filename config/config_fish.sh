@@ -38,19 +38,32 @@ if ! command -v fish &> /dev/null; then
     exit 0
 fi
 
-# prompt
-sudo pacman -S --needed --noconfirm starship
+if command -v pacman &>/dev/null; then
+    # prompt
+    sudo pacman -S --needed --noconfirm starship
 
-# plugin manager
-sudo pacman -S --needed --noconfirm fisher
+    # plugin manager
+    sudo pacman -S --needed --noconfirm fisher
+
+    # utils
+    sudo pacman -S --needed --noconfirm zoxide broot xplr atuin exa
+    yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
+        walk-bin
+fi
+if command -v dnf &>/dev/null; then
+    # fisher (for fish)
+    if [ -f /home/user/.config/fish/completions/fisher.fish ]; then
+        rm /home/user/.config/fish/completions/fisher.fish
+    fi
+    cd /tmp
+    curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+    cd -
+    # exa
+    cargo install exa
+fi
 
 # lf file manager icons
 fish -c "fisher install joshmedeski/fish-lf-icons"
-
-# utils
-sudo pacman -S --needed --noconfirm zoxide broot xplr atuin
-yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-	walk-bin
 
 mkdir -p ~/.config/fish
 cp fish/* ~/.config/fish/

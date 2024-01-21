@@ -33,7 +33,9 @@ cd "$SCRIPT_DIR" || exit
 
 echo -e "$HEADER Configuring Kitty $HEADER"
 
-sudo pacman --noconfirm --needed -S zellij ttf-cascadia-mono-nerd ttf-jetbrains-mono
+if command -v pacman &>/dev/null; then
+	sudo pacman --noconfirm --needed -S zellij ttf-cascadia-mono-nerd ttf-jetbrains-mono
+fi
 
 if [[ -d ~/.config/kitty ]]; then
 	rm -r ~/.config/kitty

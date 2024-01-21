@@ -39,7 +39,13 @@ if ! command -v nvim &> /dev/null; then
 fi
 
 # for wayland system clipboard support
-sudo pacman -S --needed --noconfirm wl-clipboard
+if command -v pacman &>/dev/null; then
+    sudo pacman -S --needed --noconfirm wl-clipboard
+fi
+if command -v dnf &>/dev/null; then
+    sudo dnf install -y wl-clipboard
+fi
+
 
 # remove cache (installed plugins, etc...)
 if [[ -d ~/.local/state/nvim ]]; then rm -rf ~/.local/state/nvim; fi
