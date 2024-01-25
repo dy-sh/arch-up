@@ -391,7 +391,7 @@ dev=(
 )
 dev_aur=(          
     visual-studio-code-bin  # vscode
-    clion clion-jre         # c++ IDE
+    clion clion-jre clion-lldb clion-cmake clion-gdb # c++ IDE
     gitfiend                # git clinet
     github-desktop-bin      # git clinet
     # gittyup # not compiled
