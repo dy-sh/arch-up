@@ -72,6 +72,7 @@ cli_system_monitoring=(
 cli_system_monitoring_aur=(         
     gotop-bin       # system monitor
     btsdu-git       # btrfs snapshot disk usage analyzer 
+    nvitop          # GPU usage monitor
 )
 
 cli_system_info=(          
