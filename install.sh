@@ -358,7 +358,7 @@ gaming=(
     lutris          # run windows apps and games
 )
 gaming_aur=( 
-    protonup-qt-bin # wine fork (libs for running windows apps and games)
+    protonup-qt     # wine fork (libs for running windows apps and games)
 )
 
 
