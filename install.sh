@@ -356,6 +356,7 @@ gaming=(
     # add 32 bit repo (multilib) to install steam
     steam           # steam client
     lutris          # run windows apps and games
+    bottles         # run windows apps and games
 )
 gaming_aur=( 
     protonup-qt     # wine fork (libs for running windows apps and games)
@@ -415,6 +416,7 @@ hardware=(
     bluez bluez-utils # bluetooth support
     # blueman         # bluetooth manager (no need for KDE)
     joyutils        # joystick tweaking
+    # xpadneo-dkms    # xbox controller support (multiple devices at once)
     psensor         # graphical hardware temperature monitoring
     barrier         # share mouse between devices
     nvme-cli        # nvmi ssd tools
@@ -435,10 +437,10 @@ hardware=(
 hardware_aur=(     
     auto-cpufreq    # automatic CPU freq optimizer
     cpulimit        # limit cpu usage of a process 
-    input-remapper-git # binding mouse buttons to any scripts
-    geekbench       # benchmark disks
-    geekbench5      # benchmark disks
-    geekbench4      # benchmark disks
+    # input-remapper-git # binding mouse buttons to any scripts
+    # geekbench       # benchmark disks
+    # geekbench5      # benchmark disks
+    # geekbench4      # benchmark disks
 )
 
 nvidia=(           
