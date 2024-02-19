@@ -357,6 +357,7 @@ gaming=(
     steam           # steam client
     lutris          # run windows apps and games
     bottles         # run windows apps and games
+    winetricks      # libs for wine
 )
 gaming_aur=( 
     protonup-qt     # wine fork (libs for running windows apps and games)
