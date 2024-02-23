@@ -1,14 +1,15 @@
 [settings]
-columns = genre,mood,artist,~title~version,~year,isrc,comment,~#length,grouping,~rating,source,explicit
+columns = genre,mood,artist,~title~version,~year,isrc,comment,~#length,grouping,~rating,source,explicit,rating
 	
 default_rating = 0.0
 ratings = 5
 
 [memory]
 browser = Paned
-column_expands = genre,1,mood,1,artist,1,~title~version,1,~year,1,isrc,1,comment,1,grouping,1,source,1,explicit,1
+chooser_dir = /run/media/user
+column_expands = genre,1,mood,1,artist,1,~title~version,1,~year,1,isrc,1,comment,1,grouping,1,source,1,explicit,1,rating,1
 	
-column_widths = genre,-1,mood,-1,artist,-1,~title~version,-1,~year,-1,isrc,-1,comment,-1,grouping,-1,source,-1,explicit,-1
+column_widths = genre,-1,mood,-1,artist,-1,~title~version,-1,~year,-1,isrc,-1,comment,-1,grouping,-1,source,-1,explicit,-1,rating,-1
 	
 exfalso_last_active_version = 4.5.0
 exfalso_maximized = 0
@@ -19,8 +20,8 @@ open_browsers =
 plugin_prefs_maximized = 0
 plugin_prefs_position = 139 406
 plugin_prefs_size_ = 750 654
-plugin_selection = Tray Icon
-prefs_page = tagging
+plugin_selection = MusicBee Rating Import
+prefs_page = songlist
 queue = False
 queue_disable = False
 queue_expanded = False
@@ -28,17 +29,17 @@ queue_position = 0.75
 quodlibet_information_maximized = 0
 quodlibet_information_position = 587 174
 quodlibet_information_size_ = 400 400
-quodlibet_last_active_version = 4.5.0
+quodlibet_last_active_version = 4.7.-1
 quodlibet_maximized = 0
-quodlibet_position = 518 348
+quodlibet_position = 543 349
 quodlibet_properties_maximized = 0
 quodlibet_properties_pos = 0.09479553903345725
 quodlibet_properties_position = 518 174
 quodlibet_properties_size_ = 600 400
 quodlibet_properties_size_single = 538 400
-quodlibet_size_ = 1408 692
-seek = 520238
-sidebar_pos = 0.25015873015873014
+quodlibet_size_ = 1837 900
+seek = 0
+sidebar_pos = 0.24986390854654328
 song = 
 sortby = 0~rating
 	
@@ -58,7 +59,7 @@ pane_selection = 1	.
 	1	.
 panedbrowser_pane_widths = 0.5113350125944585
 	
-panedbrowser_pos = 0.2819602272727273
+panedbrowser_pos = 0.2808927599346761
 panes = genre	mood
 query_text = 
 rating_confirm_multiple = true
@@ -67,22 +68,24 @@ rating_confirm_multiple = true
 version = 0
 
 [plugins]
-active_plugins = AutoUpdateTagsInFiles
-	include_saved
-	ExportToFolder
-	missing_query
-	Remove Playlist Duplicates
-	filterbrowser
-	synchronize_to_device
-	Duplicates
-	exact-rating
-	MusicBee Ratings Import
+active_plugins = MusicBee Ratings Import
 	Regex Substitution
-	FilterAll
-	Force Write
-	refresh-songs
-	WaveformSeekBar
+	synchronize_to_device
+	MusicBee Rating Export
 	MusicBee Ratings Export
+	exact-rating
+	MusicBee Rating Import
+	Remove Playlist Duplicates
+	AutoUpdateTagsInFiles
+	ExportToFolder
+	FilterAll
+	Duplicates
+	include_saved
+	filterbrowser
+	missing_query
+	Force Write
+	WaveformSeekBar
+	refresh-songs
 animosd_monitor = 0
 cover_engine_discogs = True
 icon_tooltip = <album|<album~discnumber~part~tracknumber~title~version>|<artist~title~version>>
