@@ -188,6 +188,7 @@ network=(
     nethogs         # network usage monitor
     bandwhich       # network usage monitor
     iftop           # network usage monitor
+    nload           # network usage monitor
     traceroute      # network route tracking tool
     trippy          # network route tracking tool
     curl            # http requests and download manager
