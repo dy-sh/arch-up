@@ -437,7 +437,7 @@ hardware=(
     # cups cups-pdf print-manager # printer support
     # imwheel         # mouse wheel tuning
     # preload         # run applications faster by prefetching binaries
-    earlyoom        # Out of memory killer (OOM)
+    earlyoom systembus-notify # Out of memory killer (OOM)
 )
 hardware_aur=(     
     auto-cpufreq    # automatic CPU freq optimizer
