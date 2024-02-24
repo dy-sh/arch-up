@@ -437,6 +437,7 @@ hardware=(
     # cups cups-pdf print-manager # printer support
     # imwheel         # mouse wheel tuning
     # preload         # run applications faster by prefetching binaries
+    earlyoom        # Out of memory killer (OOM)
 )
 hardware_aur=(     
     auto-cpufreq    # automatic CPU freq optimizer
@@ -782,6 +783,13 @@ if echo "$options_choises" | grep -qw 4; then
         # sudo modprobe btusb
         sudo systemctl enable --now bluetooth
         echo -e "$OK Bluetooth support enabled"
+    fi
+
+    # earlyoom OOM Killer
+    if [[ " ${apps_to_install[*]} " == *" earlyoom "* ]]; then
+        echo -e "$INFO Enabling earlyoom (OOM Killer)..."
+        sudo systemctl enable --now earlyoom
+        echo -e "$OK earlyoom enabled"
     fi
 
     echo -e "$OK Services enabled"
