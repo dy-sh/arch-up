@@ -440,7 +440,7 @@ hardware=(
     earlyoom systembus-notify # Out of memory killer (OOM)
 )
 hardware_aur=(     
-    auto-cpufreq    # automatic CPU freq optimizer
+    # auto-cpufreq    # automatic CPU freq optimizer
     cpulimit        # limit cpu usage of a process 
     # input-remapper-git # binding mouse buttons to any scripts
     # geekbench       # benchmark disks
