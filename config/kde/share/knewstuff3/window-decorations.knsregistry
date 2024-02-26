@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="114">
+  <name>Flight-Color-Dark-Aurorae</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>l4k1</author>
+  <homepage>https://store.kde.org/p/2068650</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>549</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/Flight-Color-Dark-Aurorae/*</installedfile>
+  <id>2068650</id>
+  <releasedate>2024-02-10</releasedate>
+  <summary>Dark Rounded  Window Decorations (Aurorae Theme)&lt;br />
+&lt;br />
+Follows any Dark color scheme and hence is usable with any Dark Global Theme&lt;br />
+______________________________________________________________________&lt;br />
+&lt;br />
+Light Rounded  Window Decorations   &lt;span style="color: #5e81ac;"> &lt;strong>Flight-Color-Light-Aurorae&lt;/strong> &lt;/span>, which you can download: &lt;a href="https://www.pling.com/p/2068649/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Follows any Light color scheme and hence is usable with any  Light Global Theme&lt;br />
+_______________________________________________________________________&lt;br />
+&lt;br />
+Dark Rounded Plasma Theme &lt;span style="color: #5e81ac;"> &lt;strong>Flight-Dark-Plasma&lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/2068659/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Dark Rounded Global Theme (Look-and-Feel) &lt;span style="color: #5e81ac;"> &lt;strong>Flight-Dark-Global&lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/2068663/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/90/47/2068650/screenshot-20230730-141723.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/90/47/2068650/screenshot-20230730-141723.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDc1NjAwMTYiLCJvIjoiMSIsInMiOiI3YmI2ZTA2ODdlMDk2MDNkMjI2OTBhM2NjMWY2YWJmN2YyMTU4ODMyNWQyZDZhZTBjODkzZjM2OTU5MWY2ZWY1NDE0ODQyOTQzOWJmZDYzYTVlYzVlYzkzZjNjZjFmZWEyYmYzYzg4OTQwZjQzY2U5NmZmYWY5MjlhZmYyOWFmMyIsInQiOjE3MDc4NjcxNzgsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0.Q0nt0te2bIrAjK-Ra5JByhQT9VkdtvblMaooYZ2NzKU/Flight-Color-Dark-Aurorae.tar.gz</payload>
+  <tags>linux,kde,unix,theme,gplv3,plasma,original-product</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Bluish-Color-Dark-Aurorae</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>l4k1</author>
+  <homepage>https://store.kde.org/p/2055327</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>866</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/Bluish-Color-Dark-Aurorae/*</installedfile>
+  <id>2055327</id>
+  <releasedate>2024-02-13</releasedate>
+  <summary>Follows any dark color scheme and hence is usable with any Global Theme&lt;br />
+&lt;br />
+Dark Rounded  Window Decorations (Aurorae Theme), Follows Dark Color Schemes (Window Background )&lt;br />
+&lt;br />
+&lt;br />
+Dark Rounded Plasma Theme &lt;span style="color: #5e81ac;"> &lt;strong>Bluish-Dark-Plasma&lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/2055339/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Dark Rounded Global Theme (Look-and-Feel) &lt;span style="color: #5e81ac;"> &lt;strong>Bluish-Dark-Global&lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/2055346/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/90/47/2055327/screenshot-20230623-091508.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/90/47/2055327/screenshot-20230623-091508.jpg</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDYzODU5MzciLCJvIjoiMSIsInMiOiIwMmZlNDY4MjI0NmExMzhiYzZkNjNjMjNhZDVlNDMxNzgwNjEzNGM3NTMzZGQ0MzZlODI3N2QzYmUzOTQ5YmM0MGJiMDQ5NGYzZjU1M2FmZDE0YjUzZGQ2NzFmMWE1MjY4NDkyMjEwNjkyZjJhYjMyM2Q5ODlhMTZjYThkOTk1MiIsInQiOjE3MDc4NjcxNzgsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0.3I2YI2RLaC98kN9nvrT81OVdQPmtvKkZk1og09rey3g/Bluish-Color-Dark-Aurorae.tar.gz</payload>
+  <tags>gplv3,linux,kde,plasma,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Venture</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>phob1an</author>
+  <homepage>https://store.kde.org/p/1719504</homepage>
+  <licence></licence>
+  <version>1.1</version>
+  <rating>50</rating>
+  <downloads>6007</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/Venture/*</installedfile>
+  <id>1719504</id>
+  <releasedate>2022-03-30</releasedate>
+  <summary>Part of global theme.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/44/12/32/1719504/venturenew.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/44/12/32/1719504/venturenew.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDg2ODIyMTUiLCJvIjoiMSIsInMiOiI2Y2RhNGNlYmNhYzMyZWFiOWFjNDJhNDk3OWY1YTZkNTcxMGU4MmNjNGZmNDUyMDU0MGY1OWI2ZjY2YmY4NTRlNGM2MmZmMzhhNjU2YTczMGRkMzc4NjJhYjBiMWI3NTc4NzhhNzY1YmYxYWM0MTc4NzhiZjUxNmU0Yzg4NGU2OCIsInQiOjE2OTQ5NTc2NTAsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.a1LvAaDHQHKP-81YIU64NrYyirVbiksx9JnYQcaJEX4/Venture-Aurorae-1.1.tar.bz2</payload>
+  <tags>kde,linux,gplv3,original-product,plasma,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>MacVentura Aurorae theme</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/2044275</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>29375</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/MacVentura-Dark-1.25x/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/MacVentura-Light-1.25x/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/MacVentura-Light-1.5x/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/MacVentura-Dark/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/MacVentura-Light/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/MacVentura-Dark-1.5x/*</installedfile>
+  <id>2044275</id>
+  <releasedate>2023-06-18</releasedate>
+  <summary>MacVentura Aurorae theme</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/32/24/44/2044275/monterey-plasma-g2518.jpg</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/32/24/44/2044275/monterey-plasma-g2518.jpg</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODcxMTQ0NTciLCJvIjoiMSIsInMiOiIxMGJjNjMzYmMyNTU0YmRhYmE3M2RiZDExN2E1M2ExZTNlZTg2OWM5Nzc5ZTc2ZjA2Yzc1ZDRjMjQ5NmM3ZjA5YmJjOGQ2MDQ4M2E2ZDc0OTRmYTkzOWYzYmE0YTBjMmQ1MGIxNDJhNGRkZTVjMDJmNjg0NDE1NzViOTRkZGM0ZCIsInQiOjE2OTQ5NjQ2NTYsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.efR6nbwAWbpSFgeKKv9X53zAQn2LxhfGOE5o-METvIY/MacVentura.tar.gz</payload>
+  <tags>gplv3,theme,unix,original-product,plasma,kde,linux</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Relax-Aurorae</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>l4k1</author>
+  <homepage>https://store.kde.org/p/1687604</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>50</rating>
+  <downloads>563</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/Relax-Aurorae/*</installedfile>
+  <id>1687604</id>
+  <releasedate>2024-02-01</releasedate>
+  <summary>Dark Round Window Decorations (Aurorae Theme), Customized for the Plasma Theme&lt;span style="color: #489ab1;"> &lt;strong>Relax-Plasma&lt;/strong> &lt;/span>, which you can download: &lt;a href="https://www.pling.com/p/1687614/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/90/47/1687604/screenshot-20220121-085432.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/90/47/1687604/screenshot-20220121-085432.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDY4MTc2NTgiLCJvIjoiMSIsInMiOiJlOTU4OGU2NTBlZmVkMWFhMDE3ZjE0ZDJlZjcxNTY0OTE1NTQxMjQzZDhhOGM2NWZiNDU4ZWFmOTg0NTY2MzIwYTM5MmEzM2JjNGQyMmNkN2ZhOTQ3YWFjYTRhMTYwNDhjOWE1ZTFmZWRhYjQ0MGE3NGFmZmQ1MTNlNDVkYTMyOSIsInQiOjE3MDc4NjcxNzgsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0.WUR60gbTRw_k4DxHUXp7w3gTGYN4q81PFBBlXWwxvbk/Relax-Aurorae.tar.gz</payload>
+  <tags>theme,unix,gplv3,kde,linux,plasma</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Genome 21 Aurorae Set</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>doncsugar</author>
+  <homepage>https://store.kde.org/p/1491395</homepage>
+  <licence></licence>
+  <version>1.2</version>
+  <rating>50</rating>
+  <downloads>23924</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDark21AltOutline/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDark21Alt/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeLight21Alt/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDark21Outline/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeLight21Outline/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeLight21/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDark21/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeLight21AltOutline/*</installedfile>
+  <id>1491395</id>
+  <releasedate>2021-03-14</releasedate>
+  <summary>Features new Aurorae themes for Plasma 21's headers. Includes both dark and light with outlined variants.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/54/12/88/1491395/06916d4698951da0df5e9818e5c8a5c0960faf380da7953d40cd29de506156afe616.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/54/12/88/1491395/06916d4698951da0df5e9818e5c8a5c0960faf380da7953d40cd29de506156afe616.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTU3MjAwNDciLCJvIjoiMSIsInMiOiI0ZDhlMGNmMGY5NTE5NmI3NTkxNTU2ZjE5ZTA0MTI4NDE5MWUzYjAyOWRhZjFmZjZjMzFiM2RiYmQzNTk5ODJjN2I5YzRhZWZjNWZkNzIxNzAxMzcyNWQyYzVlY2JiZjJjZGU0YWQ1YTUzZDZhNTFjMDA0MjJiZDRmYzE1YzI1ZCIsInQiOjE2OTQ5NjUzNjUsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.-q-6nTVFw0zZLLzMd9qfiDxtayHxJa0xCM7fzClSW1M/21.zip</payload>
+  <tags>plasma,unix,theme,gplv3,kde,linux</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Nordic KDE</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>eliverlara</author>
+  <homepage>https://store.kde.org/p/1326274</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>72</rating>
+  <downloads>281970</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/Nordic/*</installedfile>
+  <id>1326274</id>
+  <releasedate>2020-07-01</releasedate>
+  <summary>Nordic is a dark theme created using the awesome &lt;a href="https://github.com/arcticicestudio/nord" target="_blank" rel="nofollow">Nord&lt;/a> color palette.&lt;br />
+&lt;br />
+&lt;br />
+Suggested settings: &lt;br />
+&lt;br />
+&lt;a href="https://www.pling.com/p/1326896/" target="_blank" rel="nofollow"> Nordic Plasma theme &lt;/a>&lt;br />
+&lt;br />
+&lt;a href="https://store.kde.org/p/1326272/" target="_blank" rel="nofollow">Nordic Kvantum theme&lt;/a>&lt;br />
+&lt;br />
+&lt;a href="https://store.kde.org/p/1326271/" target="_blank" rel="nofollow">Nordic color scheme&lt;/a>&lt;br />
+&lt;br />
+&lt;a href="https://www.gnome-look.org/dl?file_id=1567965545&amp;amp;file_type=application/x-xz&amp;amp;file_name=Nordic-Folders.tar.xz&amp;amp;file_size=24000&amp;amp;project_id=1267246" target="_blank" rel="nofollow"> Folders &lt;/a>&lt;br />
+&lt;br />
+Wallpaper in screenshot &lt;a href="https://i.imgur.com/SBKjnxm.jpg" target="_blank" rel="nofollow"> here &lt;/a></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/36/61/48/1326274/2159613d6404b04b0ebb587b1c3734aeb2fb1.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/36/61/48/1326274/2159613d6404b04b0ebb587b1c3734aeb2fb1.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1OTM2MzI3NjEiLCJvIjoiMSIsInMiOiIzMzJiYjhmZDViODdkNDkxZGYxZDIyZWNmYzUwYjYzYTRhZjIxMjI0MzYzMGRjN2Y3ZGU1ZjNmYTkzMGJlZDg5MGQ0OTRlMzYxNzA0NWIzYTRiNGI0NzBjYjY1NDgwYjYzYTczMTQ1YzRmMDE5ODkwYzg4ZDIxNjY5OGZmNzMxMCIsInQiOjE2OTQ5NjYxNjksInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.OSjbND4vrdn9g5YTvObTLrO3uq4lFPPgiK_3X6Q8M7E/Nordic.tar.xz</payload>
+  <tags>linux,kde,unix,theme,plasma,gplv3</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Modernity</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>phob1an</author>
+  <homepage>https://store.kde.org/p/1486012</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>63</rating>
+  <downloads>12537</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/Modernity/*</installedfile>
+  <id>1486012</id>
+  <releasedate>2021-02-27</releasedate>
+  <summary>Part of Modernity Global Theme.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/44/12/32/1486012/e4d8939db185163faea052c13ad7892c622a78f51a1bca353218963f4615264b713d.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/44/12/32/1486012/e4d8939db185163faea052c13ad7892c622a78f51a1bca353218963f4615264b713d.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTQ0MTQ2NjkiLCJvIjoiMSIsInMiOiIwMDU4NjAyZjMwNWIzMWRhYTE1OGUzZjZmMjhkMjU0OGZmMTBhMmEwOTU1ZmVkMzg2ZjEyNmE2NjU0MTVlMmI2Y2U4YTNkNzE3ZjFkZGU1NjYxYTk0YWQ5NDM4NDY3YjJkZjM5YTQxMGRiMGRlMGE2Njk5ODlkNjkyMGZkZDZjNiIsInQiOjE2OTQ5NjUzMDcsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.pu1-wyGbGqVPS3tReRwXzq40ksARL3JlsGcnMt5og7o/Modernity-Aurorae-1.0.tar.gz</payload>
+  <tags>original-product,plasma,kde,linux,gplv3,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Genome Dark Aurorae</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>doncsugar</author>
+  <homepage>https://store.kde.org/p/1461539</homepage>
+  <licence></licence>
+  <version>1.1</version>
+  <rating>50</rating>
+  <downloads>16405</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDarkBlurOutline/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDarkFlat/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDarkBlurFlat/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/GenomeDarkOutline/*</installedfile>
+  <id>1461539</id>
+  <releasedate>2021-02-05</releasedate>
+  <summary>Includes an opaque theme for Breeze Dark and a translucent dark theme. Features a heavy shadow for focused windows and a light shadow for unfocused windows. Recommended configuration is to uncheck "Use theme's default window border size" and select either "No Side Borders" (better) or "No borders" (best). &lt;br />
+&lt;br />
+As with all Aurorae themes, it is better to have lower blur values to avoid sharp corners on blurred windows.&lt;br />
+&lt;br />
+This product is part of &lt;a href="https://www.pling.com/p/1452792/" target="_blank" rel="nofollow">Spectrum Dark&lt;/a>.&lt;br />
+&lt;br />
+For a more hands-on and much nicer solution, check out Luwx's &lt;a href="https://www.pling.com/p/1414190/" target="_blank" rel="nofollow">Lightly&lt;/a> theme.&lt;br />
+&lt;br />
+The shadows in this product are modified from vinceliuice's exceptional &lt;a href="https://www.pling.com/p/1305005/" target="_blank" rel="nofollow">McMojave Aurorae&lt;/a> theme.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/54/12/88/1461539/e79f37f4846e7b62bc131af099a2d5c157d7dd97587cac9dae1f6cf00287363457a7.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/54/12/88/1461539/e79f37f4846e7b62bc131af099a2d5c157d7dd97587cac9dae1f6cf00287363457a7.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTI1MDIxMTYiLCJvIjoiMSIsInMiOiJiNzBlM2NmMmVjYjcwYTc1MmVkMGJkOTVlMmJmOWMxNzczOGUxZDAxZDhlZTliZjg1ZTdlYzgxMDNlZThhNmNmMTExNzQ2Yjc0MWU3YWZmMDFmYmVlMmYwODY4YjdkMzg0MGFjMmU2MGRhNGUwMTIxNTE2YWQ2MWVhNzg3ZmM0YSIsInQiOjE2OTQ5NjU1NTksInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.eMJqnrhnMKhjA6hiiOulxJkcucwCzZy-P6tULO1AgI4/genome-dark-aurorae.zip</payload>
+  <tags>kde,linux,gplv3,dark,blur,breeze,plasma,original-product,spectrum,theme,unix</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Utterly Round Dark</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>himdek</author>
+  <homepage>https://store.kde.org/p/1999020</homepage>
+  <licence></licence>
+  <version>1.2</version>
+  <rating>58</rating>
+  <downloads>11013</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/Utterly-Round-Dark/*</installedfile>
+  <id>1999020</id>
+  <releasedate>2024-02-11</releasedate>
+  <summary>Rounded Window borders for KDE Plasma desktop environment that can follow any light color scheme with transparency and blur&lt;br />
+&lt;br />
+* To blend window decoration with background, install and use the Color Scheme, Kvantum Theme and Konsole Color Scheme from the below Global Theme&lt;br />
+&lt;a href="https://www.pling.com/p/1904859/" target="_blank" rel="nofollow">Utterly Nord&lt;/a>, &lt;a href="https://store.kde.org/p/1906500/" target="_blank" rel="nofollow">Utterly Sweet&lt;/a>&lt;br />
+&lt;br />
+Key features:&lt;br />
+&lt;br />
+* Blends with Window background when appropriate Kvantum theme and Konsole Color Scheme is used&lt;br />
+* Rounded corners&lt;br />
+* Follows any light color scheme and hence is usable with any Global Theme&lt;br />
+* Supports transparency: Go to `System Settings &amp;gt; Workspace Behavior &amp;gt; Desktop Effects` and enable `Blur`, `Background Contrast` and `Tranlucency` for best result.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/66/42/38/1999020/screenshot-20230307-170151.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/66/42/38/1999020/screenshot-20230307-170151.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDMzMDUxNjEiLCJvIjoiMSIsInMiOiJmYjFlZmUyNWJhNzZhYWU0NjdiOWIwYWFmYWE4MGZhMTIwZDJkMzljNmY5NmQ2ZWE0ZTFjZmFkOGM4NDVlOTI3YTk1NGEwMWNjZWMyYjUwMjIzMWQ4MTQ2YzlhNzg5MDBjYWY2Nzc5NjIyZGU3M2MyYTliZDZlZjYwMjljYzFmOSIsInQiOjE3MDc4NjcxNzgsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0.Xzn4ZzWT4zzOGSoAjG1Br2Ml3Hqbdwz57e9Eqfw6Dek/Utterly-Round-Aurorae-Dark.tar.xz</payload>
+  <tags>gplv2-later,blur,blured,blurred,blurry,kde,mac,linux,original-product,plasma,theme,unix</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>Spectrum Aurorae</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>doncsugar</author>
+  <homepage>https://store.kde.org/p/1479172</homepage>
+  <licence></licence>
+  <version>1.1</version>
+  <rating>58</rating>
+  <downloads>17533</downloads>
+  <installedfile>/home/user/.local/share/aurorae/themes/SpectrumDarkBlur/*</installedfile>
+  <installedfile>/home/user/.local/share/aurorae/themes/SpectrumLightBlur/*</installedfile>
+  <id>1479172</id>
+  <releasedate>2021-02-05</releasedate>
+  <summary>This theme colors itself according to your panel (plasma theme colors). This includes a light variant and a dark variant for color schemes that are light or dark, respectively. Features a heavy shadow for focused windows and a light shadow for unfocused windows. Recommended configuration is to uncheck "Use theme's default window border size" and select either "No Side Borders" (better) or "No borders" (best).&lt;br />
+&lt;br />
+As with all Aurorae themes, it is better to have lower blur values to avoid sharp corners on blurred windows.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/54/12/88/1479172/7a81ae91634e8d994e20617cb008b98e6d8e288d2f1d84c28d6abe4723201d921ad2.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/54/12/88/1479172/7a81ae91634e8d994e20617cb008b98e6d8e288d2f1d84c28d6abe4723201d921ad2.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTI1MDU1NzQiLCJvIjoiMSIsInMiOiJlNjRkOWQ3N2U4ODQ3NGU0MzQwZDc3ZmQyZTU1YzliZGVjMzNkOTgwOWIyNzQzMTYwZGUxMjIyMzY0MThkZjQ2Njc3ZDI3MjhiZjM3NjVkNmE4ZTkzM2Y0ZjRkMjgzNzg5ZDZiOWVmODEwMDMzOTA5YjdhZWE5YTI0YzYxMzU0OSIsInQiOjE2OTQ5NjU0MDIsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.ehLJiyZt5qbZypqFSAeyq_4uW5NdoaG5c0sQmVSnQos/spectrum-light-dark-aurorae.zip</payload>
+  <tags>colors,gplv3,linux,kde,unix,spectrum,theme,plasma</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

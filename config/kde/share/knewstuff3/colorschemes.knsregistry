@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="112">
+  <name>Plasma Deck</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>x-varlesh-x</author>
+  <homepage>https://store.kde.org/p/1811079</homepage>
+  <licence></licence>
+  <version>20220530</version>
+  <rating>50</rating>
+  <downloads>22542</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/plasmadeck.colors</installedfile>
+  <id>1811079</id>
+  <releasedate>2022-05-30</releasedate>
+  <summary>Steam Deck color scheme.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/43/80/78/1811079/preview.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/43/80/78/1811079/preview.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTM5MTQxOTkiLCJvIjoiMSIsInMiOiI3Y2UwZjU1ZDA2MzRjN2QwOWM0OGQzZGJiNDBlZjczN2JmMGI4YmM1ODY4MWI5NGJhZjJkZmM5MDIxMDAyN2U0M2RhZGI1OGFjMzMyZWE4MmVjZDFiOWVhMmRjZjc4YWE2ZmJmYWU3YjkyNjFmYzVlNzQxN2NkNWYzZGNmNzUyMiIsInQiOjE2OTQ5Njg1MjIsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.H_cdZHBasSIxD-COUgWhuShnMChuzyEnbgCKN6USIB8/plasmadeck.colors</payload>
+  <tags>original-product,plasma,steam,steamdeck,unix,theme,linux,kde,deck,dark,colorscheme,gplv3,gaming</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>Nordic bluish</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>eliverlara</author>
+  <homepage>https://store.kde.org/p/1801631</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>58</rating>
+  <downloads>63630</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/nordicbluish.colors</installedfile>
+  <id>1801631</id>
+  <releasedate>2022-05-21</releasedate>
+  <summary>Nordic bluish color scheme for KDE</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/36/61/48/1801631/screenshot-20220520-165548.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/36/61/48/1801631/screenshot-20220520-165548.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTMxNjM3MTUiLCJvIjoiMSIsInMiOiIwNmY0MDEzOTk2N2YyNDY2MTNlYzhhYzc4MWZmMDA5M2RhNmEyMDk1YTk5ZjMwZWI3MjhkNGI4OGJhN2M4NmI4ZWIzZTk5M2I3ZjFmZTBmMDAyNWI3MDBhNzNjNmMwZGRlZDdjYmYwMmI0YTM0MGRkNmJlYTYzZDA0OWM0MDk1ZCIsInQiOjE2OTQ5Njg1NjEsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.QLUemqe5xYwwO2fvs7XfNVxvTZjILh5vJ-vnu43oHCs/nordicbluish.colors</payload>
+  <tags>plasma,kde,linux,gplv3,colorscheme,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>zafiro nord</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>zayronXIO</author>
+  <homepage>https://store.kde.org/p/1969720</homepage>
+  <licence></licence>
+  <version>1.0.9</version>
+  <rating>50</rating>
+  <downloads>6076</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/ZafiroNord01.colors</installedfile>
+  <id>1969720</id>
+  <releasedate>2024-01-19</releasedate>
+  <summary>.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/24/01/13/1969720/screenshot-20230108-181452.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/24/01/13/1969720/screenshot-20230108-181452.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE3MDE3NDYzNTkiLCJvIjoiMSIsInMiOiIzMzk1M2NlZjdjNWEyZTI5ZGRmMzEwNzJmNWIzYTYwNjdmMjhjNjNkMzc2YzZkZjI0YWU2YjY5ZDY5YzM5OTRiZWIxN2NlYzE4ZTBjYzEyZjRlZjJhZDE1YmE2NDRjMzY5YjNkZTRmZjkzOWFiMmUzNDAzOGQ5ODBlYzUzNjZjYSIsInQiOjE3MDYyMTk1NzgsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNDMuMTE4In0.Ec5uIPmEAzYTegJbOdbjcYkB70t38ZysfVdvtcbWIcM/ZafiroNord01.tar.xz</payload>
+  <tags>colorscheme,agplv3,kde,linux,theme,unix,nord,plasma</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>Nord Dark Colorscheme</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>taylantatli</author>
+  <homepage>https://store.kde.org/p/1833604</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>50</rating>
+  <downloads>1819</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/NordDark.colors</installedfile>
+  <id>1833604</id>
+  <releasedate>2022-06-20</releasedate>
+  <summary>Nord Dark Colorscheme</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/66/57/87/1833604/norddark1.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/66/57/87/1833604/norddark1.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NTU3Mzk5MTkiLCJvIjoiMSIsInMiOiJlYjQ0M2Q0OWIyOTNlN2MzMmYyZmFlOTU0MDVkNTM0MGY3NTE4NmQ4MzczYWZlZDRiMDVkMGVkOThhYTk3YThhMjViMTgyN2JlYTI1YWM5YWZlNDFlZTRmNGEwMzZlMWRhZGQyOWQ4OTgwMjRmYTM3Yjg3YTIwOWYzZDZhNjhjMSIsInQiOjE2OTQ5Njk3NjksInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.9uLrX0Z1krpweyBz4VpGnqnBvVvv-Ga-pwdC3iYaCx8/NordDark.colors</payload>
+  <tags>unix,theme,plasma,colorscheme,linux,kde,mit-license</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>Utterly Nord</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>himdek</author>
+  <homepage>https://store.kde.org/p/1903937</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>58</rating>
+  <downloads>37713</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/UtterlyNord.colors</installedfile>
+  <id>1903937</id>
+  <releasedate>2024-02-11</releasedate>
+  <summary>A Nordic Color Scheme for Plasma&lt;br />
+&lt;br />
+Global Theme in Screenshots: &lt;a href="https://store.kde.org/p/1904859/" target="_blank" rel="nofollow">Utterly Nord&lt;/a> and &lt;a href="https://store.kde.org/p/2012776/" target="_blank" rel="nofollow">Utterly Nord Solid&lt;/a>&lt;br />
+Application Launcher in Screenshot: &lt;a href="https://store.kde.org/p/1819888/" target="_blank" rel="nofollow">Simple Application launcher&lt;/a>&lt;br />
+Konsole Color Scheme in Screenshots: &lt;a href="https://store.kde.org/p/1903869/" target="_blank" rel="nofollow">Utterly Nord&lt;/a> and &lt;a href="https://store.kde.org/p/2011844/" target="_blank" rel="nofollow">Utterly Nord Solid&lt;/a>&lt;br />
+Recommended Kvantum Themes: &lt;a href="https://store.kde.org/p/1905813/" target="_blank" rel="nofollow">Utterly Nord&lt;/a> or &lt;a href="https://store.kde.org/p/2011615/" target="_blank" rel="nofollow">Utterly Nord Solid&lt;/a>&lt;br />
+Wallpaper in Screenshot: &lt;a href="https://store.kde.org/p/1904144/" target="_blank" rel="nofollow">Utterly Nord&lt;/a>&lt;br />
+Window Decoration in Screenshots: &lt;a href="https://store.kde.org/p/1999020/" target="_blank" rel="nofollow">Utterly Round Dark&lt;/a> and &lt;a href="https://store.kde.org/p/2011612/" target="_blank" rel="nofollow">Utterly Round Dark Solid&lt;/a>&lt;br />
+Icons in Screenshot: &lt;a href="https://store.kde.org/p/1359276/" target="_blank" rel="nofollow">Tela Circle Nord&lt;/a> (Choose the Nord Variant while installing)&lt;br />
+NeoFetch theme in Screenshots: &lt;a href="https://github.com/Chick2D/neofetch-themes/blob/main/normal/acenoster.conf" target="_blank" rel="nofollow">Acenoster Fetch&lt;/a> (Save this file as "~/.config/neofetch/config.conf")&lt;br />
+oh-my-zsh theme in Screenshots: &lt;a href="https://github.com/HimDek/Acenoster-ZSH-Theme/" target="_blank" rel="nofollow">Acenoster ZSH Theme&lt;/a></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/66/42/38/1903937/nordicon.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/66/42/38/1903937/nordicon.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2ODU4OTk1NjQiLCJvIjoiMSIsInMiOiI4OWM0NmU4ODk1Zjc2MzM2YTc0NGIwNDNhOTIyZDc0NDRiZjZjMDhiMmZlY2E5N2RlZDJlMTI1MzA4YTU1MzU4MmIzNGUyYmIwMGI2NmJiM2RjN2UxNGViMDIzMzM1ZTM4NWU0MmFmMmFlZGRkNDY0N2MxMjAwYjlkNjg5Mzg4YiIsInQiOjE3MDc4NjcxNzgsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0._d1_qvl8i2rx-Q5dKrxNMcF0vQyoSDSfB1ib0J3flAc/Utterly-Nord-Colors.tar.gz</payload>
+  <tags>original-product,nord,nordic,plasma,kde,linux,unix,theme,colorful,colorscheme,gplv2-later</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>Nordic KDE</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>eliverlara</author>
+  <homepage>https://store.kde.org/p/1326271</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>70</rating>
+  <downloads>98170</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/Nordic.colors</installedfile>
+  <id>1326271</id>
+  <releasedate>2021-10-28</releasedate>
+  <summary>Nordic is a dark theme created using the awesome &lt;a href="https://github.com/arcticicestudio/nord" target="_blank" rel="nofollow">Nord&lt;/a> color palette.&lt;br />
+&lt;br />
+&lt;br />
+Suggested settings: &lt;br />
+&lt;br />
+&lt;a href="https://store.kde.org/p/1327093/" target="_blank" rel="nofollow"> Nordic look-and-feel theme &lt;/a>&lt;br />
+&lt;br />
+&lt;a href="https://www.pling.com/p/1326896/" target="_blank" rel="nofollow"> Nordic Plasma theme &lt;/a>&lt;br />
+&lt;br />
+&lt;a href="https://store.kde.org/p/1326272/" target="_blank" rel="nofollow">Nordic Kvantum theme&lt;/a>&lt;br />
+&lt;br />
+&lt;a href="https://store.kde.org/p/1326274/" target="_blank" rel="nofollow">Nordic Aurorae theme &lt;/a>&lt;br />
+&lt;br />
+&lt;a href="https://www.gnome-look.org/dl?file_id=1567965545&amp;amp;file_type=application/x-xz&amp;amp;file_name=Nordic-Folders.tar.xz&amp;amp;file_size=24000&amp;amp;project_id=1267246" target="_blank" rel="nofollow"> Folders &lt;/a>&lt;br />
+&lt;br />
+Wallpaper in screenshot &lt;a href="https://i.imgur.com/SBKjnxm.jpg" target="_blank" rel="nofollow"> here &lt;/a></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/36/61/48/1326271/2159613d6404b04b0ebb587b1c3734aeb2fb1.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/36/61/48/1326271/2159613d6404b04b0ebb587b1c3734aeb2fb1.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MzU0NTQ5MTkiLCJvIjoiMSIsInMiOiJkZWZhYzBmY2QzNTM3OTVlNzMyNTNmYTBkM2M1YzIzMjE1NTExZmJjZDdlYjQyNGQ5MmU2ZmY3NTZkM2E0ZjQ3ODM2Nzg1MGJmM2JkYjQ3MmFmNTBmOWI2ODAzNzc5YTI3ZGNiZjU5ZjhlYzhlMTFiOTZiMmFhNjA0NTZiZmM3ZSIsInQiOjE2OTQ5NTYzODEsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.ngAe4AXaLXjymNhtF5FHhdSBt6WNDsnv5NIANNFg_9c/Nordic.colors</payload>
+  <tags>plasma,gplv3,colorscheme,linux,kde,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>Nordic round colors</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>rkstrdee</author>
+  <homepage>https://store.kde.org/p/1597200</homepage>
+  <licence></licence>
+  <version>1.0.0</version>
+  <rating>50</rating>
+  <downloads>42717</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/NordicRoundMono.colors</installedfile>
+  <installedfile>/home/user/.local/share/color-schemes/NordicRound.colors</installedfile>
+  <id>1597200</id>
+  <releasedate>2021-09-15</releasedate>
+  <summary>Tweaked Nordic Colors for Nordic round.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/61/50/12/1597200/749b9f46173b7631aaf645790140d8fc29349384096f6a4045a888a3ba9df2ac4677.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/61/50/12/1597200/749b9f46173b7631aaf645790140d8fc29349384096f6a4045a888a3ba9df2ac4677.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MzE3MjkzMDgiLCJvIjoiMSIsInMiOiJhNzI4ODExYzU3M2ZjYjNiODdjNTE3OTU1YmFlYjQyYzZlNTgxYzZiZDhkNjQ3MmY0OWM3MzMyYzM2ZmEwMmE1NGE0ZTBjYzExODIzZWQyMDdmNDdiYjI4ZDMzZGZhMmRmYmYyZmMzNjIzMmE5MmVlY2ExNDdjZGQ1OGNlODg3MCIsInQiOjE2OTQ5NTYzNzcsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.4oY7DESOgJ1SykGLf4BzIqtDL54-0wwSLvdMpXhdDHI/NordicRound.tar.gz</payload>
+  <tags>colorscheme,color,gplv3,theme,unix,plasma,nord,nordic,arch,kde,linux</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>Nordian-Dark-Color</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>l4k1</author>
+  <homepage>https://store.kde.org/p/1416564</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>58</rating>
+  <downloads>10824</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/NordianDarkColor.colors</installedfile>
+  <id>1416564</id>
+  <releasedate>2021-07-27</releasedate>
+  <summary>&lt;strong>Dark Colorsheme, customized for the Plasma Theme &lt;span style="color: #d08770;"> &lt;strong>Nordian-Plasma&lt;/strong> &lt;/span> , which you can download: &lt;a href="https://www.pling.com/p/1416573/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Light Colorsheme "Nordian-Light-Color" For Light Plasma Themes: &lt;a href="https://www.pling.com/p/1416561/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+_________________________&lt;br />
+&lt;br />
+&lt;br />
+Wallpaper &lt;span style="color: #5e81ac;"> &lt;strong>Nordian-Plasma&lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/1416555/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Wallpaper &lt;span style="color: #5e81ac;"> &lt;strong>Nordian-Flat&lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/1416554/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Wallpaper &lt;span style="color: #5e81ac;"> &lt;strong>Nordian-Abstract&lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/1416553/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+________________________&lt;br />
+&lt;br />
+&lt;br />
+Wallpaper &lt;span style="color: #d08770;"> &lt;strong> Plasma Desktop Wallpaper 1824 4K 2K HD &lt;/strong> &lt;/span>: &lt;a href="https://store.kde.org/p/1414037" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Wallpaper &lt;span style="color: #d08770;"> &lt;strong> Starry Nebula 181 4K Wallpaper &lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/1271211/" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Wallpaper &lt;span style="color: #d08770;"> &lt;strong> Starry Nebula 232 4K Wallpaper &lt;/strong> &lt;/span>: &lt;a href="https://www.pling.com/p/1272740" target="_blank" rel="nofollow">&lt;span style="color: red;"> Here &lt;/span>&lt;/a>&lt;br />
+&lt;br />
+Author Wallpapers: &lt;a href="https://www.pling.com/u/charlie-henson/" target="_blank" rel="nofollow">&lt;span style="color: red;"> &lt;strong>Charlie-Henson&lt;/strong> &lt;/span>&lt;/a>&lt;/strong></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/49/90/47/1416564/bd2117459d508b9e954dbcd8f47fa6010e83cb3166980ef170f6209b6e33ecdc6000.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/49/90/47/1416564/bd2117459d508b9e954dbcd8f47fa6010e83cb3166980ef170f6209b6e33ecdc6000.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MDY1MDAzMTkiLCJvIjoiMSIsInMiOiIyOWNjYzdhNjZmYjM4YWNlYTM1N2U2NjlhNTlmYTRlMzc0ZjE5NGNkMTljMDA5NmI2NWRlYzBkZGYwOWIwZjNhZDkyOTNmYzkyZjA2NTM3YjQ0MzZiZWFmNGM2ZWY1Nzk2NzExOWYyZWE4N2E2ZjUxNTVlNzgxYjFmMDY3YTYxNSIsInQiOjE2OTQ5Njk4MTksInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.GKw8PcnH8gUsgufNs3BFciiyKxQt84XtqdGuXgY4Ufk/NordianDarkColor.colors</payload>
+  <tags>linux,kde,original-product,plasma,colorscheme,gplv3,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="112">
+  <name>Nordic darker KDE</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>eliverlara</author>
+  <homepage>https://store.kde.org/p/1629062</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>131868</downloads>
+  <installedfile>/home/user/.local/share/color-schemes/NordicDarker.colors</installedfile>
+  <id>1629062</id>
+  <releasedate>2021-10-28</releasedate>
+  <summary>Nordic darker coloscheme for KDE</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/36/61/48/1629062/e993b51bc83f33e12484d08c32ba614be041012bba9ee85e019a3709330ca12d14a2.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/36/61/48/1629062/e993b51bc83f33e12484d08c32ba614be041012bba9ee85e019a3709330ca12d14a2.png</previewBig>
+  <payload>https://files03.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MzU0NTQ5NzAiLCJvIjoiMSIsInMiOiIzMTQ3ODcyMDcwZGQ1YjBkMWRiMGQ5M2VmOTBhZTkzMDAxODVhNGViM2M4NTIzMTE2OTIyYzdlM2U0OTc0ZTg3ZWY3MjJlMmUxNTAyYTEyNzk0NmE1MGQ2OWJlY2ZlOWJhMjdiYWQxOGU4NWE4MTlkMzBhY2M1MWIyYTFjNDFiZiIsInQiOjE2OTQ5Njg4MjUsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4yNTAuMTE5In0.gAWE7DX-WVXKz8rMbWXBLRt49U0-YHqLhdGrBxqTDN8/NordicDarker.colors</payload>
+  <tags>linux,kde,gplv3,colorscheme,plasma,unix,theme</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

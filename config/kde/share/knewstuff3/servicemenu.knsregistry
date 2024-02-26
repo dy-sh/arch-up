@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="102">
+  <name>Open In VSCode</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>copie</author>
+  <homepage>https://store.kde.org/p/1202294</homepage>
+  <licence></licence>
+  <version>1.0.0</version>
+  <rating>66</rating>
+  <downloads>4990</downloads>
+  <installedfile>/home/user/.local/share/servicemenu-download/openinvscode.desktop</installedfile>
+  <id>1202294</id>
+  <releasedate>2017-12-06</releasedate>
+  <summary>Right-click and open in vscode&lt;br />
+&lt;br />
+if you want use it ,you can move 'openinvscode.desktop'  into '~/.local/share/kservices5/ServiceMenus/'&lt;br />
+may be in your pc don't have this folder ,you can make it.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/48/36/49/1202294/2be9f3c5434ec981142450178735e8b8c4cc1.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/48/36/49/1202294/2be9f3c5434ec981142450178735e8b8c4cc1.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1MTI2MTYyNTciLCJvIjoiMSIsInMiOiI4OTJkNjc3YjZhOGM4MGQ2ZWY1YTkzZTE2YjVmMTA0NmFmM2FhNjAyYjc1ZjY5MTNhNmEzZTM2OTM0NTZlYWNjMDk3NjI1ZDRlNzA2NTgyMDI1YTdmNWNhMGU5ZTIyOTJiYWFiMTk3NmE3N2QyYWEwZDExZTQ0MGVhNDIxOWQyMiIsInQiOjE3MDg5NTg2NzcsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0.qemFGgqmthG90ndUMTfmlKDhXJJ43-ZmzmlnmCis4po/openinvscode.desktop</payload>
+  <tags>addon</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
