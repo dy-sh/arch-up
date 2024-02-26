@@ -50,7 +50,7 @@ if command -v pacman &>/dev/null; then
     # yazi dependencies
     sudo pacman -S --needed --noconfirm yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide ouch
     # tools from aur
-    yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
+    yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None \
         carapace-bin
 fi
 if command -v dnf &>/dev/null; then

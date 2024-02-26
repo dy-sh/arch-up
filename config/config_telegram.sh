@@ -39,15 +39,17 @@ then
     echo -e "$NOTE Telegram is not installed. Skipping."
     exit 0
 fi
+read -rep "$ACTN Do you want to configure telegram theme? [Y/n] " confirm
+if [[ ! $confirm == [nN] ]]; then
+    # installing nord theme
+    echo -e "$INFO Installing Nord theme"
+    set +e
+    xdg-open https://t.me/addtheme/nordplus
+    set -e
+    read -rep "$ACTN Apply theme from browser and press Enter to continue..."
+fi
 
-# installing nord theme
-echo -e "$INFO Installing Nord theme"
-set +e
-xdg-open https://t.me/addtheme/nordplus
-set -e
-read -rep "$ACTN Apply theme from browser and press Enter to continue..."
 echo -e "$OK DONE"
-
 
 ## -------------- OLD ----------
 

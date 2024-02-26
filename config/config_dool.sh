@@ -38,22 +38,25 @@ if ! command -v dool &> /dev/null; then
     exit 0
 fi
 
-# plugins
-yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-	python-nvidia-ml-py
+# python-nvidia-ml-py is too large, because of installing cuda
+# use it only if needed!
 
-# make temp dir
-dst=$(mktemp -d)
-cd $dst
+# # plugins
+# yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None \
+# 	python-nvidia-ml-py
 
-echo -e "$INFO Installing dool plugins"
+# # make temp dir
+# dst=$(mktemp -d)
+# cd $dst
 
-wget https://raw.githubusercontent.com/datumbox/dstat/master/plugins/dstat_nvidia_gpu.py
-sudo mv dstat_nvidia_gpu.py /usr/share/dool/dool_nvidia_gpu.py
-sudo sed -i 's/dstat/dool/g' /usr/share/dool/dool_nvidia_gpu.py
+# echo -e "$INFO Installing dool plugins"
 
-wget https://raw.githubusercontent.com/xplorld/dstat_plugins/master/dstat_nvidia_gpu_mem.py
-sudo mv dstat_nvidia_gpu_mem.py /usr/share/dool/dool_nvidia_gpu_mem.py
-sudo sed -i 's/dstat/dool/g' /usr/share/dool/dool_nvidia_gpu_mem.py
+# wget https://raw.githubusercontent.com/datumbox/dstat/master/plugins/dstat_nvidia_gpu.py
+# sudo mv dstat_nvidia_gpu.py /usr/share/dool/dool_nvidia_gpu.py
+# sudo sed -i 's/dstat/dool/g' /usr/share/dool/dool_nvidia_gpu.py
+
+# wget https://raw.githubusercontent.com/xplorld/dstat_plugins/master/dstat_nvidia_gpu_mem.py
+# sudo mv dstat_nvidia_gpu_mem.py /usr/share/dool/dool_nvidia_gpu_mem.py
+# sudo sed -i 's/dstat/dool/g' /usr/share/dool/dool_nvidia_gpu_mem.py
 
 echo -e "$OK DONE"

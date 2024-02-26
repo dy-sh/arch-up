@@ -39,9 +39,9 @@ if ! command -v xplr &> /dev/null; then
 fi
 
 # utils
-sudo pacman -S --needed --noconfirm fzf sd trash-cli
-yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-	sfz-bin pipe-rename-git
+sudo pacman -S --needed --noconfirm fzf sd trash-cli pipe-rename
+yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None \
+	sfz-bin
 
 mkdir -p ~/.config/xplr
 # version="$(xplr --version | awk '{print $2}')"
