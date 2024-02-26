@@ -33,7 +33,7 @@ cd "$SCRIPT_DIR" || exit 1
 SCRIPT_NAME="$(basename $0)"
 if [ $(id -u) -ne 0 ]; then
     echo "This script must be run as root: '$SCRIPT_DIR/$SCRIPT_NAME'"
-    exec sudo "$0" "$@"
+    exec sudo "$SCRIPT_DIR/$SCRIPT_NAME" "$@"
 fi
 
 # ---------------------------------------------------------------------
