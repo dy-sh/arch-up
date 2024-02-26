@@ -26,11 +26,11 @@ ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
 # cd to script directory
-SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 cd "$SCRIPT_DIR" || exit 1
 
 # reopen script as sudo
-SCRIPT_NAME="$(basename "${BASH_SOURCE[0]}")"
+SCRIPT_NAME="$(basename $0)"
 if [ $(id -u) -ne 0 ]; then
     echo "This script must be run as root: '$SCRIPT_DIR/$SCRIPT_NAME'"
     exec sudo "$0" "$@"
