@@ -93,6 +93,10 @@ echo -e "$INFO Configuring settings..."
 cp -r kde/config/* ~/.config
 cp -r kde/share/* ~/.local/share/
 
+read -rep "$ACTN Do you want to configure KDE bottom Panel? [Y/n] " confirm
+if [[ ! $confirm == [nN] ]]; then
+    cp -r kde/panel/* ~/.config
+fi
 
 
 echo -e "$INFO Configuring KDE theme settings..."
