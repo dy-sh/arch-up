@@ -91,7 +91,7 @@ cp -r kde/cursors/* ~/.icons
 echo -e "$INFO Configuring settings..."
 
 cp -r kde/config/* ~/.config
-
+cp -r kde/share/* ~/.local/share/
 
 
 
