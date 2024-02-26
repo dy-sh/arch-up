@@ -26,14 +26,14 @@ ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
 # cd to script directory
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-cd "$SCRIPT_DIR" || exit
+SCRIPT_DIR="$(dirname "$0")"
+cd "$SCRIPT_DIR" || exit 1
 
-# editing snapper config
+# reopen script as sudo
+SCRIPT_NAME="$(basename "$0")"
 if [ $(id -u) -ne 0 ]; then
-    echo "This script must be run as root."
-    echo "$SCRIPT_DIR/$BASH_SOURCE"
-    exec sudo "$SCRIPT_DIR/$BASH_SOURCE" "$@"
+    echo "This script must be run as root: '$SCRIPT_DIR/$SCRIPT_NAME'"
+    exec sudo "$SCRIPT_DIR/$SCRIPT_NAME" "$@"
 fi
 
 # ---------------------------------------------------------------------
