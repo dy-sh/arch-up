@@ -43,6 +43,7 @@ fi
 echo -e "$INFO Configuring env variables"
 
 config_file="/etc/environment"
+# GTK_USE_PORTAL=1 - native filepicker
 lines_to_add=(
     "GTK_USE_PORTAL=1"
 )
@@ -59,15 +60,13 @@ done
 
 echo -e "$INFO Installing plasmoids..."
 
-mkdir -p ~/.local/share/plasma/plasmoids
-cp -r kde/plasmoids/* ~/.local/share/plasma/plasmoids
+cp -r kde/plasmoids/home/* ~/
 
 
 
 echo -e "$INFO Installing themes..."
 
-cp -r kde/themes-local/* ~/.local/share
-cp -r kde/themes-home/* ~/
+cp -r kde/themes/home/* ~/
 dconf write /org/gnome/desktop/interface/gtk-theme "'Nordic-bluish-accent-standard-buttons'"
 
 
@@ -82,22 +81,18 @@ cd "$SCRIPT_DIR"
 
 
 
-echo -e "$INFO Installing cursors..."
-
-mkdir -p ~/.icons
-cp -r kde/cursors/* ~/.icons
-
-
 
 
 echo -e "$INFO Configuring settings..."
+# mimeapps, keyboard layout
+cp -r kde/settings/home/* ~/
+# context menu (open with vscode)
+cp -r kde/contex-menu/home/* ~/
 
-cp -r kde/config/* ~/.config
-cp -r kde/share/* ~/.local/share/
 
 read -rep "$ACTN Do you want to configure KDE bottom Panel? [Y/n] " confirm
 if [[ ! $confirm == [nN] ]]; then
-    cp -r kde/panel/* ~/.config
+    cp -r kde/panel/home/* ~/
 fi
 
 
@@ -105,9 +100,12 @@ echo -e "$INFO Configuring KDE theme settings..."
 
 config_file="$HOME/.config/kwinrc"
 
-theme=Breeze
+BorderSize=None
+BorderSizeAuto=false
 ButtonsOnLeft=M
 ButtonsOnRight=IAX
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Lavanda-Dark
 
 
 if [ ! -f "$config_file" ]; then
@@ -118,16 +116,17 @@ if ! grep -q "\[org.kde.kdecoration2\]" "$config_file"; then
     echo "[org.kde.kdecoration2]" >> "$config_file"
 fi
 
+
 if ! grep -q "^theme=" "$config_file"; then
     sed -i '/\[org.kde.kdecoration2\]/a theme='"$theme"'' "$config_file"
 else
     sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^theme=.*/theme='"$theme"'/' "$config_file"
 fi
 
-if ! grep -q "^ButtonsOnLeft=" "$config_file"; then
-    sed -i '/\[org.kde.kdecoration2\]/a ButtonsOnLeft='"$ButtonsOnLeft"'' "$config_file"
+if ! grep -q "^library=" "$config_file"; then
+    sed -i '/\[org.kde.kdecoration2\]/a library='"$library"'' "$config_file"
 else
-    sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^ButtonsOnLeft=.*/ButtonsOnLeft='"$ButtonsOnLeft"'/' "$config_file"
+    sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^library=.*/library='"$library"'/' "$config_file"
 fi
 
 if ! grep -q "^ButtonsOnRight=" "$config_file"; then
@@ -136,10 +135,24 @@ else
     sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^ButtonsOnRight=.*/ButtonsOnRight='"$ButtonsOnRight"'/' "$config_file"
 fi
 
+if ! grep -q "^ButtonsOnLeft=" "$config_file"; then
+    sed -i '/\[org.kde.kdecoration2\]/a ButtonsOnLeft='"$ButtonsOnLeft"'' "$config_file"
+else
+    sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^ButtonsOnLeft=.*/ButtonsOnLeft='"$ButtonsOnLeft"'/' "$config_file"
+fi
 
-echo -e "$INFO Configuring KDE window decortion theme..."
+if ! grep -q "^BorderSizeAuto=" "$config_file"; then
+    sed -i '/\[org.kde.kdecoration2\]/a BorderSizeAuto='"$BorderSizeAuto"'' "$config_file"
+else
+    sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^BorderSizeAuto=.*/BorderSizeAuto='"$BorderSizeAuto"'/' "$config_file"
+fi
 
-cp -r kde/window-decoration/* ~/.config
+if ! grep -q "^BorderSize=" "$config_file"; then
+    sed -i '/\[org.kde.kdecoration2\]/a BorderSize='"$BorderSize"'' "$config_file"
+else
+    sed -i '/\[org.kde.kdecoration2\]/,/^\[/ s/^BorderSize=.*/BorderSize='"$BorderSize"'/' "$config_file"
+fi
+
 
 
 echo -e "$INFO Restarting KDE..."
