@@ -40,6 +40,8 @@ if [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; th
     exit
 fi
 
+sudo pacman -S --needed --noconfirm rsync
+
 echo -e "$INFO Configuring env variables"
 
 config_file="/etc/environment"
@@ -60,13 +62,13 @@ done
 
 echo -e "$INFO Installing plasmoids..."
 
-cp -r kde/plasmoids/home/* ~/
+rsync -a kde/plasmoids/home/ ~/
 
 
 
 echo -e "$INFO Installing themes..."
 
-cp -r kde/themes/home/* ~/
+rsync -a kde/themes/home/ ~/
 dconf write /org/gnome/desktop/interface/gtk-theme "'Nordic-bluish-accent-standard-buttons'"
 
 
@@ -85,14 +87,14 @@ cd "$SCRIPT_DIR"
 
 echo -e "$INFO Configuring settings..."
 # mimeapps, keyboard layout
-cp -r kde/settings/home/* ~/
+rsync -a kde/settings/home/ ~/
 # context menu (open with vscode)
-cp -r kde/contex-menu/home/* ~/
+rsync -a kde/contex-menu/home/ ~/
 
 
 read -rep "$ACTN Do you want to configure KDE bottom Panel? [Y/n] " confirm
 if [[ ! $confirm == [nN] ]]; then
-    cp -r kde/panel/home/* ~/
+    rsync -a kde/panel/home/ ~/
 fi
 
 
