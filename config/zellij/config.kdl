@@ -234,6 +234,7 @@ plugins {
 //   - true (default)
 //   - false
 //
+// This setting causes a file on disk to be updated every second. Until this is fixed, it is better not to enable this option!
 // session_serialization false
 
 // Whether pane viewports are serialized along with the session, default is false
