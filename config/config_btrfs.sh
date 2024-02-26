@@ -42,9 +42,13 @@ fi
 
 echo -e "$INFO Configuring grub for btrfs snapshots"
 
-sudo pacman -S --needed --noconfirm grub-btrfs snapper # snap-pac
+sudo pacman -S --needed --noconfirm grub-btrfs snapper
+
+# Installing snap-pac (tool for auto creating snapshots when new pacman package installed)
+# sudo pacman -S --needed --noconfirm snap-pac
 # yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
 # snap-pac-grub
+
 
 # Updating grub config
 sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -74,10 +78,10 @@ fi
 
 
 # New values
-NEW_TIMELINE_LIMIT_HOURLY="50"
-NEW_TIMELINE_LIMIT_DAILY="70"
+NEW_TIMELINE_LIMIT_HOURLY="5"
+NEW_TIMELINE_LIMIT_DAILY="7"
 NEW_TIMELINE_LIMIT_WEEKLY="0"
-NEW_TIMELINE_LIMIT_MONTHLY="10"
+NEW_TIMELINE_LIMIT_MONTHLY="0"
 NEW_TIMELINE_LIMIT_YEARLY="0"
 
 CONFIG_FILE="/etc/snapper/configs/root"

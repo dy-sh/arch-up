@@ -113,9 +113,9 @@ backup=(
     # snap-pac        # pacman hook for automated snapshots
 )
 backup_aur=(      
-    freefilesync-bin  # file synchronization and backup tool
+    # freefilesync-bin  # file synchronization and backup tool
     # timeshift     # GUI for disk snapshots
-    downgrade       # bash script for downgrading packages to a version in cache
+    # downgrade       # bash script for downgrading packages to a version in cache
     btrfs-assistant # GUI for btrfs management and snapper 
     # snap-pac-grub   # auto upadate grub menu when snsp-pac creates snapshots
 )
