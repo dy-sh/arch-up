@@ -14,8 +14,9 @@ shell=(
     kitty         # lightweight terminal
     fish fisher   # user friendly shell (bash alternative)
     nushell       # a new type of shell (bash alternative)
-    zsh zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k zshdb # user friendly shell (bash alternative)
-    tmux           # terminal multiplexer
+    # zsh zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k zshdb # user friendly shell (bash alternative)
+    # tmux           # terminal multiplexer
+    zellij         # terminal multiplexer
     atuin          # shell history manager
     pueue          # run tasks in parallel or queue them
 )
@@ -30,13 +31,13 @@ cli_tools=(
     wl-clipboard    # clipboard tool for wayland (required for nvim to use clipboard)
     trash-cli       # trash files from terminal
     xorg-xkill      # kill processes using xkill command
+    pipe-rename      # batch rename files in default editor
 )
 
 cli_tools_aur=(
     cp-p-git        # cp-p, mv-p - cp/mv alternative (with progress)
-    advcpmv         # advcp, advmv - cp/mv alternative (with progress
-    pipe-rename-git # batch rename files in default editor
-    rnr-bin         # batch rename files
+    advcpmv         # advcp, advmv - cp/mv alternative (with progress)
+    # rnr-bin         # batch rename files
     hwatch          # watch alternative
 )
 
@@ -57,21 +58,21 @@ cli_text_editors=(
 cli_system_monitoring=(         
     htop            # system monitor
     btop            # system monitor (htop alternative)
-    s-tui           # system monitor
-    zenith          # system monitor
     bottom          # system monitor (btm)
     dool            # system monitor 
+    glances         # system monitor
+    s-tui           # system monitor and CPU stress-test
+    zenith          # system monitor
+    nvtop           # GPU usage monitor
     duf             # disk usage info (df alternative)
     dua-cli         # folder size info (du alternative)
     gdu             # folder size info (du alternative)
     dust            # folder size info (du alternative)
-    nmap            # tool for showing open ports
-    nvtop           # GPU usage monitor
 )
 
 cli_system_monitoring_aur=(         
-    gotop-bin       # system monitor
-    btsdu-git       # btrfs snapshot disk usage analyzer 
+    # gotop-bin       # system monitor
+    # btsdu-git       # btrfs snapshot disk usage analyzer 
     nvitop          # GPU usage monitor
 )
 
@@ -84,7 +85,7 @@ cli_system_info=(
 archivers=(          
     zip unzip       # archiver
     unrar           # archiver
-    cdrtools        # mkisofs tool for creating iso images
+    # cdrtools        # mkisofs tool for creating iso images
     ouch            # archiver (tar .zip .gz .xz, .lzma .bz, .bz2 .lz4 .sz .zst)
 )
 
@@ -109,14 +110,14 @@ backup=(
     rsync           # file copying and backup tool
     grub-btrfs      # auto update grub menu with btrfs snapshots
     snapper         # btrfs snapshot manager
-    snap-pac        # pacman hook for automated snapshots
+    # snap-pac        # pacman hook for automated snapshots
 )
 backup_aur=(      
     freefilesync-bin  # file synchronization and backup tool
     # timeshift     # GUI for disk snapshots
     downgrade       # bash script for downgrading packages to a version in cache
     btrfs-assistant # GUI for btrfs management and snapper 
-    snap-pac-grub   # auto upadate grub menu when snsp-pac creates snapshots
+    # snap-pac-grub   # auto upadate grub menu when snsp-pac creates snapshots
 )
 
 find_files=(
@@ -185,6 +186,7 @@ text_aur=(
 
 
 network=(         
+    nmap            # tool for showing open ports
     nethogs         # network usage monitor
     bandwhich       # network usage monitor
     iftop           # network usage monitor
