@@ -42,7 +42,7 @@ fi
 echo -e "$INFO Installing adw-gtk3 theme"
 
 # adw-gtk3 GTK theme
-yay -S --needed --noconfirm --answerdiff=None adw-gtk3 
+yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None adw-gtk3 
 flatpak install -y org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
 # apply theme
 # gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' 
@@ -91,7 +91,7 @@ cd "$SCRIPT_DIR"
 echo -e "$INFO Installing cursors"
 
 # bibata cursor theme
-yay -S --needed --noconfirm --answerdiff=None bibata-cursor-theme
+yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None bibata-cursor-theme
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
 gsettings set org.gnome.desktop.interface cursor-size 22
 
@@ -105,7 +105,7 @@ ttf-roboto \
 ttf-nerd-fonts-symbols \
 ttf-nerd-fonts-symbols-mono \
 
-yay -S --needed --noconfirm --answerdiff=None \
+yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None \
 ttf-ms-fonts \
 
 

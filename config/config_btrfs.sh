@@ -29,15 +29,16 @@ HEADER="${BLUE}\n--------------------------------------------------------------$
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd "$SCRIPT_DIR" || exit
 
-# ---------------------------------------------------------------------
-
-echo -e "$HEADER Configuring btrfs $HEADER"
-
 # editing snapper config
 if [ $(id -u) -ne 0 ]; then
     echo "This script must be run as root."
-    exec sudo "$0" "$@"
+    echo "$SCRIPT_DIR/$BASH_SOURCE"
+    exec sudo "$SCRIPT_DIR/$BASH_SOURCE" "$@"
 fi
+
+# ---------------------------------------------------------------------
+
+echo -e "$HEADER Configuring btrfs $HEADER"
 
 
 echo -e "$INFO Configuring grub for btrfs snapshots"
@@ -46,7 +47,7 @@ sudo pacman -S --needed --noconfirm snapper grub-btrfs inotify-tools
 
 # Installing snap-pac (tool for auto creating snapshots when new pacman package installed)
 # sudo pacman -S --needed --noconfirm snap-pac
-# yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
+# yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None \
 # snap-pac-grub
 
 

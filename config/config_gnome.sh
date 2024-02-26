@@ -91,7 +91,7 @@ echo -e "$INFO Enabling fractional scaling"
 set +e
 sudo pacman -Rdd --noconfirm mutter 2> /dev/null
 set -eu 
-if ! yay -S --needed --noconfirm --answerdiff=None mutter-x11-scaling; then
+if ! yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None mutter-x11-scaling; then
     sudo pacman -S --needed --noconfirm mutter
 fi
 gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling','scale-monitor-framebuffer']" # wayland and x11
@@ -118,7 +118,7 @@ echo -e "$INFO Configuring GDM"
 # # enable guestures on xorg
 # sudo gpasswd -a $USER input
 # sudo pacman -S --needed --noconfirm wmctrl xdotool
-# yay -S --needed --noconfirm --answerdiff=None libinput-gestures 
+# yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None libinput-gestures 
 # libinput-gestures-setup autostart start
 
 echo -e "$OK DONE"

@@ -31,7 +31,7 @@ cli_tools=(
     wl-clipboard    # clipboard tool for wayland (required for nvim to use clipboard)
     trash-cli       # trash files from terminal
     xorg-xkill      # kill processes using xkill command
-    pipe-rename      # batch rename files in default editor
+    pipe-rename     # batch rename files in default editor
     fzf             # fuzzy finder (file selection CLI tool)
 )
 
@@ -308,7 +308,7 @@ graphics_editors=(
 
 
 graphics_editors_aur=(
-    xnconvert       # convert images
+    # xnconvert       # convert images (conflict with xnviewmp)
 )
 
 
@@ -331,9 +331,10 @@ fonts=(
 gnome=(             
     gnome-browser-connector # browser integration with extensions.gnome.org
     gnome-tweaks            # GNOME 3 settings (Tweak Tool)
-    gnome-keyring   # stores passwords and encryption keys
-    gparted         # partition manager 
-    gnome-clocks    # timer, stopwatch, clock
+    gnome-keyring    # stores passwords and encryption keys
+    gparted          # partition manager 
+    partitionmanager # KDE partition manager 
+    gnome-clocks     # timer, stopwatch, clock
     gnome-terminal       # terminal
     gnome-power-manager # power monitoring tool
     ##### NAUTILUS FIlE MANAGER ###########
@@ -737,22 +738,21 @@ fi
 
 
 # install apps
-echo -e "$INFO Installing apps from upstream..."
+if [ -n "${apps_to_install[*]}" ]; then
+    echo -e "$INFO Installing apps from upstream..."
+    sudo pacman -S --needed --noconfirm ${apps_to_install[@]}
+    echo -e "$OK Apps from upstream successfully installed"
+fi
 
-sudo pacman -S --needed --noconfirm ${apps_to_install[@]}
+if [ -n "${apps_to_install_aur[*]}" ]; then
+    echo -e "$INFO Installing apps from AUR..."
 
-echo -e "$OK Apps from upstream successfully installed"
+    # skip validity checks (less secure but allow to install outdated packages)
+    yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None ${apps_to_install_aur[@]}
 
-echo -e "$INFO Installing apps from AUR..."
+    echo -e "$OK Apps from AUR successfully installed"
+fi
 
-
-# regular install (with validity checks)
-# yay -S --needed --noconfirm --answerdiff=None --quiet --norebuild --noredownload ${apps_to_install[@]}
-
-# skip validity checks (less secure but allow to install outdated packages)
-yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --norebuild --noredownload ${apps_to_install_aur[@]}
-
-echo -e "$OK Apps from AUR successfully installed"
 
 
 
@@ -811,7 +811,7 @@ fi
 # qt5-webkit taking too long to compile
 # to download and install compiled version:
 # wget https://archive.archlinux.org/packages/q/qt5-webkit/qt5-webkit-5.212.0alpha4-18-x86_64.pkg.tar.zst && sudo pacman -U --noconfirm qt5-webkit-5.212.0alpha4-18-x86_64.pkg.tar.zst
-# yay -S --needed --noconfirm --answerdiff=None  davinci-resolve-studio  # video editor
+# yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None  davinci-resolve-studio  # video editor
 
 
 
@@ -823,7 +823,7 @@ if [[ -v install_unreal ]]; then
     set +e  # disabling flags to compile UE
     set +u  
 
-    yay -S --needed --noconfirm --answerdiff=None eam-git
+    yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None eam-git
 
     echo -e "$OK Epic Asset Manager installed"
 
@@ -841,7 +841,7 @@ if [[ -v install_unreal ]]; then
     # echo "then press Enter..."
     # read TEMP
 
-    # yay -S --needed --noconfirm --answerdiff=None unreal-engine-bin
+    # yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None unreal-engine-bin
 
     # echo -e "$OK Unreal Engine installed"
     set -eu # enabling flags back

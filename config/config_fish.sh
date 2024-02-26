@@ -47,8 +47,8 @@ if command -v pacman &>/dev/null; then
 
     # utils
     sudo pacman -S --needed --noconfirm zoxide broot xplr atuin exa
-    yay -S --mflags --skipinteg --needed --quiet --answerdiff=None --nopgpfetch --nodiffmenu --norebuild --noredownload \
-        walk-bin
+    # yay -S --noconfirm --norebuild --noredownload --needed --quiet --mflags --skipinteg --answerdiff=None \
+        # walk-bin
 fi
 if command -v dnf &>/dev/null; then
     # fisher (for fish)
