@@ -68,6 +68,7 @@ echo -e "$INFO Installing themes..."
 
 cp -r kde/themes-local/* ~/.local/share
 cp -r kde/themes-home/* ~/
+dconf write /org/gnome/desktop/interface/gtk-theme "'Nordic-bluish-accent-standard-buttons'"
 
 
 
