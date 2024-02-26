@@ -32,6 +32,7 @@ cli_tools=(
     trash-cli       # trash files from terminal
     xorg-xkill      # kill processes using xkill command
     pipe-rename      # batch rename files in default editor
+    fzf             # fuzzy finder (file selection CLI tool)
 )
 
 cli_tools_aur=(
@@ -92,8 +93,6 @@ archivers=(
 code_compiling=(         
     cmake           # code compile and build tool
     gcc             # c/c++ compiler
-    git git-lfs     # version control system
-    lazygit         # terminal UI for git
     ninja           # code compile and build tool
     python-pip      # tool for installing python packages
     rust            # code compile and build tool
@@ -187,14 +186,14 @@ text_aur=(
 
 network=(         
     nmap            # tool for showing open ports
-    nethogs         # network usage monitor
     bandwhich       # network usage monitor
-    iftop           # network usage monitor
     nload           # network usage monitor
     bmon            # network usage monitor
-    vnstat          # network usage monitor
+    # nethogs         # network usage monitor
+    # iftop           # network usage monitor
+    # vnstat          # network usage monitor
     traceroute      # network route tracking tool
-    trippy          # network route tracking tool
+    trippy          # network route tracking tool (trip)
     curl            # http requests and download manager
     aria2           # download manager (HTTP, FTP, BitTorrent)
     wget            # download manager
@@ -211,8 +210,8 @@ network=(
 )
 network_aur=(      
     xrdp            # remote desktop protocol (RDP) server 
-    wsdd            # web service discovery (WSD) daemon for SMB/Samba
-    sfz-bin         # simple web server for serving files
+    # wsdd            # web service discovery (WSD) daemon for SMB/Samba
+    # sfz-bin         # simple web server for serving files
     ngrok           # tunneling internet protocols (share port on gray ip)
     termscp-bin     # TUI util for file transfering over SCP/SFTP/FTP/S3/SMB
 )
@@ -221,27 +220,27 @@ network_aur=(
 
 
 internet=( 
-    uget            # download manager
-    kget            # download manager (KDE)
+    # kget            # download manager (KDE)
+    # uget            # download manager
     yt-dlp          # download video from youtube
-    deluge-gtk      # bittorrent client
     qbittorrent     # bittorrent client
+    # deluge-gtk      # bittorrent client
     firefox         # web browser
-    opera           # web browser with integrated VPN
     thunderbird     # email clint
     telegram-desktop # messenger
     discord         # messenger
-    moserial        # serial terminal
-    putty           # terminal for ssh/telent/serial
+    # moserial        # serial terminal
+    # putty           # terminal for ssh/telent/serial
     cool-retro-term # terminal emulator which old cathode display
     filezilla       # ftp client
     # opensnitch    # firewall
     # haguichi      # hamachi client 
 )
 internet_aur=(     
+    opera           # web browser with integrated VPN
     tgpt-bin        # chat-gpt in terminal
-    uget-integrator         # uget download manager integration for browsers
-    kget-integrator-firefox # kget download manager integration for firefox
+    # uget-integrator         # uget download manager integration for browsers
+    # kget-integrator-firefox # kget download manager integration for firefox
     pcloud-drive    # file storage cloud
 )
 
@@ -258,7 +257,7 @@ audio_players_aur=(
 
 
 audio_editors=(     
-    audacity        # audio editor
+    tenacity        # audio editor
     reaper          # audio editor
 )
 
@@ -267,7 +266,7 @@ audio_editors=(
 video_players=(     
     mpv             # video player
     vlc             # video player
-    totem           # video player
+    # totem           # video player
     gst-libav       # codecs for totem and gthumb
     playerctl       # CLI for players (vlc and other)
 )
@@ -360,7 +359,7 @@ gnome_aur=(
 gaming=(            
     # add 32 bit repo (multilib) to install steam
     steam           # steam client
-    lutris          # run windows apps and games
+    # lutris          # run windows apps and games
     bottles         # run windows apps and games
     winetricks      # libs for wine
 )
@@ -372,7 +371,6 @@ gaming_aur=(
 
 automation=(            
     inotify-tools   # watch file system changes in realtime
-    fzf             # fuzzy finder (file selection CLI tool)
     dconf-editor    # gsettings editor (for GNOME apps)
     d-spy           # d-bus debugger (for automation)
     xbindkeys       # launch commands with keyboard/mouse (for X11)
@@ -384,31 +382,35 @@ automation=(
 
 
 
-dev=(              
+dev=(     
+    git git-lfs     # version control system
+    lazygit         # TUI git manager         
+    gitui           # TUI git manager
+    kommit          # git manager and diff tool
+    git-delta       # git diff in terminal
+    meld            # diff compare
     blender         # 3D modelling
     glade           # GUI builder for GTK+ applications
     httpie          # http client
     jdk-openjdk     # java development kit
-    meld            # diff compare
-    git-delta       # git diff in terminal
     nodejs          # nodejs
     npm             # nodejs package manager
-    pycharm-community-edition # python IDE
     qtcreator       # qt IDE
     sqlitebrowser   # sqlite database browser
+    pycharm-community-edition # python IDE
 )
 dev_aur=(          
     visual-studio-code-bin  # vscode
     clion clion-jre clion-lldb clion-cmake clion-gdb # c++ IDE
-    gitfiend                # git clinet
-    github-desktop-bin      # git clinet
-    # gittyup # not compiled
     rider                   # IDE for Unreal Enigne and Unity
-    smartgit                # git clinet
     rustrover rustrover-jre # rust IDE
-    static-web-server-bin   # simple static web server
-    simple-http-server-bin  # simple static web server
-    # webstorm
+    # webstorm              # web IDE
+    # gitfiend                # git clinet
+    # github-desktop-bin      # git clinet
+    # gittyup # not compiled
+    # smartgit                # git clinet
+    # static-web-server-bin   # simple static web server
+    # simple-http-server-bin  # simple static web server
     # required libraries for building KDE apps:
     # extra-cmake-modules-git plasma5support-git kcoreaddons-git kunitconversion-git  kirigami2-git kconfig-git
 )
@@ -422,7 +424,7 @@ hardware=(
     bluez bluez-utils # bluetooth support
     # blueman         # bluetooth manager (no need for KDE)
     joyutils        # joystick tweaking
-    # xpadneo-dkms    # xbox controller support (multiple devices at once)
+    xpadneo-dkms    # xbox controller support (multiple devices at once)
     psensor         # graphical hardware temperature monitoring
     barrier         # share mouse between devices
     nvme-cli        # nvmi ssd tools
@@ -435,11 +437,11 @@ hardware=(
     speedtest-cli   # benchmark internet
     kdiskmark       # benchmark disks
     mangohud        # FPS monitoring overlay
+    earlyoom systembus-notify # Out of memory killer (OOM)
     # powertop        # power management tool (consumption monitorring and sleep tweaks)
     # cups cups-pdf print-manager # printer support
     # imwheel         # mouse wheel tuning
     # preload         # run applications faster by prefetching binaries
-    earlyoom systembus-notify # Out of memory killer (OOM)
 )
 hardware_aur=(     
     # auto-cpufreq    # automatic CPU freq optimizer
@@ -451,10 +453,10 @@ hardware_aur=(
 )
 
 nvidia=(           
-    nvidia          # nvidia drivers for linux kernel      (preinstalled by installer)
-    # nvidia-lts    # nvidia drivers for linux-lts kernel  (preinstalled by installer)
-    # nvidia-dkms   # nvidia drivers for all other kernels (preinstalled by installer)
-    nvidia-settings # nvidia settins app
+    nvidia          # nvidia drivers for linux kernel     
+    nvidia-lts    # nvidia drivers for linux-lts kernel 
+    # nvidia-dkms   # nvidia drivers for all other kernels
+    # nvidia-settings # nvidia settins app
     lib32-nvidia-utils # 32 bit libraries requird for games
 )
 nvidia_aur=(       
@@ -482,7 +484,7 @@ asus_notebooks=(
     # tlp           # power management tool (conflicted with rog-control-center)
 )
 asus_notebooks_aur=( 
-    rog-control-center # ASUS notebooks management tool
+    rog-control-center # ASUS notebooks management tool (require supergfxctl for turn off dGPU)
     # tlpui         # GUI for tlp (conflicted with rog-control-center)
 )
 
@@ -491,7 +493,7 @@ iot=(
 
 )
 iot_aur=(          
-    lgtv-git        # remote control LG TV
+    # lgtv-git        # remote control LG TV
     # hypernion     # philips hue ambilight 
 )
 
@@ -817,19 +819,21 @@ fi
 # epic games launcher and unreal engine
 # if [[ " ${apps_to_install[*]} " == *" unreal-engine-bin "* ]]; then
 if [[ -v install_unreal ]]; then
-    echo -e "$INFO Installing Epic Games Launcher..."
+    echo -e "$INFO Installing Epic Asset Manager..."
     set +e  # disabling flags to compile UE
     set +u  
 
     yay -S --needed --noconfirm --answerdiff=None eam-git
 
-    echo -e "$OK Epic Games Launcher installed"
+    echo -e "$OK Epic Asset Manager installed"
 
-    echo -e "$ACTN Installing Unreal Engine..."
-    mkdir -p ~/.cache/yay/unreal-engine-bin
-    echo -e "$ACTN Download Unreal Engine from https://www.unrealengine.com/en-US/linux"
-    echo -e "$ACTN and place it to '~/.cache/yay/unreal-engine-bin'"
-    read -rep "$ACTN Press Enter to continue..."
+    echo -e "$ACTN Install Unreal Engine manually from Epic Asset Manager."
+
+    # echo -e "$ACTN Installing Unreal Engine..."
+    # mkdir -p ~/.cache/yay/unreal-engine-bin
+    # echo -e "$ACTN Download Unreal Engine from https://www.unrealengine.com/en-US/linux"
+    # echo -e "$ACTN and place it to '~/.cache/yay/unreal-engine-bin'"
+    # read -rep "$ACTN Press Enter to continue..."
 
     # xdg-open https://www.unrealengine.com/en-US/linux
     # mkdir -p ~/.cache/yay/unreal-engine-bin
@@ -837,9 +841,9 @@ if [[ -v install_unreal ]]; then
     # echo "then press Enter..."
     # read TEMP
 
-    yay -S --needed --noconfirm --answerdiff=None unreal-engine-bin
+    # yay -S --needed --noconfirm --answerdiff=None unreal-engine-bin
 
-    echo -e "$OK Unreal Engine installed"
+    # echo -e "$OK Unreal Engine installed"
     set -eu # enabling flags back
 fi
 

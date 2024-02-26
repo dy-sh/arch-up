@@ -42,7 +42,7 @@ fi
 
 echo -e "$INFO Configuring grub for btrfs snapshots"
 
-sudo pacman -S --needed --noconfirm grub-btrfs snapper
+sudo pacman -S --needed --noconfirm snapper grub-btrfs inotify-tools
 
 # Installing snap-pac (tool for auto creating snapshots when new pacman package installed)
 # sudo pacman -S --needed --noconfirm snap-pac
