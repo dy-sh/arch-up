@@ -66,7 +66,8 @@ cp -r kde/plasmoids/* ~/.local/share/plasma/plasmoids
 
 echo -e "$INFO Installing themes..."
 
-cp -r kde/themes/* ~/.local/share
+cp -r kde/themes-local/* ~/.local/share
+cp -r kde/themes-home/* ~/
 
 
 
