@@ -59,6 +59,7 @@ cp -r nvim/* ~/.config/nvim/
 sudo mkdir -p /root/.config/nvim
 sudo cp -r nvim/* /root/.config/nvim/
 
+set +e
 # install plugins
 echo -e "$WARN Installing nvim plugins. It is automated process. Just wait!"
 nvim &
@@ -69,5 +70,6 @@ killall nvim || echo ""
 nvim "+TSInstall nu" &
 sleep 4
 killall nvim || echo ""
+set -e
 
 echo -e "$OK DONE"
