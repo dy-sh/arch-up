@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="102">
+  <name>Open In VSCode</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>copie</author>
+  <homepage>https://store.kde.org/p/1202294</homepage>
+  <licence></licence>
+  <version>1.0.0</version>
+  <rating>66</rating>
+  <downloads>4990</downloads>
+  <installedfile>/home/user/.local/share/servicemenu-download/openinvscode.desktop</installedfile>
+  <id>1202294</id>
+  <releasedate>2017-12-06</releasedate>
+  <summary>Right-click and open in vscode&lt;br />
+&lt;br />
+if you want use it ,you can move 'openinvscode.desktop'  into '~/.local/share/kservices5/ServiceMenus/'&lt;br />
+may be in your pc don't have this folder ,you can make it.</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/48/36/49/1202294/2be9f3c5434ec981142450178735e8b8c4cc1.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/48/36/49/1202294/2be9f3c5434ec981142450178735e8b8c4cc1.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1MTI2MTYyNTciLCJvIjoiMSIsInMiOiI4OTJkNjc3YjZhOGM4MGQ2ZWY1YTkzZTE2YjVmMTA0NmFmM2FhNjAyYjc1ZjY5MTNhNmEzZTM2OTM0NTZlYWNjMDk3NjI1ZDRlNzA2NTgyMDI1YTdmNWNhMGU5ZTIyOTJiYWFiMTk3NmE3N2QyYWEwZDExZTQ0MGVhNDIxOWQyMiIsInQiOjE3MDg5NTg2NzcsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0.qemFGgqmthG90ndUMTfmlKDhXJJ43-ZmzmlnmCis4po/openinvscode.desktop</payload>
+  <tags>addon</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="102">
+  <name>Back In Time Helper</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>c-hartmann</author>
+  <homepage>https://store.kde.org/p/1739778</homepage>
+  <licence></licence>
+  <version>0.9.2</version>
+  <rating>50</rating>
+  <downloads>1484</downloads>
+  <installedfile>/home/user/.local/share/servicemenu-download/back-in-time-helper.desktop</installedfile>
+  <id>1739778</id>
+  <releasedate>2022-03-24</releasedate>
+  <summary>A KDE 5 dolphin context menu extension (aka Service Menu), that let's you restore (or backup) any&lt;br />
+file or folder from within the context menu with the help of Back In Time and rsync(1).&lt;br />
+&lt;br />
+This Action gives the user a very basic but quick approach to the basic functionality of...</summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/100x100-0/img/00/00/65/05/11/1739778/back-in-time-helper-logo.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-0/img/00/00/65/05/11/1739778/back-in-time-helper-logo.png</previewBig>
+  <payload>https://files04.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2NDgxMjc1NDAiLCJvIjoiMSIsInMiOiIzZDM4NjdhNmViY2U2MDgxZDBkNWM2NDEyN2MyMDAwZWFkNDI0NjM1NmY5YmY2MzhkYzdlMDI4MzUwNzg5YWNlOWNmN2NhZTMyYWIxNjMyOTU2YmY1YTBhMDA0ODBmMWM5NTQ4YjZmMDRjMTY1YzJlODdmODMzZTdiYzI4ZWRkMiIsInQiOjE3MDg5NTk1OTEsInN0ZnAiOm51bGwsInN0aXAiOiI0Ni41My4xODkuMTg3In0.VZ5g2pMuUPmmafGD8K4zYGA2gjnLGTA_UZJHBSMEE8U/back-in-time-helper.desktop</payload>
+  <tags>dolphin,gplv3,original-product,addon</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
