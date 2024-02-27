@@ -73,7 +73,8 @@ cli_system_monitoring=(
 
 cli_system_monitoring_aur=(         
     # gotop-bin       # system monitor
-    btsdu-git       # btrfs snapshot disk usage analyzer 
+    btsdu-git       # btrfs snapshot disk usage analyzer
+    btdu-bin        # btrfs snapshot disk usage analyzer
     nvitop          # GPU usage monitor
 )
 
@@ -109,6 +110,7 @@ backup=(
     rsync           # file copying and backup tool
     grub-btrfs      # auto update grub menu with btrfs snapshots
     snapper         # btrfs snapshot manager
+    # btrbk           # snapshots and remote backups of btrfs subvolumes
     # snap-pac        # pacman hook for automated snapshots
 )
 backup_aur=(      
