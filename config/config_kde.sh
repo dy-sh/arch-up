@@ -40,7 +40,9 @@ if [[ $DESKTOP_SESSION != "plasma" && $DESKTOP_SESSION != "plasmawayland" ]]; th
     exit
 fi
 
-sudo pacman -S --needed --noconfirm rsync
+if ! command -v rsync &> /dev/null; then
+	sudo pacman -S --needed --noconfirm rsync
+fi
 
 echo -e "$INFO Configuring env variables"
 
