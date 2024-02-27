@@ -68,7 +68,7 @@ killall nvim || echo ""
 # nvim "+Lazy install"
 # install nu language highlight
 nvim "+TSInstall nu" &
-sleep 4
+sleep 10
 killall nvim || echo ""
 set -e
 
