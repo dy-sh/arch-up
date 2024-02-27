@@ -81,7 +81,7 @@ for f in *.tar.gz; do tar xf "$f"; done
 rm *.tar.gz
 cd "$SCRIPT_DIR"
 
-
+sleep 3
 
 
 
