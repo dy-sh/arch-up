@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.18
+###  vlc 3.0.20
 ###
 
 ###
@@ -242,42 +242,6 @@
 
 # Open GL/GLES hardware converter (string)
 #glconv=
-
-# Rendering intent for color conversion (integer)
-#rendering-intent=1
-
-# Display primaries (integer)
-#target-prim=0
-
-# Display gamma / transfer function (integer)
-#target-trc=0
-
-# Tone-mapping algorithm (integer)
-#tone-mapping=3
-
-# Tone-mapping parameter (float)
-#tone-mapping-param=0.000000
-
-# Highlight clipped pixels (boolean)
-#tone-mapping-warn=0
-
-# Dithering algorithm (integer)
-#dither-algo=-1
-
-# Dither depth override (0 = framebuffer depth) (integer)
-#dither-depth=0
-
-# Desaturation strength (float)
-#desat-strength=0.000000
-
-# Desaturation exponent (float)
-#desat-exponent=0.000000
-
-# Desaturation base (float)
-#desat-base=0.000000
-
-# Maximum brightness boost (float)
-#max-boost=0.000000
 
 [flaschen] # Flaschen-Taschen video output
 
@@ -696,7 +660,7 @@
 [freetype] # Freetype2 font renderer
 
 # Font (string)
-#freetype-font=Serif Bold
+freetype-font=Noto Sans
 
 # Monospace Font (string)
 #freetype-monofont=Monospace
@@ -1442,7 +1406,7 @@
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.18 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.20 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -1925,7 +1889,7 @@ qt-privacy-ask=0
 #sout-avformat-options=
 
 # Reset timestamps (boolean)
-#sout-avformat-reset-ts=0
+#sout-avformat-reset-ts=1
 
 [adaptive] # Unified adaptive streaming for DASH/HLS
 
@@ -2655,6 +2619,26 @@ sout-x264-tune=film
 
 # Use DecodeBin (boolean)
 #use-decodebin=1
+
+[fluidsynth] # FluidSynth MIDI synthesizer
+
+# SoundFont file (string)
+#soundfont=
+
+# Chorus (boolean)
+#synth-chorus=1
+
+# Synthesis gain (float)
+#synth-gain=0.500000
+
+# Polyphony (integer)
+#synth-polyphony=256
+
+# Reverb (boolean)
+#synth-reverb=1
+
+# Sample rate (integer)
+#synth-sample-rate=44100
 
 [dvbsub] # DVB subtitles decoder
 
@@ -3940,7 +3924,7 @@ audio-resampler=any
 #disable-screensaver=1
 
 # Show media title on video (boolean)
-#video-title-show=1
+video-title-show=0
 
 # Show video title for x milliseconds (integer)
 #video-title-timeout=5000
@@ -4033,7 +4017,7 @@ video-filter=pause_click
 #video-splitter=
 
 # Enable sub-pictures (boolean)
-#spu=1
+spu=0
 
 # On Screen Display (boolean)
 #osd=1

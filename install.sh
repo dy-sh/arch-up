@@ -110,6 +110,7 @@ backup=(
     rsync           # file copying and backup tool
     grub-btrfs      # auto update grub menu with btrfs snapshots
     snapper         # btrfs snapshot manager
+    grsync          # GUI for rsync
     # btrbk           # snapshots and remote backups of btrfs subvolumes
     # snap-pac        # pacman hook for automated snapshots
 )
@@ -168,6 +169,8 @@ file_managers_aur=(
 encryption=(        
     keepassxc       # password manager
     veracrypt       # encryption tool
+    encfs           # encryption tool
+    gocryptfs       # encryption tool
 )
 
 
