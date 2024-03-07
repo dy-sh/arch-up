@@ -40,6 +40,8 @@ play = [
 	{ exec = 'mpv "$@"', orphan = true, for = "unix" },
 	{ exec = 'vlc "$@"', orphan = true, for = "unix" },
 	{ exec = 'mpv "%1"', orphan = true, for = "windows" },
+	{ exec = 'vlc "%1"', orphan = true, for = "windows" },
+	{ exec = 'losslesscut "$@"', orphan = true, for = "unix" },
 	{ exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info", for = "unix" },
 ]
 bash = [
