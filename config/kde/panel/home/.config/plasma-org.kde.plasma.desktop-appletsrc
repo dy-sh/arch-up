@@ -197,9 +197,22 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][118][Applets][249][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 popupHeight=450
 popupWidth=560
+
+[Containments][118][Applets][249][Configuration][Appearance]
+autoFontAndSize=false
+fontFamily=Noto Sans
+fontSize=11
+fontStyleName=Regular
+fontWeight=400
+showDate=false
+use24hFormat=2
+
+[Containments][118][Applets][249][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][118][ConfigDialog]
 DialogHeight=52
