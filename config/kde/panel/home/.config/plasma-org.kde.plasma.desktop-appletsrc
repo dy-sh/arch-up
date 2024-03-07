@@ -70,7 +70,7 @@ plugin=org.kde.plasma.systemmonitor.memory
 
 [Containments][118][Applets][157][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=38
+PreloadWeight=53
 popupHeight=165
 popupWidth=156
 
@@ -98,7 +98,7 @@ plugin=org.kde.plasma.systemmonitor.net
 
 [Containments][118][Applets][158][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=33
+PreloadWeight=48
 popupHeight=194
 popupWidth=156
 
@@ -129,7 +129,7 @@ plugin=org.kde.plasma.systemmonitor.cpu
 
 [Containments][118][Applets][159][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=33
+PreloadWeight=43
 popupHeight=216
 popupWidth=156
 
@@ -149,45 +149,15 @@ highPrioritySensorIds=["cpu/all/usage"]
 lowPrioritySensorIds=["cpu/all/cpuCount","cpu/all/coreCount"]
 totalSensors=["cpu/all/usage"]
 
-[Containments][118][Applets][162]
-immutability=1
-plugin=org.kde.plasma.eventcalendar
-
-[Containments][118][Applets][162][Configuration]
-PreloadWeight=15
-popupHeight=432
-popupWidth=432
-
-[Containments][118][Applets][162][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][118][Applets][162][Configuration][General]
-clockMaxHeight=20
-clockTimeFormat1=hh:mm
-v71Migration=true
-v72Migration=true
-
-[Containments][118][Applets][166]
-immutability=1
-plugin=org.kde.plasma.minimizeall
-
-[Containments][118][Applets][166][Configuration]
-PreloadWeight=0
-
-[Containments][118][Applets][166][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][118][Applets][236]
 immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][118][Applets][236][Configuration]
 CurrentPreset=org.kde.plasma.systemmonitor
-PreloadWeight=33
-popupHeight=212
-popupWidth=187
+PreloadWeight=48
+popupHeight=174
+popupWidth=203
 
 [Containments][118][Applets][236][Configuration][Appearance]
 chartFace=org.kde.ksysguard.piechart
@@ -222,6 +192,15 @@ plugin=org.kde.plasma.panelspacer
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][118][Applets][249]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][118][Applets][249][Configuration]
+PreloadWeight=65
+popupHeight=450
+popupWidth=560
+
 [Containments][118][ConfigDialog]
 DialogHeight=52
 DialogWidth=1707
@@ -230,7 +209,7 @@ DialogWidth=1707
 PreloadWeight=0
 
 [Containments][118][General]
-AppletOrder=236;157;159;158;247;119;122;121;246;123;162;166
+AppletOrder=236;157;159;158;247;119;122;121;246;123;249
 
 [Containments][124]
 activityId=
@@ -239,8 +218,8 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.private.systemtray
-popupHeight=432
-popupWidth=432
+popupHeight=448
+popupWidth=448
 wallpaperplugin=org.kde.image
 
 [Containments][124][Applets][125]
@@ -255,7 +234,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][124][Applets][126][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][124][Applets][127]
 immutability=1
@@ -353,14 +332,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][124][Applets][142][Configuration]
-PreloadWeight=70
+PreloadWeight=69
 
 [Containments][124][Applets][226]
 immutability=1
 plugin=luisbocanegra.do-not-unplug-yet
 
 [Containments][124][Applets][226][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][124][Applets][237]
 immutability=1
@@ -378,7 +357,7 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][124][Applets][242][Configuration]
-PreloadWeight=55
+PreloadWeight=44
 
 [Containments][124][ConfigDialog]
 DialogHeight=540
@@ -562,7 +541,7 @@ PreloadWeight=2
 
 [Containments][238][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=326
+ToolBoxButtonX=264
 
 [Containments][238][Wallpaper][org.kde.image][General]
 Image=/usr/share/wallpapers/Mountain/
