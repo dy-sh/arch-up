@@ -97,11 +97,22 @@ if [[ ! $confirm == [nN] ]]; then
 	echo -e "$OK Commit message configured"
 fi
 
-read -rep "$ACTN Do you want to configure github authorization? [Y/n] " confirm
+read -rep "$ACTN Do you want to configure GitHub authorization? [Y/n] " confirm
 if [[ ! $confirm == [nN] ]]; then
 	echo "$ACTN Authorization process started... Press Ctrl+C if not required."
 
 	if gh auth login; then
+		gh auth status
+		echo -e "$OK Authorization configured"
+	fi
+fi
+
+read -rep "$ACTN Do you want to configure GitLab authorization? [Y/n] " confirm
+if [[ ! $confirm == [nN] ]]; then
+	echo "$ACTN Authorization process started... Press Ctrl+C if not required."
+
+	if glab auth login; then
+		glab auth status
 		echo -e "$OK Authorization configured"
 	fi
 fi
