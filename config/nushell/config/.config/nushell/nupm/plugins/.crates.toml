@@ -3,4 +3,4 @@
 "nu_plugin_clipboard 0.3.1 (path+file:///home/user/.config/nushell/nupm/plugins-src/nu_plugin_clipboard)" = ["nu_plugin_clipboard"]
 "nu_plugin_desktop_notifications 1.0.6 (path+file:///home/user/.config/nushell/nupm/plugins-src/nu_plugin_desktop_notifications)" = ["nu_plugin_desktop_notifications"]
 "nu_plugin_port_list 1.2.7 (path+file:///home/user/.config/nushell/nupm/plugins-src/nu_plugin_port_list)" = ["nu_plugin_port_list"]
-"nu_plugin_port_scan 1.0.7 (path+file:///home/user/.config/nushell/nupm/plugins-src/nu_plugin_port_scan)" = ["nu_plugin_port_scan"]
+"nu_plugin_port_scan 1.0.11 (path+file:///home/user/.config/nushell/nupm/plugins-src/nu_plugin_port_scan)" = ["nu_plugin_port_scan"]
