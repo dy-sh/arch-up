@@ -212,6 +212,7 @@ network=(
     sshfs           # mounting remote directories over a SSH 
     gping           # ping with graph
     bore            # tunneling internet protocols (share port on gray ip)
+    wol             # wake on lan
 )
 network_aur=(      
     xrdp            # remote desktop protocol (RDP) server 
