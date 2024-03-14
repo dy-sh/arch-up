@@ -702,7 +702,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "String": {
                   "val": "8.8.8.8",
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -711,7 +711,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "Int": {
                   "val": 53,
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -720,7 +720,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "String": {
                   "val": "Open",
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -729,7 +729,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "Bool": {
                   "val": true,
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -738,7 +738,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "Int": {
                   "val": 40,
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -746,7 +746,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               }
             ]
           },
-          "internal_span": {
+          "span": {
             "start": 0,
             "end": 0
           }
@@ -770,7 +770,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "String": {
                   "val": "8.8.8.8",
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -779,7 +779,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "Int": {
                   "val": 54,
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -788,7 +788,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "String": {
                   "val": "Closed",
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -797,7 +797,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "Bool": {
                   "val": false,
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -806,7 +806,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               {
                 "Int": {
                   "val": 1000,
-                  "internal_span": {
+                  "span": {
                     "start": 0,
                     "end": 0
                   }
@@ -814,7 +814,7 @@ register /home/user/.config/nushell/nupm/plugins/bin/nu_plugin_port_scan  {
               }
             ]
           },
-          "internal_span": {
+          "span": {
             "start": 0,
             "end": 0
           }
