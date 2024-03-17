@@ -234,7 +234,7 @@ internet=(
     firefox         # web browser
     thunderbird     # email clint
     telegram-desktop # messenger
-    element-desktop # messenger
+    element-desktop gomuks # messenger (matrix)
     discord         # messenger
     # moserial        # serial terminal
     # putty           # terminal for ssh/telent/serial
