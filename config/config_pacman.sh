@@ -101,6 +101,27 @@ else
     fi
 fi
 
+# disable debug
+config_file="/etc/makepkg.conf"
+config_content=$(<"$config_file")
+
+options_line=$(echo "$config_content" | grep -n "^OPTIONS=" | cut -d: -f1)
+if [ -n "$options_line" ]; then
+    options_value=$(echo "$config_content" | sed -n "${options_line}p")
+
+  if echo "$options_value" | grep -q "OPTIONS=.*\<debug\>" && ! echo "$options_value" | grep -q "OPTIONS=.*!\<debug\>"; then
+        new_options_value=$(echo "$options_value" | sed 's/\(OPTIONS=.*\)\<debug\>/\1!debug/')
+        new_config_content=$(echo "$config_content" | sed "${options_line}s/.*/${new_options_value}/")
+        echo "$new_config_content" | sudo tee "$config_file" > /dev/null
+        echo -e "$OK Debug symbols disabled."
+    else
+        echo -e "$INFO Debug symbols already disabled. Skipping."
+    fi
+else
+    echo -e "$ERR Line OPTIONS= not found in $config_file"
+    exit 1
+fi
+
 
 echo -e "$OK DONE"
 
