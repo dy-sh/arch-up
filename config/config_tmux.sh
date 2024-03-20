@@ -26,8 +26,8 @@ ERR="[${RED}ERR!${NC}]"
 HEADER="${BLUE}\n--------------------------------------------------------------${NC}\n"
 
 # cd to script directory
-SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
-cd "$SCRIPT_DIR" || exit
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+cd "$SCRIPT_DIR" || exit 1
 
 # ---------------------------------------------------------------------
 
